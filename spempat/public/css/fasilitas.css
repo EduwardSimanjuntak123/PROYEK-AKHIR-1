@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 800; /* Ubah warna latar belakang body */
+  }
+  
+  /* CSS untuk header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00A9FF;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    background: none;
+  }
+  
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  .navbar-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 20px;
+  }
+  
+  .navbar-nav .nav-item a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .navbar-nav .nav-item a:hover { 
+    background: #77C8FE;
+  }
+  
+  .navbar-nav .nav-item a {
+    color: #fff;
+  }
+  
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    cursor: pointer;
+  }
+
+/*fasilitas*/
+.word {
+    background: linear-gradient(0deg, #7FD4FF, #7FD4FF), linear-gradient(0deg, #E9E9E9, #E9E9E9), linear-gradient(0deg, #E9E9E9, #E9E9E9), #E9E9E9;
+    color: #fff;
+    padding: 100px
+}
+
+.word img {
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+.word h1 {
+    font-size: 70px;
+}
+
+.word p {
+    margin-top: 70px;
+    font-size: 40px;
+    text-align: center;
+
+}
+
+img[alt="foto_1"] {
+    left: 40px;
+    top: 120px;
+    position: absolute;
+}
+
+img[alt="foto_2"] {
+    left: 350px;
+    top: 180px;
+    position: absolute;
+}
+
+img[alt="foto_3"] {
+    left: 150px;
+    top: 420px;
+    position: absolute;
+}
+
+.list1 {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.list {
+    padding: 10px;
+    background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
+}
+
+/*overflow*/
+.scrolldown {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.scrolldown h1 {
+    text-align: center;
+}
+
+.scrolldown img{
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+.scrolldown .text-center{
+    overflow-y: scroll;
+    height: 500px;
+}
+
+/*Data Sarpras*/
+.sarpras{
+    background-color: #fff;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    color: #464343;
+}
+
+
+.sarpras .ganjil{
+    background-color: #fff;
+}
+.sarpras .genap{
+    background: rgba(196, 196, 196, 0.35);
+}
+
+ 
+/*Informasi/Kontak(footer)*/
+footer{
+  background: #0496c7;
+}
+.kontak {
+  margin: 30px;
+}
+
+.box {
+  background: rgba(217, 217, 217, 0.25);
+  padding: 15px;
+  color: #fff;
+}
+.box .tautan{
+  display: flex;
+}
+.tautan .link {
+  padding-right: 50px;
+}
+.box .sosmed{
+  margin-bottom: 30px;
+}
+.up .info {
+  text-align: left;
+  display: flex;
+}
+
+.up h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline rgb(132, 138, 155);
+}
+
+.up h4 {
+  font-size: 30px;
+}
+
+.icon {
+  margin-bottom: 58px;
+  font-size: 3.5rem;
+}
+@media screen and (max-width : 576px){
+  .up h2{
+    font-size: 25px;
+  }
+  .up h4{
+    font-size: 18px;
+  }
+  .icon{
+    font-size: 2.8rem;
+  }
+}
+
+/*footer*/
+.footer {
+
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer i{
+  font-size: 4rem;
+}
+.footer h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  margin-top: 10px;
+}
+.footer .info{
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width : 576px){
+  .footer i{
+    font-size: 2rem;
+  }
+  .footer h4{
+    font-size: 15px;
+  }
+}

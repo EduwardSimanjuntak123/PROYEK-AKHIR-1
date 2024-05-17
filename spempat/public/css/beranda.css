@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 800; /* Ubah warna latar belakang body */
+}
+
+/* CSS untuk header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00A9FF;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+  background: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item a:hover { 
+  background: #77C8FE;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+}
+
+.navbar-nav .nav-item a {
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+
+/* Untuk header */
+@media (max-width: 768px) {
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .navbar-nav .nav-item a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  .text-light h2 {
+    margin-left: 20px;
+    width: auto;
+  }
+
+  .text-light h3,
+  .text-light h4,
+  .text-light p {
+    padding-left: 20px;
+  }
+
+  .shape {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+
+/*Kata Sambutan*/
+.hero {
+  background-color: #fff;
+  padding: 3%;
+  position: relative;
+}
+
+.shape {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin-left: -50px;
+  object-fit: cover;
+  border-radius: 20px;
+  clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 15% 50%);
+}
+
+.sambutan {
+  height: 500px;
+  border-radius: 15px;
+  background: #00A9FF;
+}
+
+
+.text-light h3 {
+  text-align: left;
+  padding-left: 80px;
+  font-size: 60px;
+  margin-top: 120px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+}
+
+.text-light h4 {
+  text-align: left;
+  padding-left: 80px;
+  font-size: 40px;
+  margin-top: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+}
+
+.text-light p {
+  font-size: 22px;
+  text-align: left;
+  padding-left: 80px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+}
+@media screen and (max-width : 576px){
+  .sambutan{
+    height: auto;
+  }
+  .scroll{
+    display: none;
+  }
+
+  .text-light h3, .text-light h4{
+    font-size: 30px;
+    padding-left: 30px;
+    margin-top: 10px;
+  }
+  .text-light p{
+    font-size: 18px;
+    padding-left: 30px;
+  }
+}
+
+
+/* CSS untuk person section */
+.person {
+  background-image: url(/img/murid.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.list {
+  height: 40px;
+  background: #00A9FF;
+}
+.person .col{
+  flex-wrap: wrap;
+}
+
+.hero1 h2{
+  font-size: 40px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404); 
+}
+.hero1 h3{
+ 
+  font-size: 30px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+}
+.hero1 p{
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+}
+.hero1 {
+  padding-left: 100px;
+  margin-top: 60px;
+  font-weight: bold;
+  text-align: left;
+}
+@media screen and (max-width : 576px){
+  .hero1 {
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  .hero1 h2{
+    font-size: 20px;
+  }
+  .hero1 h3{
+    font-size: 15px;
+  }
+  .hero1 p{
+    font-size: 10px;
+  }
+  .person img{
+    display: none;
+  }
+}
+
+
+/* Berita*/
+.latar {
+  background-color: #fff;
+}
+
+.berita {
+  padding-bottom: 30px;
+}
+
+.berita h1 {
+  padding-left: 15px;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.berita h2 {
+  font-weight: bold;
+}
+
+.berita h3 {
+  font-size: 18px;
+}
+
+.news {
+  background: #00A9FF;
+  padding: 25px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.news img {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+}
+
+@media screen and (max-width : 576px){
+  .berita h1{
+    font-size: 20px;
+  }
+  .berita h2{
+    font-size: 18px;
+  }
+  .berita h3{
+    font-size: 15px;
+  }
+  .news img{
+    margin-left: 10px;
+  }
+}
+
+
+/*Informasi/Kontak(footer)*/
+footer{
+  background: #0496c7;
+}
+.kontak {
+  margin: 30px;
+}
+
+.box {
+  background: rgba(217, 217, 217, 0.25);
+  padding: 15px;
+  color: #fff;
+}
+.box .tautan{
+  display: flex;
+}
+.tautan .link {
+  padding-right: 50px;
+}
+.box .sosmed{
+  margin-bottom: 30px;
+}
+.up .info {
+  text-align: left;
+  display: flex;
+}
+
+.up h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline rgb(132, 138, 155);
+}
+
+.up h4 {
+  font-size: 30px;
+}
+
+.icon {
+  margin-bottom: 58px;
+  font-size: 3.5rem;
+}
+@media screen and (max-width : 576px){
+  .up h2{
+    font-size: 25px;
+  }
+  .up h4{
+    font-size: 18px;
+  }
+  .icon{
+    font-size: 2.8rem;
+  }
+}
+
+/*footer*/
+.footer {
+
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer i{
+  font-size: 4rem;
+}
+.footer h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  margin-top: 10px;
+}
+.footer .info{
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width : 576px){
+  .footer i{
+    font-size: 2rem;
+  }
+  .footer h4{
+    font-size: 15px;
+  }
+}
