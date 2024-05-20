@@ -12,11 +12,12 @@ use App\Http\Controllers\kata_sambutanController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\userviewController;
+use App\Http\Controllers\ImageController;
 use App\Models\berita;
 use Illuminate\Support\Facades\Route;
 
 
-
+Route::get('/images/{imageName}', [ImageController::class, 'show'])->name('image.show');
 Route::get('/', [userviewController::class, 'dashboard'])->name('dashboarduser');
 Route::get('/fasilitas', [userviewController::class, 'fasilitas'])->name('fasilitas');
 Route::get('/Sejarah', [userviewController::class, 'sejarah'])->name('sejarah');

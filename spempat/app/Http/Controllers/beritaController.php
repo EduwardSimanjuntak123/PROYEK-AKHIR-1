@@ -37,7 +37,7 @@ class beritaController extends Controller
  
         $photo =$request->file('photo');
         $filename = date('Y-m-d_H-i-s').$photo->getClientOriginalName();//mengubah nama ke database
-        $path ='img/'.$filename;
+        $path ='images/'.$filename;
  
         Storage::disk('public')->put($path,file_get_contents($photo));
 
