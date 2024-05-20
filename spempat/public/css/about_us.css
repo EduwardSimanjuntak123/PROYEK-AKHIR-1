@@ -215,6 +215,9 @@ footer{
 .kontak {
   margin: 30px;
 }
+.link h6 a{
+  text-decoration: none;
+ }
 
 .box {
   background: rgba(217, 217, 217, 0.25);
@@ -261,6 +264,9 @@ footer{
   .icon{
     font-size: 2.8rem;
   }
+  .link h6 a{
+    text-decoration: none;
+   }
 }
 /*android landscape dan tablet*/
 @media only screen and (min-width: 767px) and (max-width : 992px){

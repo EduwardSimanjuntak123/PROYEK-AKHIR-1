@@ -150,21 +150,24 @@ body {
 } */
 
 .text-light h3 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
   margin-top: 3rem;
   text-align: left;
   padding-left: 80px;
-  font-size: 70px;  
+  font-size: 60px;  
 }
 
 .text-light h4 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
   text-align: left;
   padding-left: 80px;
-  font-size: 70 px;
+  font-size: 50px;
   margin-top: 15px;
 }
 
 .text-light p {
-  font-size: 22px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.50);
+  font-size: 26px;
   text-align: left;
   padding-left: 80px;
 }
@@ -185,8 +188,10 @@ body {
     font-size: 25px;
     padding-left: 25px;
     margin-top: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
   }
   .text-light p{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
     font-size: 18px;
     padding-left: 30px;
   }
@@ -206,13 +211,15 @@ body {
   
   .text-light h3, .text-light h4{
     font-size: 28px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
   }
   .text-light p{
     font-size: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
   }
 }
 /*dekstop*/
-@media only screen and (min-width : 992px){
+/* @media only screen and (min-width : 992px){
   .sambutan{
     height: auto;
     margin-top: 1rem;
@@ -230,7 +237,7 @@ body {
     font-size: 24px;
   }
 }
-
+ */
 
 /* CSS untuk person section */
 .person {
@@ -306,9 +313,9 @@ body {
   }
 }
 /*dekstop*/
-@media only screen and (min-width : 927px){
+/* @media only screen and (min-width : 927px){
   
-}
+} */
 
 
 /* Berita*/
@@ -390,6 +397,9 @@ footer{
 .kontak {
   margin: 30px;
 }
+.link h6 a{
+ text-decoration: none;
+}
 
 .box {
   background: rgba(217, 217, 217, 0.25);
@@ -436,6 +446,9 @@ footer{
   .icon{
     font-size: 2.8rem;
   }
+  .link h6 a{
+    text-decoration: none;
+   }
 }
 /*android landscape dan tablet*/
 @media only screen and (min-width: 767px) and (max-width : 992px){
@@ -448,14 +461,14 @@ footer{
 }
 
 /*dekstop*/
-@media only screen and (min-width : 1300px){
+/* @media only screen and (min-width : 1300px){
   .up h2{
     font-size: 2.8rem;
   }
   .up h4{
     font-size: 2.3rem;
   }
-}
+} */
 /*footer*/
 .footer {
   margin-top: 20px;
@@ -508,11 +521,11 @@ footer{
 }
 
 /*dekstop*/
-@media only screen and (min-width : 1300px) {
+/* @media only screen and (min-width : 1300px) {
   .footer h4 {
       font-size: 20px;
   }
   .footer i {
       font-size: 3.5rem;
   }
-}
+} */

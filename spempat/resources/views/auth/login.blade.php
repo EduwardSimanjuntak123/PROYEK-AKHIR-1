@@ -9,17 +9,17 @@
                 <input class="rounded-full shadow" type="text" name="email" placeholder="Email"> <br>
 
             </div>
-
+            @error('email')
+                <div class="alert alert-danger" role="alert">{{ $message }}</div>
+            @enderror
             <!-- Password -->
             <div class="mt-4">
                 <input class="rounded-full shadow" type="password" name="password" placeholder="Password">
 
             </div>
-            @error('email')
-                <div class="error" style="color: red">{{ $message }}</div>
-            @enderror
+
             @error('password')
-                <div class="error" style="color: red">{{ $message }}</div>
+                <div class="alert alert-danger" role="alert">{{ $message }}</div>
             @enderror
 
 

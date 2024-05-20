@@ -144,8 +144,8 @@
                 @foreach ($data as $item)
                     <tr>
                         <td class="">
-                            <img class="border shadow" src="{{ asset('storage/img/' . $item->file) }}" alt="Gambar berita"
-                                style="max-width: 100px;height:100px;">
+                            <img class="border shadow" src="{{ asset('storage/img/' . $item->file) }}"
+                                style="max-width: 100px; height:100px;">
                             
                         </td>
                         <td class="p-3 border">{{ $item->judul }}</td>
