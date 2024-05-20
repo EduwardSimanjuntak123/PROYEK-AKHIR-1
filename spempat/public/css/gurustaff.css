@@ -1,125 +1,119 @@
 body {
-    margin: 0;
-    font-family: "Kaisei Tokumin", serif;
-    font-weight: 800;
-    /* Ubah warna latar belakang body */
+  margin: 0;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 800; /* Ubah warna latar belakang body */
 }
 
 /* CSS untuk header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #00A9FF;
-    padding: 10px 20px;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00A9FF;
+  padding: 10px 20px;
+  font-weight: bold;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
 }
 
 .logo img {
-    width: 65px;
-    height: 65px;
-    margin-right: 20px;
-    background: none;
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+  background: none;
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .navbar-nav {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    color: #fff;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
 }
 
 .navbar-nav .nav-item {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .navbar-nav .nav-item a {
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 
-.navbar-nav .nav-item a:hover {
-    background: #77C8FE;
+.navbar-nav .nav-item a:hover { 
+  background: #77C8FE;
 }
 
 .navbar-nav .nav-item a {
-    color: #fff;
+  color: #fff;
 }
 
 
 .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    z-index: 1;
-    border-radius: 10px;
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 10px;
 }
 
 .dropdown-menu li {
-    padding: 10px;
+  padding: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 .dropdown {
-    position: relative;
+  position: relative;
 }
 
 .dropdown-toggle {
-    cursor: pointer;
+  cursor: pointer;
 }
-
 /* Untuk header */
-@media (max-width: 768px) {
-    .logo img {
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-    }
+@media (min-width: 768px) {
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
 
-    .logo {
-        font-size: 20px;
-    }
+  .logo {
+    font-size: 20px;
+  }
 
-    .navbar-nav .nav-item a {
-        font-size: 14px;
-        padding: 5px 8px;
-    }
+  .navbar-nav .nav-item a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
 
-    .text-light h2 {
-        margin-left: 20px;
-        width: auto;
-    }
+  .text-light h2 {
+    margin-left: 20px;
+    width: auto;
+  }
 
-    .text-light h3,
-    .text-light h4,
-    .text-light p {
-        padding-left: 20px;
-    }
+  .text-light h3,
+  .text-light h4,
+  .text-light p {
+    padding-left: 20px;
+  }
 
-    .shape {
-        width: 300px;
-        height: 250px;
-    }
 }
 
 /*tampilan awal*/
@@ -177,82 +171,134 @@ body {
  
 /*Informasi/Kontak(footer)*/
 footer{
-    background: #0496c7;
+  background-color: #00A9FF;
+}
+.kontak {
+  margin: 30px;
+}
+
+.box {
+  background: rgba(217, 217, 217, 0.25);
+  padding: 15px;
+  color: #fff;
+}
+.box .tautan{
+  display: flex;
+}
+.tautan .link {
+  padding-right: 50px;
+}
+.box .sosmed{
+  margin-bottom: 30px;
+}
+.up .info {
+  text-align: left;
+  display: flex;
+}
+
+.up h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline black;
+}
+
+.up h4 {
+  font-size: 30px;
+}
+
+.icon {
+  margin-bottom: 58px;
+  font-size: 3.5rem;
+}
+
+/*android*/
+@media only screen and (max-width : 768px){
+  .up h2{
+    font-size: 25px;
   }
-  .kontak {
-    margin: 30px;
+  .up h4{
+    font-size: 18px;
   }
-  
-  .box {
-    background: rgba(217, 217, 217, 0.25);
-    padding: 15px;
-    color: #fff;
+  .icon{
+    font-size: 2.8rem;
   }
-  .box .tautan{
-    display: flex;
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px){
+  .up h2{
+    font-size: 32px;
   }
-  .tautan .link {
-    padding-right: 50px;
+  .up h4{
+    font-size: 25px;
   }
-  .box .sosmed{
-    margin-bottom: 30px;
+}
+
+/*dekstop*/
+@media only screen and (min-width : 1300px){
+  .up h2{
+    font-size: 2.8rem;
   }
-  .up .info {
-    text-align: left;
-    display: flex;
+  .up h4{
+    font-size: 2.3rem;
   }
-  
-  .up h2 {
-    font-size: 40px;
-    font-weight: bold;
-    text-decoration: underline rgb(132, 138, 155);
+}
+/*footer*/
+.footer {
+  margin-top: 20px;
+  padding: 25px;
+  display: flex;
+  justify-content:flex-start;
+}
+
+.footer i {
+  font-size: 4rem;
+}
+
+.footer h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.footer .info {
+  display: flex;
+  flex-direction: row;
+}
+
+/*android*/
+@media only screen and (max-width : 768px) {
+  .footer{
+      padding: 10px;
   }
-  
-  .up h4 {
-    font-size: 30px;
+  .footer i {
+      font-size: 2.5rem;
   }
-  
-  .icon {
-    margin-bottom: 58px;
-    font-size: 3.5rem;
+
+  .footer h4 {
+      font-size: 15px;
   }
-  @media screen and (max-width : 576px){
-    .up h2{
-      font-size: 25px;
-    }
-    .up h4{
-      font-size: 18px;
-    }
-    .icon{
-      font-size: 2.8rem;
-    }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px) {
+  .footer h4 {
+      font-size: 15px;
   }
-  
-  /*footer*/
-  .footer {
-  
-    padding: 25px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer i{
-    font-size: 4rem;
+  .footer i {
+      font-size: 3rem;
   }
   .footer h4 {
-    font-size: 20px;
-    color: #fff;
-    text-align: left;
-    margin-top: 10px;
+      font-size: 17px;
   }
-  .footer .info{
-    display: flex;
-    flex-direction: row;
+}
+
+/*dekstop*/
+@media only screen and (min-width : 1300px) {
+  .footer h4 {
+      font-size: 20px;
   }
-  @media screen and (max-width : 576px){
-    .footer i{
-      font-size: 2rem;
-    }
-    .footer h4{
-      font-size: 15px;
-    }
+  .footer i {
+      font-size: 3.5rem;
   }
+}

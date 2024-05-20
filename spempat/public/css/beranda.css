@@ -55,12 +55,10 @@ body {
 
 .navbar-nav .nav-item a:hover { 
   background: #77C8FE;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
 }
 
 .navbar-nav .nav-item a {
   color: #fff;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514);
 }
 
 
@@ -88,10 +86,8 @@ body {
 .dropdown-toggle {
   cursor: pointer;
 }
-
-
 /* Untuk header */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .logo img {
     width: 40px;
     height: 40px;
@@ -118,25 +114,20 @@ body {
     padding-left: 20px;
   }
 
-  .shape {
-    width: 300px;
-    height: 250px;
-  }
 }
 
 
-/*Kata Sambutan*/
 .hero {
   background-color: #fff;
   padding: 3%;
   position: relative;
 }
 
-.shape {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  margin-left: -50px;
+.scroll img {
+  width: 500px;
+  height: 400px;
+  margin-right: 2%;
+  margin-top: 50px;
   object-fit: cover;
   border-radius: 20px;
   clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 15% 50%);
@@ -145,48 +136,98 @@ body {
 .sambutan {
   height: 500px;
   border-radius: 15px;
-  background: #00A9FF;
+  background: #7fd4ff;
 }
 
+/* .text-light h2 {
+  text-align: center;
+  margin: 40px;
+  margin-left: 50px;
+  color: purple;
+  background-color: grey;
+  width: 300px;
+  border-radius: 50px;
+} */
 
 .text-light h3 {
+  margin-top: 3rem;
   text-align: left;
   padding-left: 80px;
-  font-size: 60px;
-  margin-top: 120px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+  font-size: 70px;  
 }
 
 .text-light h4 {
   text-align: left;
   padding-left: 80px;
-  font-size: 40px;
-  margin-top: 30px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+  font-size: 70 px;
+  margin-top: 15px;
 }
 
 .text-light p {
   font-size: 22px;
   text-align: left;
   padding-left: 80px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
 }
-@media screen and (max-width : 576px){
+/*android*/
+@media only screen and (max-width : 768px){
+  .hero{
+    padding: 2%;
+  }
   .sambutan{
     height: auto;
+    margin-bottom: 10px;
   }
   .scroll{
     display: none;
   }
 
   .text-light h3, .text-light h4{
-    font-size: 30px;
-    padding-left: 30px;
+    font-size: 25px;
+    padding-left: 25px;
     margin-top: 10px;
   }
   .text-light p{
     font-size: 18px;
     padding-left: 30px;
+  }
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px){
+  .sambutan{
+    height: auto;
+    margin-top: 1rem;
+  }
+  .scroll img{
+    margin-top: 4.5rem;
+    padding-right: 5rem;
+    width: 370px;
+    height: 270px;
+  }
+  
+  .text-light h3, .text-light h4{
+    font-size: 28px;
+  }
+  .text-light p{
+    font-size: 20px;
+  }
+}
+/*dekstop*/
+@media only screen and (min-width : 992px){
+  .sambutan{
+    height: auto;
+    margin-top: 1rem;
+  }
+  .scroll img{
+    margin-top: 2.5rem;
+    padding-right: 2rem;
+    width: 400px;
+    height: 300px;
+  }
+  .text-light h3, .text-light h4{
+    font-size: 32px;
+  }
+  .text-light p{
+    font-size: 24px;
   }
 }
 
@@ -195,30 +236,27 @@ body {
 .person {
   background-image: url(/img/murid.jpg);
   background-size: cover;
-  width: 100%;
-  height: auto;
 }
 
 .list {
   height: 40px;
-  background: #00A9FF;
+  background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
 }
 .person .col{
   flex-wrap: wrap;
 }
-
+.person img{
+  width: 100%;
+  height: auto;
+}
 .hero1 h2{
-  font-size: 40px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404); 
+  font-size: 30px;
 }
 .hero1 h3{
- 
   font-size: 30px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
 }
 .hero1 p{
   font-size: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
 }
 .hero1 {
   padding-left: 100px;
@@ -226,23 +264,50 @@ body {
   font-weight: bold;
   text-align: left;
 }
-@media screen and (max-width : 576px){
+/*android*/
+@media only screen and (max-width : 768px){
   .hero1 {
-    padding-left: 10px;
-    margin-top: 10px;
+    padding-left: 0.7rem;
+    margin-top: 0.7rem;
   }
   .hero1 h2{
-    font-size: 20px;
+    font-size: 1.2rem;
   }
   .hero1 h3{
-    font-size: 15px;
+    font-size: 1rem;
   }
   .hero1 p{
-    font-size: 10px;
+    font-size: 0.7rem;
   }
   .person img{
     display: none;
   }
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px){
+  .hero1 {
+    padding-left: 1rem;
+    margin-top: 1.5rem;
+  }
+  .hero1 h2{
+    font-size: 1.8rem;
+  }
+  .hero1 h3{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+  .hero1 p{
+    font-size: 0.85rem;
+  }
+  .person img{
+    width: 18rem;
+    height: auto;
+    margin-top: 2rem;
+  }
+}
+/*dekstop*/
+@media only screen and (min-width : 927px){
+  
 }
 
 
@@ -271,7 +336,7 @@ body {
 }
 
 .news {
-  background: #00A9FF;
+  background: #89CFF3;
   padding: 25px;
   margin-bottom: 40px;
   border-radius: 10px;
@@ -285,8 +350,8 @@ body {
   float: left;
   margin-left: 20px;
 }
-
-@media screen and (max-width : 576px){
+/*android*/
+@media only screen and (max-width : 768px){
   .berita h1{
     font-size: 20px;
   }
@@ -298,13 +363,29 @@ body {
   }
   .news img{
     margin-left: 10px;
+    height: auto;
   }
 }
 
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px){
+  .berita h1{
+    font-size: 28px;
+  }
+  .berita h2{
+    font-size: 25px;
+  }
+  .berita h3{
+    font-size: 23px;
+  }
+  .news img{
+    height: auto;
+  }
+}
 
 /*Informasi/Kontak(footer)*/
 footer{
-  background: #0496c7;
+  background-color: #00A9FF;
 }
 .kontak {
   margin: 30px;
@@ -332,7 +413,7 @@ footer{
 .up h2 {
   font-size: 40px;
   font-weight: bold;
-  text-decoration: underline rgb(132, 138, 155);
+  text-decoration: underline black;
 }
 
 .up h4 {
@@ -343,7 +424,9 @@ footer{
   margin-bottom: 58px;
   font-size: 3.5rem;
 }
-@media screen and (max-width : 576px){
+
+/*android*/
+@media only screen and (max-width : 768px){
   .up h2{
     font-size: 25px;
   }
@@ -354,32 +437,82 @@ footer{
     font-size: 2.8rem;
   }
 }
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px){
+  .up h2{
+    font-size: 32px;
+  }
+  .up h4{
+    font-size: 25px;
+  }
+}
 
+/*dekstop*/
+@media only screen and (min-width : 1300px){
+  .up h2{
+    font-size: 2.8rem;
+  }
+  .up h4{
+    font-size: 2.3rem;
+  }
+}
 /*footer*/
 .footer {
-
+  margin-top: 20px;
   padding: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
 }
-.footer i{
+
+.footer i {
   font-size: 4rem;
 }
+
 .footer h4 {
   font-size: 20px;
   color: #fff;
   text-align: left;
   margin-top: 10px;
 }
-.footer .info{
+
+.footer .info {
   display: flex;
   flex-direction: row;
 }
-@media screen and (max-width : 576px){
-  .footer i{
-    font-size: 2rem;
+
+/*android*/
+@media only screen and (max-width : 768px) {
+  .footer{
+      padding: 10px;
   }
-  .footer h4{
-    font-size: 15px;
+  .footer i {
+      font-size: 2.5rem;
+  }
+
+  .footer h4 {
+      font-size: 15px;
+  }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px) {
+  .footer h4 {
+      font-size: 15px;
+  }
+  .footer i {
+      font-size: 3rem;
+  }
+  .footer h4 {
+      font-size: 17px;
+  }
+}
+
+/*dekstop*/
+@media only screen and (min-width : 1300px) {
+  .footer h4 {
+      font-size: 20px;
+  }
+  .footer i {
+      font-size: 3.5rem;
   }
 }

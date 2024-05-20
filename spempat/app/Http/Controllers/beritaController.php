@@ -36,21 +36,20 @@ class beritaController extends Controller
         if ($validator->fails()) return redirect()->back()->withInput()->withErrors($validator);
  
         $photo =$request->file('photo');
-        $filename = date('Y-m-d').$photo->getClientOriginalName();//mengubah nama ke database
+        $filename = date('Y-m-d_H-i-s').$photo->getClientOriginalName();//mengubah nama ke database
         $path ='img/'.$filename;
  
         Storage::disk('public')->put($path,file_get_contents($photo));
 
         $userId = Auth::id();
- 
+        
         //memasukkan data ke database
         $data['judul']= $request->judul;
         $data['isi']= $request->isi;
         $data['file']= $filename;
         $data['user_id']= $userId;
- 
+
         berita::create($data);
-      
         return redirect()->route('berita.index')->with('filename', $filename);
      }
 

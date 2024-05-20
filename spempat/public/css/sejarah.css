@@ -1,132 +1,231 @@
-
 body {
-    margin: 0;
-    font-family: "Kaisei Tokumin", serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-  
-  /* CSS untuk header */
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #00A9FF;
-    padding: 10px 20px;
-    font-weight: bold;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    color: #fff;
-    text-decoration: none;
-  }
-  
+  margin: 0;
+  font-family: "Kaisei Tokumin", serif;
+  font-weight: 800; /* Ubah warna latar belakang body */
+}
+
+/* CSS untuk header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #00A9FF;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+  background: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-item a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar-nav .nav-item a:hover { 
+  background: #77C8FE;
+}
+
+.navbar-nav .nav-item a {
+  color: #fff;
+}
+
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+/* Untuk header */
+@media (min-width: 768px) {
   .logo img {
-    width: 65px;
-    height: 65px;
-    margin-right: 20px;
-    background: none;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
   }
-  
-  * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+
+  .logo {
+    font-size: 20px;
   }
-  
-  .navbar-nav {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    color: #fff;
-  }
-  
-  .navbar-nav .nav-item {
-    margin-right: 20px;
-  }
-  
+
   .navbar-nav .nav-item a {
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 10px;
-    border-radius: 5px;
+    font-size: 14px;
+    padding: 5px 8px;
   }
-  
-  .navbar-nav .nav-item a:hover { 
-    background: #77C8FE;
+
+  .text-light h2 {
+    margin-left: 20px;
+    width: auto;
   }
-  
-  .navbar-nav .nav-item a {
-    color: #fff;
+
+  .text-light h3,
+  .text-light h4,
+  .text-light p {
+    padding-left: 20px;
   }
-  
-  
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    z-index: 1;
-    border-radius: 10px;
-  }
-  
-  .dropdown-menu li {
-    padding: 10px;
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  .dropdown {
-    position: relative;
-  }
-  
-  .dropdown-toggle {
-    cursor: pointer;
-  }
+
+}
   
 
 /*tampilan awal*/
 .info h1 {
-    font-size: 50px;
-    color: #fff;
+  font-size: 50px;
+  color: #fff;
 }
 
 .info .first {
-    background: linear-gradient(0deg, #7FD4FF, #7FD4FF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
-    text-align: center;
-    padding: 190px;
+  background: linear-gradient(0deg, #7FD4FF, #7FD4FF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+  text-align: center;
+  padding: 190px;
 }
 
 .info .second {
-    background-image: url(/img/visimisi.jpg);
-    background-size: cover;
-    text-align: center;
+background-image: url(/img/visimisi.jpg);
+background-size: cover;
+  text-align: center;
+}
+/*android*/
+@media only screen and (max-width : 600px){
+.info h1{
+margin-top: 15px;
+font-size: 20px;
+}
+.info .first{
+padding: 10px;
+}
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 601px) and (max-width : 1024px){
+.info h1{
+  margin-top: 30px;
+  font-size: 30px;
+ }
+ .info .first{
+  padding: 40px;
+ }
+}
+
+/*dekstop*/
+@media only screen and (min-width : 1300px){
+
 }
 
 /*sejarah*/
 .kedua{
-    background-color: #fff;
-    padding: 80px;
+  background-color: #fff;
+  padding: 80px;
 }
 .sejarah{
-    background-image: url(/img/sejarah_gelap.jpg);
-    background-size: cover;
-    color: #fff;
-    padding: 120px;
-    border-radius: 10px; 
+  background-image: url(/img/sejarah_gelap.jpg);
+  background-size: cover;
+  color: #fff;
+  padding: 120px;
+  border-radius: 10px; 
 }
 .sejarah h1{
-    text-align: center;
-    font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 .sejarah h4{
-    font-size: 38px;
+  font-size: 38px;
 }
+/*android*/
+@media only screen and (max-width : 600px){
+.kedua{
+  padding: 20px;
+}
+.sejarah{
+  padding: 10px;
+}
+.sejarah h1{
+  font-size: 20px;
+}
+.sejarah h4{
+  font-size: 15px;
+}
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 601px) and (max-width : 1024px){
+.kedua{
+  padding: 25px;
+}
+.sejarah{
+  padding: 15px;
+}
+.sejarah h1{
+  font-size: 30px;
+}
+.sejarah h4{
+  font-size: 23px;
+}
+}
+
+/*dekstop*/
+@media only screen and (min-width : 1300px){
+.kedua{
+  padding: 25px;
+}
+.sejarah{
+  padding: 20px;
+}
+.sejarah h1{
+  font-size: 28px;
+}
+.sejarah h4{
+  font-size: 25px;
+}
+}
+
 
 
 
@@ -135,7 +234,7 @@ body {
  
 /*Informasi/Kontak(footer)*/
 footer{
-  background: #0496c7;
+  background-color: #00A9FF;
 }
 .kontak {
   margin: 30px;
@@ -163,7 +262,7 @@ footer{
 .up h2 {
   font-size: 40px;
   font-weight: bold;
-  text-decoration: underline rgb(132, 138, 155);
+  text-decoration: underline black;
 }
 
 .up h4 {
@@ -174,7 +273,9 @@ footer{
   margin-bottom: 58px;
   font-size: 3.5rem;
 }
-@media screen and (max-width : 576px){
+
+/*android*/
+@media only screen and (max-width : 768px){
   .up h2{
     font-size: 25px;
   }
@@ -185,32 +286,82 @@ footer{
     font-size: 2.8rem;
   }
 }
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px){
+  .up h2{
+    font-size: 32px;
+  }
+  .up h4{
+    font-size: 25px;
+  }
+}
 
+/*dekstop*/
+@media only screen and (min-width : 1300px){
+  .up h2{
+    font-size: 2.8rem;
+  }
+  .up h4{
+    font-size: 2.3rem;
+  }
+}
 /*footer*/
 .footer {
-
+  margin-top: 20px;
   padding: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
 }
-.footer i{
+
+.footer i {
   font-size: 4rem;
 }
+
 .footer h4 {
   font-size: 20px;
   color: #fff;
   text-align: left;
   margin-top: 10px;
 }
-.footer .info{
+
+.footer .info {
   display: flex;
   flex-direction: row;
 }
-@media screen and (max-width : 576px){
-  .footer i{
-    font-size: 2rem;
+
+/*android*/
+@media only screen and (max-width : 768px) {
+  .footer{
+      padding: 10px;
   }
-  .footer h4{
-    font-size: 15px;
+  .footer i {
+      font-size: 2.5rem;
+  }
+
+  .footer h4 {
+      font-size: 15px;
+  }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px) {
+  .footer h4 {
+      font-size: 15px;
+  }
+  .footer i {
+      font-size: 3rem;
+  }
+  .footer h4 {
+      font-size: 17px;
+  }
+}
+
+/*dekstop*/
+@media only screen and (min-width : 1300px) {
+  .footer h4 {
+      font-size: 20px;
+  }
+  .footer i {
+      font-size: 3.5rem;
   }
 }

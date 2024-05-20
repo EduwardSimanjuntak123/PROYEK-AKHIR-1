@@ -1,8 +1,7 @@
 body {
   margin: 0;
   font-family: "Kaisei Tokumin", serif;
-  font-weight: 800;
-  font-style: normal;
+  font-weight: 800; /* Ubah warna latar belakang body */
 }
 
 /* CSS untuk header */
@@ -87,39 +86,34 @@ body {
 .dropdown-toggle {
   cursor: pointer;
 }
-
 /* Untuk header */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .logo img {
-      width: 40px;
-      height: 40px;
-      margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
   }
 
   .logo {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .navbar-nav .nav-item a {
-      font-size: 14px;
-      padding: 5px 8px;
+    font-size: 14px;
+    padding: 5px 8px;
   }
 
   .text-light h2 {
-      margin-left: 20px;
-      width: auto;
+    margin-left: 20px;
+    width: auto;
   }
 
   .text-light h3,
   .text-light h4,
   .text-light p {
-      padding-left: 20px;
+    padding-left: 20px;
   }
 
-  .shape {
-      width: 300px;
-      height: 250px;
-  }
 }
 
 
@@ -207,7 +201,7 @@ body {
 
 /*Informasi/Kontak(footer)*/
 footer{
-  background: #0496c7;
+  background-color: #00A9FF;
 }
 .kontak {
   margin: 30px;
@@ -235,7 +229,7 @@ footer{
 .up h2 {
   font-size: 40px;
   font-weight: bold;
-  text-decoration: underline rgb(132, 138, 155);
+  text-decoration: underline black;
 }
 
 .up h4 {
@@ -246,7 +240,9 @@ footer{
   margin-bottom: 58px;
   font-size: 3.5rem;
 }
-@media screen and (max-width : 576px){
+
+/*android*/
+@media only screen and (max-width : 768px){
   .up h2{
     font-size: 25px;
   }
@@ -257,32 +253,82 @@ footer{
     font-size: 2.8rem;
   }
 }
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px){
+  .up h2{
+    font-size: 32px;
+  }
+  .up h4{
+    font-size: 25px;
+  }
+}
 
+/*dekstop*/
+@media only screen and (min-width : 1300px){
+  .up h2{
+    font-size: 2.8rem;
+  }
+  .up h4{
+    font-size: 2.3rem;
+  }
+}
 /*footer*/
 .footer {
-
+  margin-top: 20px;
   padding: 25px;
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
 }
-.footer i{
+
+.footer i {
   font-size: 4rem;
 }
+
 .footer h4 {
   font-size: 20px;
   color: #fff;
   text-align: left;
   margin-top: 10px;
 }
-.footer .info{
+
+.footer .info {
   display: flex;
   flex-direction: row;
 }
-@media screen and (max-width : 576px){
-  .footer i{
-    font-size: 2rem;
+
+/*android*/
+@media only screen and (max-width : 768px) {
+  .footer{
+      padding: 10px;
   }
-  .footer h4{
-    font-size: 15px;
+  .footer i {
+      font-size: 2.5rem;
+  }
+
+  .footer h4 {
+      font-size: 15px;
+  }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 767px) and (max-width : 992px) {
+  .footer h4 {
+      font-size: 15px;
+  }
+  .footer i {
+      font-size: 3rem;
+  }
+  .footer h4 {
+      font-size: 17px;
+  }
+}
+
+/*dekstop*/
+@media only screen and (min-width : 1300px) {
+  .footer h4 {
+      font-size: 20px;
+  }
+  .footer i {
+      font-size: 3.5rem;
   }
 }
