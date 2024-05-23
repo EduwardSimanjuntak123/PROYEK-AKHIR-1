@@ -113,11 +113,8 @@ body {
   .text-light p {
     padding-left: 20px;
   }
-
 }
 
-
-/*tampilan awal*/
 /*tampilan awal*/
 .hero {
   background-color: #fff;
@@ -141,9 +138,9 @@ body {
 }
 
 /*android*/
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
   .hero h1 {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       padding: 3px;
   }
 
@@ -157,15 +154,29 @@ body {
 }
 
 /*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 1104px) {
+@media only screen and (min-width: 768px) and (max-width : 992px) {
   .hero h1 {
       font-size: 2.2rem;
       padding: 5px;
   }
+
   .list {
       padding: 15px;
   }
 }
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .hero h1 {
+      font-size: 3rem;
+      padding: 7px;
+  }
+
+  .list {
+      padding: 20px;
+  }
+}
+
 
 /*data sekolah*/
 .data {
@@ -222,7 +233,7 @@ body {
 }
 
 /*android*/
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
   .kiri {
       padding: 10px;
   }
@@ -258,7 +269,7 @@ body {
 }
 
 /*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 1104px) {
+@media only screen and (min-width: 768px) and (max-width : 992px) {
   .kiri {
       padding: 15px;
   }
@@ -286,6 +297,38 @@ body {
 
   .dua hr {
       padding: 15px;
+  }
+}
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .kiri {
+      padding: 17px;
+  }
+
+  .kiri .satu {
+      margin-bottom: 17px;
+  }
+
+  .satu i {
+      font-size: 1.5rem;
+  }
+
+  .satu h2 {
+      font-size: 1.7rem;
+  }
+
+  .satu h4 {
+      font-size: 1.19rem;
+      padding: 10px;
+  }
+
+  .dua h1 {
+      font-size: 1.7rem;
+  }
+
+  .dua hr {
+      padding: 19px;
   }
 }
 
@@ -350,7 +393,7 @@ body {
 }
 
 /*android*/
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
   .kanan {
       padding: 10px;
   }
@@ -384,7 +427,7 @@ body {
 }
 
 /*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 1104px) {
+@media only screen and (min-width: 768px) and (max-width : 992px) {
   .kanan {
       padding: 15px;
   }
@@ -416,31 +459,67 @@ body {
   }
 }
 
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .kanan {
+      padding: 17px;
+  }
+
+  .kanan .one,
+  .kanan .two,
+  .kanan .three {
+      margin-bottom: 17px;
+  }
+
+  .kanan h1 {
+      font-size: 1.8rem;
+      padding: 10px;
+  }
+
+  .kanan h3 {
+      font-size: 1.7rem;
+      padding-left: 15px;
+  }
+
+  .four h6,
+  .three h6 {
+      font-size: 1.2rem;
+      padding: 10px;
+  }
+
+  .kanan .total {
+      padding: 17px;
+  }
+}
+
 
 /*Informasi/Kontak(footer)*/
-footer{
+footer {
   background-color: #00A9FF;
 }
+
 .kontak {
   margin: 30px;
 }
-.link h6 a{
-  text-decoration: none;
- }
+
 .box {
   background: rgba(217, 217, 217, 0.25);
   padding: 15px;
   color: #fff;
 }
-.box .tautan{
+
+.box .tautan {
   display: flex;
 }
+
 .tautan .link {
   padding-right: 50px;
 }
-.box .sosmed{
+
+.box .sosmed {
   margin-bottom: 30px;
 }
+
 .up .info {
   text-align: left;
   display: flex;
@@ -462,45 +541,47 @@ footer{
 }
 
 /*android*/
-@media only screen and (max-width : 768px){
-  .up h2{
-    font-size: 25px;
+@media only screen and (max-width : 767px) {
+  .up h2 {
+      font-size: 25px;
   }
-  .up h4{
-    font-size: 18px;
+
+  .up h4 {
+      font-size: 18px;
   }
-  .icon{
-    font-size: 2.8rem;
-  }
-  .link h6 a{
-    text-decoration: none;
-   }
-}
-/*android landscape dan tablet*/
-@media only screen and (min-width: 767px) and (max-width : 992px){
-  .up h2{
-    font-size: 32px;
-  }
-  .up h4{
-    font-size: 25px;
+
+  .icon {
+      font-size: 2.8rem;
   }
 }
 
-/*dekstop*/
-@media only screen and (min-width : 1300px){
-  .up h2{
-    font-size: 2.8rem;
+/*android landscape dan tablet landscape*/
+@media only screen and (min-width: 768px) and (max-width : 992px) {
+  .up h2 {
+      font-size: 32px;
   }
-  .up h4{
-    font-size: 2.3rem;
+
+  .up h4 {
+      font-size: 25px;
   }
 }
+
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .up h2 {
+      font-size: 35px;
+  }
+
+  .up h4 {
+      font-size: 27px;
+  }
+}
+
 /*footer*/
 .footer {
   margin-top: 20px;
   padding: 25px;
   display: flex;
-  justify-content:flex-start;
+  justify-content: space-evenly;
 }
 
 .footer i {
@@ -520,10 +601,11 @@ footer{
 }
 
 /*android*/
-@media only screen and (max-width : 768px) {
-  .footer{
+@media only screen and (max-width : 767px) {
+  .footer {
       padding: 10px;
   }
+
   .footer i {
       font-size: 2.5rem;
   }
@@ -533,25 +615,32 @@ footer{
   }
 }
 
-/*android landscape dan tablet*/
-@media only screen and (min-width: 767px) and (max-width : 992px) {
+/*android landscape dan tablet landscape*/
+@media only screen and (min-width: 768px) and (max-width : 992px) {
   .footer h4 {
       font-size: 15px;
   }
+
   .footer i {
       font-size: 3rem;
   }
+
   .footer h4 {
       font-size: 17px;
   }
 }
 
 /*dekstop*/
-@media only screen and (min-width : 1300px) {
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
   .footer h4 {
-      font-size: 20px;
+      font-size: 15px;
   }
+
   .footer i {
       font-size: 3.5rem;
+  }
+
+  .footer h4 {
+      font-size: 17px;
   }
 }

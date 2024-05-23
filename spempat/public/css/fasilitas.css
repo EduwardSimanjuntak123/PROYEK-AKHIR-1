@@ -113,7 +113,6 @@ body {
   .text-light p {
     padding-left: 20px;
   }
-
 }
 
 /*fasilitas*/
@@ -285,12 +284,94 @@ footer{
     font-size: 2.3rem;
   }
 }
+
+/*Informasi/Kontak(footer)*/
+footer {
+  background-color: #00A9FF;
+}
+
+.kontak {
+  margin: 30px;
+}
+
+.box {
+  background: rgba(217, 217, 217, 0.25);
+  padding: 15px;
+  color: #fff;
+}
+
+.box .tautan {
+  display: flex;
+}
+
+.tautan .link {
+  padding-right: 50px;
+}
+
+.box .sosmed {
+  margin-bottom: 30px;
+}
+
+.up .info {
+  text-align: left;
+  display: flex;
+}
+
+.up h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: underline black;
+}
+
+.up h4 {
+  font-size: 30px;
+}
+
+.icon {
+  margin-bottom: 58px;
+  font-size: 3.5rem;
+}
+
+/*android*/
+@media only screen and (max-width : 767px) {
+  .up h2 {
+      font-size: 25px;
+  }
+
+  .up h4 {
+      font-size: 18px;
+  }
+
+  .icon {
+      font-size: 2.8rem;
+  }
+}
+
+/*android landscape dan tablet landscape*/
+@media only screen and (min-width: 768px) and (max-width : 992px) {
+  .up h2 {
+      font-size: 32px;
+  }
+
+  .up h4 {
+      font-size: 25px;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width : 1200px){
+  .up h2 {
+    font-size: 35px;
+}
+
+.up h4 {
+    font-size: 27px;
+}
+}
 /*footer*/
 .footer {
   margin-top: 20px;
   padding: 25px;
   display: flex;
-  justify-content:flex-start;
+  justify-content: space-evenly;
 }
 
 .footer i {
@@ -310,10 +391,11 @@ footer{
 }
 
 /*android*/
-@media only screen and (max-width : 768px) {
-  .footer{
+@media only screen and (max-width : 767px) {
+  .footer {
       padding: 10px;
   }
+
   .footer i {
       font-size: 2.5rem;
   }
@@ -323,25 +405,31 @@ footer{
   }
 }
 
-/*android landscape dan tablet*/
-@media only screen and (min-width: 767px) and (max-width : 992px) {
+/*android landscape dan tablet landscape*/
+@media only screen and (min-width: 768px) and (max-width : 992px) {
   .footer h4 {
       font-size: 15px;
   }
+
   .footer i {
       font-size: 3rem;
   }
+
   .footer h4 {
       font-size: 17px;
   }
 }
-
 /*dekstop*/
-@media only screen and (min-width : 1300px) {
+@media only screen and (min-width: 993px) and (max-width : 1200px){
   .footer h4 {
-      font-size: 20px;
-  }
-  .footer i {
-      font-size: 3.5rem;
-  }
+    font-size: 15px;
+}
+
+.footer i {
+    font-size: 3.5rem;
+}
+
+.footer h4 {
+    font-size: 17px;
+}
 }
