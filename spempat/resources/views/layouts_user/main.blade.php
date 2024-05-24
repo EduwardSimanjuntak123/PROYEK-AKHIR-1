@@ -46,8 +46,8 @@
     <script>
         $(document).ready(function () {
             $.fakeLoader({
-                bgColor: '#fff',
-                spinner:"spinner4"
+                bgColor: '#00a9ff',
+                spinner:"spinner1"
             });
         });
     </script>

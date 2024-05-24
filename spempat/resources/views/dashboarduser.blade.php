@@ -46,35 +46,29 @@
         </div>
     </div>
     </div>
-
     <div class="list">
     </div>
-
     <!-- Berita/Pengumuman -->
     <div class="latar">
         <div class="container text-center berita">
             <h1 style="text-align: left;">B E R I T A</h1>
             <div class="row justify-content-evenly">
-@foreach ($berita as $item)
-<div class="col-10 col-lg-5 news">
-  <img src="{{ asset('storage/images/' . $item->file) }}" width="100" height="100">
-  <div>
-      <p style="-webkit-line-clamp: 1;
+                @foreach ($berita as $item)
+                    <div class="col-10 col-lg-5 news">
+                        <img src="{{ asset('storage/images/' . $item->file) }}" width="100" height="100">
+                        <div>
+                            <p
+                                style="-webkit-line-clamp: 3;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      overflow: hidden;">{{ $item->judul }}</p>
-      <em>{{ $item->created_at }}</em><br>
-      <a href="{{ route('berita.show', ['id' => $item->id]) }}">Selengkapnnya..</a>
-  </div>
-</div>
-@endforeach
-                
-
-                
+      overflow: hidden;">
+                                {{ $item->judul }}</p>
+                            <em>{{ $item->created_at }}</em><br>
+                            <a href="{{ route('berita.show', ['id' => $item->id]) }}">Selengkapnnya..</a>
+                        </div>
+                    </div>
+                @endforeach
             </div>
-
-
-
         </div>
     </div>
 @endsection

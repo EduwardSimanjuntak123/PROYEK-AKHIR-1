@@ -171,7 +171,7 @@ body {
 
  
 
-/*Informasi/Kontak(footer)*/
+/* /Informasi/Kontak(footer)/ */
 footer {
   background-color: #00A9FF;
 }
@@ -185,7 +185,9 @@ footer {
   padding: 15px;
   color: #fff;
 }
-
+.tautan h6{
+  font-size: 1.7rem;
+}
 .box .tautan {
   display: flex;
 }
@@ -217,8 +219,11 @@ footer {
   margin-bottom: 58px;
   font-size: 3.5rem;
 }
+.box .garis{
+  margin-top: 3rem;
+}
 
-/*android*/
+/* /android/ */
 @media only screen and (max-width : 767px) {
   .up h2 {
       font-size: 25px;
@@ -229,11 +234,14 @@ footer {
   }
 
   .icon {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
+  }
+  .tautan h6{
+    font-size: 1rem;
   }
 }
 
-/*android landscape dan tablet landscape*/
+/* /android landscape dan tablet landscape/ */
 @media only screen and (min-width: 768px) and (max-width : 992px) {
   .up h2 {
       font-size: 32px;
@@ -241,6 +249,9 @@ footer {
 
   .up h4 {
       font-size: 25px;
+  }
+  .tautan h6{
+    font-size: 1.15rem;
   }
 }
 @media only screen and (min-width: 993px) and (max-width : 1200px){
@@ -251,8 +262,14 @@ footer {
 .up h4 {
     font-size: 27px;
 }
+.icon {
+  font-size: 2.4rem;
 }
-/*footer*/
+.tautan h6{
+  font-size: 1.4rem;
+}
+}
+/* /footer/ */
 .footer {
   margin-top: 20px;
   padding: 25px;
@@ -275,8 +292,14 @@ footer {
   display: flex;
   flex-direction: row;
 }
+.info .garis1{
+  margin-left: 12.2rem;
+}
+.info .garis2{
+  margin-left: 3rem;
+}
 
-/*android*/
+/* /android/ */
 @media only screen and (max-width : 767px) {
   .footer {
       padding: 10px;
@@ -289,10 +312,16 @@ footer {
   .footer h4 {
       font-size: 15px;
   }
+  .info .garis1, .info .garis2{
+    display: none;
+  }
 }
 
-/*android landscape dan tablet landscape*/
+/* /android landscape dan tablet landscape/ */
 @media only screen and (min-width: 768px) and (max-width : 992px) {
+  .footer {
+    padding: 13px;
+}
   .footer h4 {
       font-size: 15px;
   }
@@ -304,18 +333,30 @@ footer {
   .footer h4 {
       font-size: 17px;
   }
+  .info .garis1, .info .garis2{
+    display: none;
+  }
 }
-/*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1200px){
+/* /dekstop/ */
+@media only screen and (min-width: 993px) and (max-width : 1195px){
+  .footer {
+    padding: 15px;
+}
   .footer h4 {
     font-size: 15px;
 }
 
 .footer i {
-    font-size: 3.5rem;
+    font-size: 3.7rem;
 }
 
 .footer h4 {
     font-size: 17px;
+}
+.info .garis1{
+  margin-left: 6rem;
+}
+.info .garis2{
+  margin-left: 1rem;
 }
 }
