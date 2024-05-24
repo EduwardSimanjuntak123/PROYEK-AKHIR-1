@@ -16,7 +16,7 @@ class kata_sambutanSeeder extends Seeder
         DB::table('kata_sambutan')->insert([
             'isi' => 'ini kata sambutan',
             'file' => 'sacasc',
-            'user_id' => 2,
+            'user_id' => 1
             
         ]);
     }

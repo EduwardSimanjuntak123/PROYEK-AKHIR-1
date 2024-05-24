@@ -226,7 +226,7 @@ body {
 
 /* CSS untuk person section */
 .person {
-  background-image: url(gambar/murid.jpg);
+  background-image: url(/img/murid.jpg);
   background-size: cover;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, ifr));

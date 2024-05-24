@@ -3,7 +3,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">tambah gurustaff</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Tambah Guru Staff</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -44,7 +44,7 @@
                             <small style="color: brown">{{ $message }}</small>
                         @enderror
                         <div class="form-group">
-                            <label for="exampleInputEmail1">alamat lahir</label>
+                            <label for="exampleInputEmail1">Alamat Lahir</label>
                             <input type="text" class="form-control" name="alamat_lahir" id="exampleInputEmail1"
                                 placeholder="masukkan alamat lahir">
                             @error('alamat_lahir')
@@ -54,8 +54,8 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">batal</button>
-                        <button type="submit" class="btn btn-primary">tambah</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-primary">Tambah</button>
                     </div>
                 </form>
             </div>

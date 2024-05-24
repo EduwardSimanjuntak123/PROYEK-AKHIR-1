@@ -20,7 +20,7 @@ class userviewController extends Controller
     public function gurustaff()
     {
         $halaman ='gurustaff';
-        $gurustaff = gurustaff::get();
+        $gurustaff = gurustaff::Paginate(5);
         return view('gurustaff', compact('gurustaff', 'halaman'));
     }
     public function show_berita(string $id)

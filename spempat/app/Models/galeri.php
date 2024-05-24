@@ -16,5 +16,6 @@ class galeri extends Model
     protected $fillable = [
         'file',
         'user_id',
+        'nama_galeri'
     ];
 }

@@ -3,7 +3,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">tambah gurustaff</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Tambah Galeri</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -18,13 +18,20 @@
                                 <small style="color: brown">{{ $message }}</small>
                             @enderror
                         </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nama Galeri</label>
+                            <input type="text" placeholder="Masukan Nama Galeri" class="form-control" name="Nama_Galeri" id="exampleInputEmail1">
+                            @error('Nama_Galeri')
+                                <small style="color: brown">{{ $message }}</small>
+                            @enderror
+                        </div>
 
 
                     </div>
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">batal</button>
-                        <button type="submit" class="btn btn-primary">tambah</button>
+                        <button type="submit" class="btn btn-primary">Tambah</button>
                     </div>
                 </form>
             </div>
@@ -38,12 +45,12 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">tambah gurustaff</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Hapus Galeri</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 @foreach ($data as $item)
-                    {{ $item->id }}. {{ $item->file }}<form
+                    {{ $item->id }}. {{ $item->nama_galeri}}<form
                         action="{{ route('galeri.delete', ['id' => $item->id]) }}" method="POST"
                         enctype="multipart/form-data">
                         @csrf

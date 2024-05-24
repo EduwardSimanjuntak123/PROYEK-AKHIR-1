@@ -3,7 +3,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">tambah sarpras</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Tambah Sarpras</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -11,7 +11,7 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Nama sarpras</label>
+                            <label for="exampleInputEmail1">Nama Sarpras</label>
                             <input type="text" class="form-control" name="nama_sarpras" id="exampleInputEmail1"
                                 placeholder="masukkan nama sarpras">
                             @error('nama_guru')
@@ -22,7 +22,7 @@
                         
                        
                         <div class="form-group">
-                            <label for="exampleInputEmail1">jumlah sarpras</label>
+                            <label for="exampleInputEmail1">Jumlah Sarpras</label>
                             <input type="text" class="form-control" name="jumlah_sarpras" id="exampleInputEmail1"
                                 placeholder="masukkan jumlah">
                             @error('alamat_lahir')
@@ -32,8 +32,8 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">batal</button>
-                        <button type="submit" class="btn btn-primary">tambah</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-primary">Tambah</button>
                     </div>
                 </form>
             </div>

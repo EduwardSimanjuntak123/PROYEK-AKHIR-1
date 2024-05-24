@@ -12,8 +12,9 @@
          <div >
              @foreach ($data as $item)
              
-              <img class="border shadow m-1" src="{{ asset('storage/img/' . $item->file) }}" alt="Gambar berita"
+              <img class="border shadow m-1" src="{{ asset('storage/images/' . $item->file) }}"
         style="max-width: 100%;height:300px;"> 
+        <p>{{$item->nama_galeri}}</p>
              @endforeach
          </div>
        

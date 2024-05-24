@@ -4,7 +4,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Edit Katasambutan {{ $item->id }}</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Edit Kata Sambutan {{ $item->id }}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -15,7 +15,7 @@
                             <div class="form-group">
                                 
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">isi katasambutan</label>
+                                    <label for="exampleInputEmail1">Isi Kata Sambutan</label>
                                     <textarea name="isi" class="form-control" id="exampleInputEmail1" placeholder="Enter content">{{ $item->isi }}</textarea>
 
                                     @error('isi')
@@ -27,7 +27,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                            <button type="submit" class="btn btn-primary">Perbarui</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                     </form>
                 </div>

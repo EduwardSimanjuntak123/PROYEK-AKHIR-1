@@ -4,7 +4,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">Edit Berita {{ $item->id }}</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Edit Detail Sekolah {{ $item->id }}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -19,7 +19,7 @@
                                             alt="Gambar Profil" style="max-width: 100px;"></center>
                                 @endif
                                 <div>
-                                    <label for="exampleInputEmail1">nama kepala sekolah</label>
+                                    <label for="exampleInputEmail1">Nama Kepala Sekolah</label>
                                     <input type="text" class="form-control" name="nama_kepala_sekolah"
                                         value="{{ $item->nama_kepala_sekolah }}" id="exampleInputEmail1">
                                 </div>
@@ -27,7 +27,7 @@
                                     <div class="error" style="color: red">{{ $message }}</div>
                                 @enderror
                                 <div>
-                                    <label for="exampleInputEmail1">AKREDITAS</label>
+                                    <label for="exampleInputEmail1">Akreditasi</label>
                                     <input type="text" class="form-control" name="akreditas"
                                         value="{{ old('akreditas') }}" id="exampleInputEmail1"
                                         placeholder="{{ $item->akreditas }}">
@@ -37,7 +37,7 @@
                                     <div class="error" style="color: red">{{ $message }}</div>
                                 @enderror
                                 <div>
-                                    <label for="exampleInputEmail1">OPERATOR</label>
+                                    <label for="exampleInputEmail1">Operator</label>
                                     <input type="text" class="form-control" name="operator"
                                         value="{{ $item->operator }}" id="exampleInputEmail1"
                                         placeholder="masukkan judul berita">
@@ -49,7 +49,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                            <button type="submit" class="btn btn-primary">Perbarui</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                     </form>
                 </div>

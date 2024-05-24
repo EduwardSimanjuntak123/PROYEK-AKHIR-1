@@ -105,7 +105,7 @@ class beritaController extends Controller
         }
     
         $filename = $berita->file; // Nama file yang akan dihapus
-        $path = 'img/' . $filename; // Path lengkap menuju file
+        $path = 'images/' . $filename; // Path lengkap menuju file
     
         if (Storage::disk('public')->exists($path)) {
             Storage::disk('public')->delete($path); // Menghapus file dari direktori jika ada

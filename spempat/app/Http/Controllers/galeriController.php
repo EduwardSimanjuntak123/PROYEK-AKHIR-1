@@ -26,7 +26,7 @@ class galeriController extends Controller
  
         $photo =$request->file('photo');
         $filename = date('Y-m-d').$photo->getClientOriginalName();//mengubah nama ke database
-        $path ='img/'.$filename;
+        $path ='images/'.$filename;
  
         Storage::disk('public')->put($path,file_get_contents($photo));
 
@@ -36,6 +36,7 @@ class galeriController extends Controller
         
         $data['file']= $filename;
         $data['user_id']= $userId;
+        $data['nama_galeri']= $request->Nama_Galeri;
         galeri::create($data);
       
         return redirect()->route('galeri.index')->with('filename', $filename);
@@ -50,7 +51,7 @@ class galeriController extends Controller
          }
      
          $filename = $data->file; // Nama file yang akan dihapus
-         $path = 'img/'.$filename; // Path lengkap menuju file
+         $path = 'images/'.$filename; // Path lengkap menuju file
      
          if(Storage::disk('public')->exists($path)) {
              Storage::disk('public')->delete($path); // Menghapus file dari direktori

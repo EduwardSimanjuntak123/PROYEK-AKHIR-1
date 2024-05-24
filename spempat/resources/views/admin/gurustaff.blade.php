@@ -5,14 +5,17 @@
         <button type="button " class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             tambah guru atau staff
         </button>
+     
+        <div class="m-4">{{ $data->links() }}</div>
+        
         <div class="row mt-3">
-            @foreach ($data as $item)
+            @foreach ($data as $key => $item)
                 <div class="col mb-5">
                     <div class="card shadow p-3" style="width: 18rem; ">
-                        <center><img class="border shadow" src="{{ asset('storage/img/' . $item->file) }}"
+                        <center><img class="border shadow" src="{{ asset('storage/images/' . $item->file) }}"
                                 alt="Gambar berita" style="max-width: 100px;height:100px;">
                             <div class="card-body">
-                                <h5 class="card-title">{{ $item->nama }}</h5>
+                                <h5 class="card-title">{{ $data->firstItem() + $key }}. {{ $item->nama }}</h5>
                             </div>
                         </center>
                         <ul class="list-group list-group-flush">
@@ -36,6 +39,7 @@
                     </div>
                 </div>
                 @endforeach
+
         </div>
     </div>
     @include('modals.modalgurustaff')

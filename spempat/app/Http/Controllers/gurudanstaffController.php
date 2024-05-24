@@ -13,10 +13,13 @@ class gurudanstaffController extends Controller
     
     public function index(){
         try {
-            $data = gurustaff::get();
+          
+            $data = gurustaff::Paginate(6);
+           
            
             return view('admin.gurustaff',[
-                'title'=>'guru dan staff'
+                'title'=>'guru dan staff',
+                
             ],compact('data'));
         } catch (\Exception $e) {
             
@@ -31,7 +34,7 @@ class gurudanstaffController extends Controller
     
             // Hapus foto terkait jika ada
             if (!empty($gurustaff->file)) {
-                $path = 'img/' . $gurustaff->file;
+                $path = 'images/' . $gurustaff->file;
     
                 if (Storage::disk('public')->exists($path)) {
                     Storage::disk('public')->delete($path);
@@ -60,7 +63,7 @@ class gurudanstaffController extends Controller
      
             $photo =$request->file('photo');
             $filename = date('Y-m-d').$photo->getClientOriginalName();//mengubah nama ke database
-            $path ='img/'.$filename;
+            $path ='images/'.$filename;
      
             Storage::disk('public')->put($path,file_get_contents($photo));
     

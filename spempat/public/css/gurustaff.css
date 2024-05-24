@@ -117,7 +117,7 @@ body {
 
 /*tampilan awal*/
 .tampilan{
-    background-image:url(/img/2.jpg);
+    background-image:url(/img/herogurustaff.jpg);
     background-size: cover;
     height: 649px;
     display: flex;
@@ -135,20 +135,22 @@ body {
 .isi{
     background-image: url(/img/1.jpg);
     background-size: cover;
-    
+  
     justify-content: center;
     align-items: center;
 }
 .isi h1{
     text-align: center;
     color: #ffffff;
-    padding: 50px;
+    padding-top: 50px;
+    font-size: xx-large;
 }
 .isi p{
     font-weight: 500;
     color: #ffffff;
-    font-size: 30px;
+    font-size:x-large;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .list1 {

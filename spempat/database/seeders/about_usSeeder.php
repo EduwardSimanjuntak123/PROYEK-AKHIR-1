@@ -17,7 +17,7 @@ class about_usSeeder extends Seeder
             'email' => 'smpn4@gmail.com',
             'alamat' => 'soposurung,balige',
             'no_telepon' => '0812-3512-3445',
-            'user_id' => 2,
+            'user_id' => 1,
         ]);
     }
 }

@@ -39,8 +39,8 @@
                         menerapkan
                         pembelajaran UKBM dalam bentuk eLearning.
                         Oleh karena itu, kami berharap melalui pembelajaran elearning ini SMP Negeri 4 Balige menjadi bagian
-                        dari
-                        pendidikan yang bermutu dan berkualitas.</p>
+                        daripendidikan yang bermutu dan berkualitas.
+                    </p>
                 </div>
             </div>
         </div>
@@ -57,10 +57,13 @@
             <div class="row justify-content-evenly">
 @foreach ($berita as $item)
 <div class="col-10 col-lg-5 news">
-  <img src="{{ asset('storage/img/' . $item->file) }}" width="100" height="100">
+  <img src="{{ asset('storage/images/' . $item->file) }}" width="100" height="100">
   <div>
-      <h2>{{ $item->judul }}</h2>
-      <h3>{{ $item->created_at }}</h3>
+      <p style="-webkit-line-clamp: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;">{{ $item->judul }}</p>
+      <em>{{ $item->created_at }}</em><br>
       <a href="{{ route('berita.show', ['id' => $item->id]) }}">Selengkapnnya..</a>
   </div>
 </div>

@@ -35,7 +35,7 @@ class data_sekolahSeeder extends Seeder
             'Sumber_Listrik' => 'rumah terdekat',
             'Daya_Listrik' => '12watt',
             'Kecepatan_Internet' => '10mbps',
-            'user_id' => 2,
+            'user_id' => 1,
             
         ]);
     }
