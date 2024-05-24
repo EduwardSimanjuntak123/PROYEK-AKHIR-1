@@ -87,7 +87,7 @@ body {
   cursor: pointer;
 }
 /* Untuk header */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .logo img {
     width: 40px;
     height: 40px;
@@ -125,7 +125,9 @@ body {
 .info .first {
   background: linear-gradient(0deg, #7FD4FF, #7FD4FF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
   text-align: center;
-  padding: 190px;
+  justify-content: center;
+  align-items: center;
+  padding: 12rem;
 }
 
 .info .second {
@@ -134,29 +136,34 @@ background-size: cover;
   text-align: center;
 }
 /*android*/
-@media only screen and (max-width : 600px){
+@media only screen and (max-width : 767px){
 .info h1{
 margin-top: 15px;
 font-size: 20px;
 }
 .info .first{
-padding: 10px;
+padding: 32px;
 }
 }
 /*android landscape dan tablet*/
-@media only screen and (min-width: 601px) and (max-width : 1024px){
+@media only screen and (min-width: 768px) and (max-width : 992px){
 .info h1{
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 32px;
  }
  .info .first{
-  padding: 40px;
+  padding: 90px;
  }
 }
-
 /*dekstop*/
-@media only screen and (min-width : 1300px){
-
+@media only screen and (min-width: 993px) and (max-width : 1200px){ 
+.info h1{
+  margin-top: 45px;
+  font-size: 40px;
+ }
+ .info .first{
+  padding: 100px;
+ }
 }
 
 /*sejarah*/
@@ -175,60 +182,54 @@ padding: 10px;
   text-align: center;
   font-weight: bold;
 }
-.sejarah h4{
+.sejarah p{
   font-size: 38px;
 }
 /*android*/
-@media only screen and (max-width : 600px){
+@media only screen and (max-width : 767px){
 .kedua{
   padding: 20px;
 }
 .sejarah{
-  padding: 10px;
+  padding: 20px;
 }
 .sejarah h1{
-  font-size: 20px;
+  font-size: 23px;
 }
-.sejarah h4{
+.sejarah p{
   font-size: 15px;
 }
 }
 /*android landscape dan tablet*/
-@media only screen and (min-width: 601px) and (max-width : 1024px){
+@media only screen and (min-width: 768px) and (max-width : 992px){
 .kedua{
-  padding: 25px;
+  padding: 40px;
 }
 .sejarah{
-  padding: 15px;
+  padding: 60px;
 }
 .sejarah h1{
   font-size: 30px;
 }
-.sejarah h4{
-  font-size: 23px;
+.sejarah p{
+  font-size: 19px;
 }
 }
-
 /*dekstop*/
-/* @media only screen and (min-width : 1300px){
+@media only screen and (min-width: 993px) and (max-width : 1200px){ 
 .kedua{
-  padding: 25px;
+  padding: 60px;
 }
 .sejarah{
-  padding: 20px;
+  padding: 70px;
 }
 .sejarah h1{
+  font-size: 40px;
+}
+.sejarah p{
   font-size: 28px;
 }
-.sejarah h4{
-  font-size: 25px;
 }
-} */
-
-
-
-
-
 
 
 /* /Informasi/Kontak(footer)/ */
@@ -375,6 +376,9 @@ footer {
   .info .garis1, .info .garis2{
     display: none;
   }
+  .copyright div{
+    font-size: 13px;
+  }
 }
 
 /* /android landscape dan tablet landscape/ */
@@ -396,9 +400,12 @@ footer {
   .info .garis1, .info .garis2{
     display: none;
   }
+  .copyright div{
+    font-size: 17px;
+  }
 }
 /* /dekstop/ */
-@media only screen and (min-width: 993px) and (max-width : 1195px){
+@media only screen and (min-width: 993px) and (max-width : 1199px){
   .footer {
     padding: 15px;
 }
@@ -417,6 +424,9 @@ footer {
   margin-left: 6rem;
 }
 .info .garis2{
-  margin-left: 1rem;
+  margin-left:1rem;
+}
+.copyright div{
+  font-size: 22px;
 }
 }

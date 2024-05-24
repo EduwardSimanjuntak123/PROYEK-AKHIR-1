@@ -88,7 +88,7 @@
             </div>
         </div>
 </footer>
-<div class="bg-body-tertiary text-center text-lg-start">
+<div class="bg-body-tertiary text-center text-lg-start copyright">
     <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05);">
         Copyright © 2024 SMPN 4 Balige - All Rights reserved.
         </div>

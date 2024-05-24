@@ -88,7 +88,7 @@ body {
   cursor: pointer;
 }
 /* Untuk header */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .logo img {
     width: 40px;
     height: 40px;
@@ -221,9 +221,6 @@ body {
     font-size: 22px;
   }
 }
-
-
-
 
 /* CSS untuk person section */
 .person {
@@ -550,6 +547,9 @@ footer {
   .info .garis1, .info .garis2{
     display: none;
   }
+  .copyright div{
+    font-size: 13px;
+  }
 }
 
 /* /android landscape dan tablet landscape/ */
@@ -570,6 +570,9 @@ footer {
   }
   .info .garis1, .info .garis2{
     display: none;
+  }
+  .copyright div{
+    font-size: 17px;
   }
 }
 /* /dekstop/ */
@@ -596,5 +599,8 @@ footer {
 }
 .info{
   width: 500px;
+}
+.copyright div{
+  font-size: 22px;
 }
 }

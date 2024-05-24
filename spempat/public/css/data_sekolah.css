@@ -87,7 +87,7 @@ body {
   cursor: pointer;
 }
 /* Untuk header */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .logo img {
     width: 40px;
     height: 40px;
@@ -247,11 +247,11 @@ body {
   }
 
   .satu h2 {
-      font-size: 1rem;
+      font-size: 0.9rem;
   }
 
   .satu h4 {
-      font-size: 0.51rem;
+      font-size: 0.55rem;
       padding: 5px;
   }
 
@@ -287,7 +287,7 @@ body {
   }
 
   .satu h4 {
-      font-size: 1.14rem;
+      font-size: 1.1rem;
       padding: 10px;
   }
 
@@ -576,6 +576,7 @@ footer {
     font-size: 1.15rem;
   }
 }
+/* dekstop */
 @media only screen and (min-width: 993px) and (max-width : 1200px){
   .up h2 {
     font-size: 35px;
@@ -637,6 +638,9 @@ footer {
   .info .garis1, .info .garis2{
     display: none;
   }
+  .copyright div{
+    font-size: 13px;
+  }
 }
 
 /* /android landscape dan tablet landscape/ */
@@ -658,9 +662,12 @@ footer {
   .info .garis1, .info .garis2{
     display: none;
   }
+  .copyright div{
+    font-size: 17px;
+  }
 }
 /* /dekstop/ */
-@media only screen and (min-width: 993px) and (max-width : 1195px){
+@media only screen and (min-width: 993px) and (max-width : 1199px){
   .footer {
     padding: 15px;
 }
@@ -680,5 +687,8 @@ footer {
 }
 .info .garis2{
   margin-left: 1rem;
+}
+.copyright div{
+  font-size: 22px;
 }
 }
