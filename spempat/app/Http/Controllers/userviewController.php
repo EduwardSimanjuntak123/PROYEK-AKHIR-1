@@ -25,8 +25,9 @@ class userviewController extends Controller
     }
     public function show_berita(string $id)
     {
+        $halaman ='berita';
         $berita = berita::findOrFail($id);
-        return view('show_berita',compact('berita'));
+        return view('show_berita',compact('berita', 'halaman'));
     }
     public function about_us()
     {

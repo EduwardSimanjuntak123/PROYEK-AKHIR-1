@@ -57,13 +57,9 @@
                     <div class="col-10 col-lg-5 news">
                         <img src="{{ asset('storage/images/' . $item->file) }}" width="100" height="100">
                         <div>
-                            <p
-                                style="-webkit-line-clamp: 3;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      overflow: hidden;">
-                                {{ $item->judul }}</p>
-                            <em>{{ $item->created_at }}</em><br>
+                            <h5 style="-webkit-line-clamp: 1; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden;">{{ $item->judul }}</h5>
+                            <p style="-webkit-line-clamp: 1; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden;">{{ $item->isi }}</p>
+                            <u>{{ $item->created_at }}</u><br>
                             <a href="{{ route('berita.show', ['id' => $item->id]) }}">Selengkapnnya..</a>
                         </div>
                     </div>
