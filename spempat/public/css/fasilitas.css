@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: "Kaisei Tokumin", serif;
-  font-weight: 800; /* Ubah warna latar belakang body */
+  font-weight: 800;
+  font-style: normal;
 }
 
 /* CSS untuk header */
@@ -53,14 +54,13 @@ body {
   border-radius: 5px;
 }
 
-.navbar-nav .nav-item a:hover { 
+.navbar-nav .nav-item a:hover {
   background: #77C8FE;
 }
 
 .navbar-nav .nav-item a {
   color: #fff;
 }
-
 
 .dropdown-menu {
   display: none;
@@ -86,206 +86,383 @@ body {
 .dropdown-toggle {
   cursor: pointer;
 }
+
 /* Untuk header */
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .logo img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
   }
 
   .logo {
-    font-size: 20px;
+      font-size: 20px;
   }
 
   .navbar-nav .nav-item a {
-    font-size: 14px;
-    padding: 5px 8px;
+      font-size: 14px;
+      padding: 5px 8px;
   }
 
   .text-light h2 {
-    margin-left: 20px;
-    width: auto;
+      margin-left: 20px;
+      width: auto;
   }
 
   .text-light h3,
   .text-light h4,
   .text-light p {
-    padding-left: 20px;
+      padding-left: 20px;
+  }
+
+  .shape {
+      width: 300px;
+      height: 250px;
   }
 }
 
 /*fasilitas*/
 .word {
-    background: linear-gradient(0deg, #7FD4FF, #7FD4FF), linear-gradient(0deg, #E9E9E9, #E9E9E9), linear-gradient(0deg, #E9E9E9, #E9E9E9), #E9E9E9;
-    color: #fff;
-    padding: 100px
+  background: linear-gradient(0deg, #7FD4FF, #7FD4FF), linear-gradient(0deg, #E9E9E9, #E9E9E9), linear-gradient(0deg, #E9E9E9, #E9E9E9), #E9E9E9;
+  color: #fff;
+  padding: 105px;
+  position: relative;
 }
 
 .word img {
-    object-fit: cover;
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .word h1 {
-    font-size: 70px;
+  font-size: 70px;
 }
 
 .word p {
-    margin-top: 70px;
-    font-size: 40px;
-    text-align: center;
+  margin-top: 70px;
+  font-size: 40px;
+  text-align: center;
 
 }
 
 img[alt="foto_1"] {
-    left: 40px;
-    top: 120px;
-    position: absolute;
+  top: 4%;
+  left: 2%;
+  position: absolute;
 }
 
 img[alt="foto_2"] {
-    left: 350px;
-    top: 180px;
-    position: absolute;
+  top: 20%;
+  left: 23%;
+  position: absolute;
 }
 
 img[alt="foto_3"] {
-    left: 150px;
-    top: 420px;
-    position: absolute;
+  top: 54%;
+  left: 7%;
+  position: absolute;
 }
 
 .list1 {
-    padding: 20px;
-    background-color: #fff;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .list {
-    padding: 10px;
-    background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
-}
-
-/*overflow*/
-.scrolldown {
-    padding: 20px;
-    background-color: #fff;
-}
-
-.scrolldown h1 {
-    text-align: center;
-}
-
-.scrolldown img{
-    object-fit: cover;
-    width: 400px;
-    height: 400px;
-}
-.scrolldown .text-center{
-    overflow-y: scroll;
-    height: 500px;
-}
-
-/*Data Sarpras*/
-.sarpras{
-    background-color: #fff;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 15px;
-    color: #464343;
-}
-
-
-.sarpras .ganjil{
-    background-color: #fff;
-}
-.sarpras .genap{
-    background: rgba(196, 196, 196, 0.35);
-}
-
- 
-/*Informasi/Kontak(footer)*/
-footer{
-  background-color: #00A9FF;
-}
-.kontak {
-  margin: 30px;
-}
-.link h6 a{
-  text-decoration: none;
- }
-.box {
-  background: rgba(217, 217, 217, 0.25);
-  padding: 15px;
-  color: #fff;
-}
-.box .tautan{
-  display: flex;
-}
-.tautan .link {
-  padding-right: 50px;
-}
-.box .sosmed{
-  margin-bottom: 30px;
-}
-.up .info {
-  text-align: left;
-  display: flex;
-}
-
-.up h2 {
-  font-size: 40px;
-  font-weight: bold;
-  text-decoration: underline black;
-}
-
-.up h4 {
-  font-size: 30px;
-}
-
-.icon {
-  margin-bottom: 58px;
-  font-size: 3.5rem;
+  padding: 20px;
+  background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
 }
 
 /*android*/
-@media only screen and (max-width : 768px){
-  .up h2{
-    font-size: 25px;
+@media only screen and (max-width : 600px) {
+  .word {
+      padding: 10px
   }
-  .up h4{
-    font-size: 18px;
+
+  .word img {
+      width: 5rem;
+      height: 5rem;
   }
-  .icon{
-    font-size: 2.8rem;
+
+  .word h1 {
+      font-size: 20px;
   }
-  .link h6 a{
-    text-decoration: none;
-   }
+
+  .word p {
+      margin-top: 20px;
+      font-size: 13px;
+  }
+
+  img[alt="foto_1"] {
+      top: 4%;
+      left: 2%;
+  }
+
+  img[alt="foto_2"] {
+      top: 20%;
+      left: 23%;
+  }
+
+  img[alt="foto_3"] {
+      top: 54%;
+      left: 7%;
+  }
+
+  .list1 {
+      padding: 5px;
+  }
+
+  .list {
+      padding: 4px;
+  }
 }
+
 /*android landscape dan tablet*/
-@media only screen and (min-width: 767px) and (max-width : 992px){
-  .up h2{
-    font-size: 32px;
+@media only screen and (min-width: 601px) and (max-width : 992px) {
+  .word {
+      padding: 55px
   }
-  .up h4{
-    font-size: 25px;
+
+  .word img {
+      width: 9rem;
+      height: 9rem;
+  }
+
+  .word h1 {
+      font-size: 35px;
+  }
+
+  .word p {
+      margin-top: 40px;
+      font-size: 20px;
+  }
+
+  img[alt="foto_1"] {
+      top: 4%;
+      left: 2%;
+  }
+
+  img[alt="foto_2"] {
+      top: 20%;
+      left: 23%;
+  }
+
+  img[alt="foto_3"] {
+      top: 54%;
+      left: 7%;
+  }
+
+  .list1 {
+      padding: 8px;
+  }
+
+  .list {
+      padding: 8px;
   }
 }
 
 /*dekstop*/
-@media only screen and (min-width : 1300px){
-  .up h2{
-    font-size: 2.8rem;
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .word {
+      padding: 85px
   }
-  .up h4{
-    font-size: 2.3rem;
+
+  .word img {
+      width: 13rem;
+      height: 13rem;
+  }
+
+  .word h1 {
+      font-size: 45px;
+  }
+
+  .word p {
+      margin-top: 40px;
+      font-size: 30px;
+  }
+
+  img[alt="foto_1"] {
+      top: 4%;
+      left: 2%;
+  }
+
+  img[alt="foto_2"] {
+      top: 20%;
+      left: 23%;
+  }
+
+  img[alt="foto_3"] {
+      top: 54%;
+      left: 7%;
+  }
+
+  .list1 {
+      padding: 10px;
+  }
+
+  .list {
+      padding: 12px;
   }
 }
 
+/*overflow*/
+.scrolldown {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.scrolldown h1 {
+  text-align: center;
+}
+
+.scrolldown img {
+  object-fit: cover;
+  width: 80%;
+  height: auto;
+}
+
+.scrolldown .text-center {
+  overflow-y: scroll;
+  height: 470px;
+}
+
+/*android*/
+@media only screen and (max-width : 767px) {
+  .scrolldown {
+      padding: 5px;
+  }
+
+  .scrolldown h1 {
+      font-size: 1rem;
+  }
+
+  .scrolldown h2 {
+      font-size: 0.8rem;
+  }
+
+  .scrolldown img {
+      height: auto;
+  }
+
+  .scrolldown .text-center {
+      height: 250px;
+  }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 768px) and (max-width : 992px) {
+  .scrolldown {
+      padding: 10px;
+  }
+
+  .scrolldown h1 {
+      font-size: 1.8rem;
+  }
+
+  .scrolldown h2 {
+      font-size: 1rem;
+  }
+
+  .scrolldown img {
+      height: auto;
+  }
+
+  .scrolldown .text-center {
+      height: 350px;
+  }
+}
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .scrolldown {
+      padding: 15px;
+  }
+
+  .scrolldown h1 {
+      font-size: 1.8rem;
+  }
+
+  .scrolldown h2 {
+      font-size: 1.3rem;
+  }
+
+  .scrolldown img {
+      height: auto;
+  }
+
+}
+
+
+/*Data Sarpras*/
+.sarpras {
+  background-color: #fff;
+  padding: 80px;
+}
+
+.sarpras h1 {
+  background: #00A9FF;
+  color: #fff;
+}
+
+.sarpras .row {
+  background: #26BEFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.sarpras .ganjil {
+  background-color: #fff;
+  border: none;
+}
+
+.sarpras .genap {
+  background: rgba(196, 196, 196, 0.35);
+  border: none;
+}
+
+/*android*/
+@media only screen and (max-width : 600px) {
+  .sarpras {
+      padding: 20px;
+  }
+  .sarpras h1 {
+      font-size: 1rem;
+  }
+  .sarpras h2,
+  .sarpras h3 {
+      font-size: 0.7rem;
+  }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 601px) and (max-width : 992px) {
+  .sarpras {
+      padding: 30px;
+  }
+  .sarpras h1 {
+      font-size: 1.5rem;
+  }
+  .sarpras h2,
+  .sarpras h3 {
+      font-size: 1rem;
+  }
+}
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .sarpras {
+      padding: 40px;
+  }
+  .sarpras h1 {
+      font-size: 1.8rem;
+  }
+  .sarpras h2,
+  .sarpras h3 {
+      font-size: 1.2rem;
+  }
+}
+
+
 /* /Informasi/Kontak(footer)/ */
+/*Informasi/Kontak(footer)*/
 footer {
   background-color: #00A9FF;
 }
@@ -299,9 +476,11 @@ footer {
   padding: 15px;
   color: #fff;
 }
-.tautan h6{
+
+.tautan h6 {
   font-size: 1.7rem;
 }
+
 .box .tautan {
   display: flex;
 }
@@ -333,11 +512,12 @@ footer {
   margin-bottom: 58px;
   font-size: 3.5rem;
 }
-.box .garis{
+
+.box .garis {
   margin-top: 3rem;
 }
 
-/* /android/ */
+/*android*/
 @media only screen and (max-width : 767px) {
   .up h2 {
       font-size: 25px;
@@ -350,12 +530,13 @@ footer {
   .icon {
       font-size: 2.4rem;
   }
-  .tautan h6{
-    font-size: 1rem;
+
+  .tautan h6 {
+      font-size: 1rem;
   }
 }
 
-/* /android landscape dan tablet landscape/ */
+/*android landscape dan tablet landscape*/
 @media only screen and (min-width: 768px) and (max-width : 992px) {
   .up h2 {
       font-size: 32px;
@@ -364,26 +545,31 @@ footer {
   .up h4 {
       font-size: 25px;
   }
-  .tautan h6{
-    font-size: 1.15rem;
+
+  .tautan h6 {
+      font-size: 1.15rem;
   }
 }
-@media only screen and (min-width: 993px) and (max-width : 1200px){
+
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
   .up h2 {
-    font-size: 35px;
+      font-size: 35px;
+  }
+
+  .up h4 {
+      font-size: 27px;
+  }
+
+  .icon {
+      font-size: 2.4rem;
+  }
+
+  .tautan h6 {
+      font-size: 1.4rem;
+  }
 }
 
-.up h4 {
-    font-size: 27px;
-}
-.icon {
-  font-size: 2.4rem;
-}
-.tautan h6{
-  font-size: 1.4rem;
-}
-}
-/* /footer/ */
+/*footer*/
 .footer {
   margin-top: 20px;
   padding: 25px;
@@ -406,14 +592,16 @@ footer {
   display: flex;
   flex-direction: row;
 }
-.info .garis1{
-  margin-left: 12.2rem;
+
+.info .garis1 {
+  margin-left: 11rem;
 }
-.info .garis2{
+
+.info .garis2 {
   margin-left: 3rem;
 }
 
-/* /android/ */
+/*android*/
 @media only screen and (max-width : 767px) {
   .footer {
       padding: 10px;
@@ -426,16 +614,22 @@ footer {
   .footer h4 {
       font-size: 15px;
   }
-  .info .garis1, .info .garis2{
-    display: none;
+
+  .info .garis1,
+  .info .garis2 {
+      display: none;
+  }
+  .copyright div{
+    font-size: 10px;
   }
 }
 
-/* /android landscape dan tablet landscape/ */
+/*android landscape dan tablet landscape*/
 @media only screen and (min-width: 768px) and (max-width : 992px) {
   .footer {
-    padding: 13px;
-}
+      padding: 13px;
+  }
+
   .footer h4 {
       font-size: 15px;
   }
@@ -447,30 +641,36 @@ footer {
   .footer h4 {
       font-size: 17px;
   }
-  .info .garis1, .info .garis2{
-    display: none;
+
+  .info .garis1,
+  .info .garis2 {
+      display: none;
   }
 }
-/* /dekstop/ */
-@media only screen and (min-width: 993px) and (max-width : 1195px){
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1195px) {
   .footer {
-    padding: 15px;
-}
+      padding: 15px;
+  }
+
   .footer h4 {
-    font-size: 15px;
-}
+      font-size: 15px;
+  }
 
-.footer i {
-    font-size: 3.7rem;
-}
+  .footer i {
+      font-size: 3.7rem;
+  }
 
-.footer h4 {
-    font-size: 17px;
-}
-.info .garis1{
-  margin-left: 6rem;
-}
-.info .garis2{
-  margin-left: 1rem;
-}
+  .footer h4 {
+      font-size: 17px;
+  }
+
+  .info .garis1 {
+      margin-left: 6rem;
+  }
+
+  .info .garis2 {
+      margin-left: 1rem;
+  }
 }

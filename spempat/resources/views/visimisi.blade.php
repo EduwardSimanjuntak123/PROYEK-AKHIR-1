@@ -3,26 +3,26 @@
      <!--tampilan awal-->
     <div class="container-fluid pertama">
         <div class="row justify-content-center info">
-            <div class="col-md-6 first">
+            <div class="col-6 col-lg-6 first">
                 <h1 style="font-weight: bold;">Visi dan Misi</h1>
                 <h1 style="font-weight: bold;">SMPN 4 BALIGE</h1>
             </div>
-            <div class="col-md-6 second">
+            <div class="col-6 col-lg-6 second">
             </div>
         </div>
     </div>
     <!--Visi & Misi-->
     <div class="container-fluid kedua">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center isi">
-                <div class="col-md-10 visi">
+                <div class="col-md-12 col-12 visi">
                     <div class="judul">
                         <h1 style="font-weight: bold;">Visi</h1>
                     </div>
                     <h4>MENCIPTAKAN PESERTA DIDIK YANG BERIMAN, BERAKHLAK, BERPRESTASI,KREATIF, INOVATIF, MELESTARIKAN
                         BUDAYA DAN RAMAH LINGKUNGAN DEMI TERWUJUDNYA PROFIL PELAJAR PANCASILA.</h4>
                 </div>
-                <div class="col-md-10 misi">
+                <div class="col-md-12 col-12 misi">
                     <div class="judul">
                         <h1 style="font-weight: bold;">Misi</h1>
                     </div>
