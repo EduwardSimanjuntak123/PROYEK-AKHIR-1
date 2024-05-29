@@ -7,6 +7,7 @@ use Illuminate\Auth\Events\Validated;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class about_usController extends Controller
 {
@@ -40,7 +41,7 @@ class about_usController extends Controller
         $about_us->alamat = $request->alamat;
         $about_us->no_telepon = $request->no_telepon;
         $about_us->save();
-    
+        Alert::success('Data Berhasil di Update','Success Message');
         return redirect()->route('about_us.index');
     }
 }

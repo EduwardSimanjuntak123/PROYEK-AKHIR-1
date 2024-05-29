@@ -67,7 +67,9 @@
 
 
 <body>
+    @include('sweetalert::alert')
     <div class="wrapper">
+
         @include('layouts.sidebar')
         <div class="main p-3">
             <header class="shadow mb-3 rounded">
@@ -81,7 +83,8 @@
                     <div class="relative">
                         <em class="mx-3">{{ Auth::user()->name }} </em>
                         <button id="profileDropdown" class=" ">
-                            <img style="width: 30px" src="{{ asset('img/admin.png') }}" alt="{{ Auth::user()->name }}" />
+                            <img style="width: 30px" src="{{ asset('img/admin.png') }}"
+                                alt="{{ Auth::user()->name }}" />
                         </button>
                         <!-- Dropdown menu -->
                         <div id="dropdownMenu" class="dropdown-content">
@@ -127,6 +130,24 @@
                 }
             }
         });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+    <script type="text/javascript">
+        window.deleteConfirm = function(e) {
+            e.preventDefault();
+            var form = e.target.form;
+            swal({
+                    title: "Apakah kamu yakin ingin menghapusnya?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willDelete) => {
+                    if (willDelete) {
+                        form.submit();
+                    }
+                });
+        }
     </script>
 </body>
 

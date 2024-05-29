@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Models\data_sarpras;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class data_sarprasController extends Controller
 {
@@ -37,6 +38,7 @@ class data_sarprasController extends Controller
         $data['user_id']= $userId;
  
         data_sarpras::create($data);
+        Alert::success('Sarpras Berhasil Ditambah','Success Message');
       
         return redirect()->route('data_sarpras.index');
      }
@@ -63,7 +65,7 @@ class data_sarprasController extends Controller
     }
       
        data_sarpras::whereId($id)->update($data);
-       
+       Alert::success('Data Berhasil di Update','Success Message');
        return redirect()->route('data_sarpras.index');
 
     }

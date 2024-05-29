@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: "Kaisei Tokumin", serif;
-  font-weight: 800; /* Ubah warna latar belakang body */
+  font-weight: 800;
+  /* Ubah warna latar belakang body */
 }
 
 /* CSS untuk header */
@@ -53,7 +54,7 @@ body {
   border-radius: 5px;
 }
 
-.navbar-nav .nav-item a:hover { 
+.navbar-nav .nav-item a:hover {
   background: #77C8FE;
 }
 
@@ -86,8 +87,9 @@ body {
 .dropdown-toggle {
   cursor: pointer;
 }
+
 /* Untuk header */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .logo img {
     width: 40px;
     height: 40px;
@@ -113,65 +115,181 @@ body {
   .text-light p {
     padding-left: 20px;
   }
+
+  .shape {
+    width: 300px;
+    height: 250px;
+  }
 }
 
 /*tampilan awal*/
-.tampilan{
-    background-image:url(/img/herogurustaff.jpg);
-    background-size: cover;
-    height: 649px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.tampilan {
+  background-image: url(/img/gurudanstaf.jpg);
+  background-size: cover;
+  height: 649px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.tampilan h1{
-    color: #222121;
-    font-weight: bold;
-    font-size: 60px;
+.tampilan h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
 }
+
+/*android*/
+@media only screen and (max-width : 600px) {
+  .tampilan {
+    height: 250px;
+  }
+
+  .tampilan h1 {
+    font-size: 15px;
+  }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 601px) and (max-width : 992px) {
+  .tampilan {
+    height: 350px;
+  }
+
+  .tampilan h1 {
+    font-size: 25px;
+  }
+}
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .tampilan {
+    height: 450px;
+  }
+
+  .tampilan h1 {
+    font-size: 35px;
+  }
+}
+
 
 /*tampilan isi*/
-.isi{
-    background-image: url(/img/1.jpg);
-    background-size: cover;
-  
-    justify-content: center;
-    align-items: center;
-}
-.isi h1{
-    text-align: center;
-    color: #ffffff;
-    padding-top: 50px;
-    font-size: xx-large;
-}
-.isi p{
-    font-weight: 500;
-    color: #ffffff;
-    font-size:x-large;
-    text-align: center;
-    padding-bottom: 50px;
+.isi {
+  background-image: url(/img/1.jpg);
+  background-size: cover;
+  margin: 40px;
+  justify-content: center;
+  align-items: center;
 }
 
-.list1 {
-    height: 40px;
-    background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
+.isi h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  padding: 50px;
 }
 
+.isi p {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  height: 600px;
+  padding: 20px;
+}
 
 .total h6 {
-    padding: 15px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .total {
-    padding: 50px;
+  padding: 50px;
 }
 
- 
+/*android*/
+@media only screen and (max-width : 600px) {
+  .isi {
+    margin: 10px;
+  }
 
-/* /Informasi/Kontak(footer)/ */
+  .isi h1 {
+    font-size: 15px;
+    padding: 2px;
+  }
+
+  .isi p {
+    font-size: 10px;
+    height: 200px;
+    padding: 2px;
+  }
+
+  .total h6 {
+    font-size: 0.6rem;
+    padding: 7px;
+  }
+
+  .total {
+    padding: 15px;
+  }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 601px) and (max-width : 992px) {
+  .isi {
+    margin: 25px;
+  }
+
+  .isi h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+
+  .isi p {
+    font-size: 18px;
+    height: 300px;
+    padding: 5px;
+  }
+
+  .total h6 {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  .total {
+    padding: 25px;
+  }
+}
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .isi {
+    margin: 35px;
+  }
+
+  .isi h1 {
+    font-size: 35px;
+    padding: 12px;
+  }
+
+  .isi p {
+    font-size: 22px;
+    height: 400px;
+    padding: 7px;
+  }
+
+  .total h6 {
+    font-size: 1.3rem;
+    padding: 12px;
+  }
+
+  .total {
+    padding: 30px;
+  }
+}
+
+
+
+/*Informasi/Kontak(footer)*/
 footer {
   background-color: #00A9FF;
 }
@@ -185,9 +303,11 @@ footer {
   padding: 15px;
   color: #fff;
 }
-.tautan h6{
+
+.tautan h6 {
   font-size: 1.7rem;
 }
+
 .box .tautan {
   display: flex;
 }
@@ -219,57 +339,64 @@ footer {
   margin-bottom: 58px;
   font-size: 3.5rem;
 }
-.box .garis{
+
+.box .garis {
   margin-top: 3rem;
 }
 
-/* /android/ */
+/*android*/
 @media only screen and (max-width : 767px) {
   .up h2 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .up h4 {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .icon {
-      font-size: 2.4rem;
+    font-size: 2.4rem;
   }
-  .tautan h6{
+
+  .tautan h6 {
     font-size: 1rem;
   }
 }
 
-/* /android landscape dan tablet landscape/ */
+/*android landscape dan tablet landscape*/
 @media only screen and (min-width: 768px) and (max-width : 992px) {
   .up h2 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .up h4 {
-      font-size: 25px;
+    font-size: 25px;
   }
-  .tautan h6{
+
+  .tautan h6 {
     font-size: 1.15rem;
   }
 }
-@media only screen and (min-width: 993px) and (max-width : 1200px){
+
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
   .up h2 {
     font-size: 35px;
+  }
+
+  .up h4 {
+    font-size: 27px;
+  }
+
+  .icon {
+    font-size: 2.4rem;
+  }
+
+  .tautan h6 {
+    font-size: 1.4rem;
+  }
 }
 
-.up h4 {
-    font-size: 27px;
-}
-.icon {
-  font-size: 2.4rem;
-}
-.tautan h6{
-  font-size: 1.4rem;
-}
-}
-/* /footer/ */
+/*footer*/
 .footer {
   margin-top: 20px;
   padding: 25px;
@@ -292,71 +419,82 @@ footer {
   display: flex;
   flex-direction: row;
 }
-.info .garis1{
-  margin-left: 12.2rem;
+
+.info .garis1 {
+  margin-left: 11rem;
 }
-.info .garis2{
+
+.info .garis2 {
   margin-left: 3rem;
 }
 
-/* /android/ */
+/*android*/
 @media only screen and (max-width : 767px) {
   .footer {
-      padding: 10px;
+    padding: 10px;
   }
 
   .footer i {
-      font-size: 2.5rem;
+    font-size: 2.5rem;
   }
 
   .footer h4 {
-      font-size: 15px;
+    font-size: 15px;
   }
-  .info .garis1, .info .garis2{
+
+  .info .garis1,
+  .info .garis2 {
     display: none;
   }
 }
 
-/* /android landscape dan tablet landscape/ */
+/*android landscape dan tablet landscape*/
 @media only screen and (min-width: 768px) and (max-width : 992px) {
   .footer {
     padding: 13px;
-}
+  }
+
   .footer h4 {
-      font-size: 15px;
+    font-size: 15px;
   }
 
   .footer i {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 
   .footer h4 {
-      font-size: 17px;
+    font-size: 17px;
   }
-  .info .garis1, .info .garis2{
+
+  .info .garis1,
+  .info .garis2 {
     display: none;
   }
 }
-/* /dekstop/ */
-@media only screen and (min-width: 993px) and (max-width : 1195px){
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1195px) {
   .footer {
     padding: 15px;
-}
+  }
+
   .footer h4 {
     font-size: 15px;
-}
+  }
 
-.footer i {
+  .footer i {
     font-size: 3.7rem;
-}
+  }
 
-.footer h4 {
+  .footer h4 {
     font-size: 17px;
-}
-.info .garis1{
-  margin-left: 6rem;
-}
-.info .garis2{
-  margin-left: 1rem;
-}
+  }
+
+  .info .garis1 {
+    margin-left: 6rem;
+  }
+
+  .info .garis2 {
+    margin-left: 1rem;
+  }
 }

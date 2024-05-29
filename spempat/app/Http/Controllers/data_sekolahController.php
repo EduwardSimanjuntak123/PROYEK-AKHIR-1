@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\data_sekolah;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use RealRashid\SweetAlert\Facades\Alert;
+
 class data_sekolahController extends Controller
 {
     public function index(){
@@ -137,10 +139,8 @@ if ($request->has('Kecepatan_Internet')) {
 }
 
 data_sekolah::whereId($id)->update($data);
+Alert::success('Data Sekolah Berhasil di Update','Success Message');
 
-      
-       data_sekolah::whereId($id)->update($data);
-       
        return redirect()->route('data_sekolah.index');
 
     }

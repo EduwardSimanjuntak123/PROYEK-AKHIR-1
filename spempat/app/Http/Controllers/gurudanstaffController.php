@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class gurudanstaffController extends Controller
 {
@@ -79,6 +80,7 @@ class gurudanstaffController extends Controller
             $data['user_id']= $userId;
      
             gurustaff::create($data);
+       Alert::success('data Guru dan Staff Berhasil Ditambah','Success Message');
           
             return redirect()->route('gurustaff.index')->with('filename', $filename);
         }

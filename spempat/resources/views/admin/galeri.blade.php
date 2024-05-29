@@ -2,10 +2,10 @@
 @section('content')
     <div class="container">
         <button type="button " class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahgaleri">
-            tambah photo
+            Tambah Foto
         </button>
         <button type="button " class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#hapusgaleri">
-         hapus photo
+         Hapus Foto
      </button>
         <div class="container mt-3">
         
@@ -13,7 +13,7 @@
              @foreach ($data as $item)
              
               <img class="border shadow m-1" src="{{ asset('storage/images/' . $item->file) }}"
-        style="max-width: 100%;height:300px;"> 
+        style="max-width: 100%;">
         <p>{{$item->nama_galeri}}</p>
              @endforeach
          </div>
