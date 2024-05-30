@@ -1,7 +1,6 @@
 @extends('layouts_user.main')
 @section('content')
-    <!--carousel-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -12,13 +11,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('img/1.jpg') }}" class="d-block w-100" alt="">
+                <img src="gambar/sekolah1.jpg" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('img/2.jpg') }}" class="d-block w-100" alt="">
+                <img src="gambar/sekolah2.jpg" class="d-block w-100" alt="">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('img/3.jpg') }}" class="d-block w-100" alt="">
+                <img src="gambar/sekolah3.jpg" class="d-block w-100" alt="">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -37,34 +36,34 @@
     </div>
 
     <!--about us-->
-    <div class="container-fluid text-center data">
-        <div class="row row-cols-2">
-            <div class="col-md-3 kiri">
-            
-                <div class="col-12 dua shadow">
+    <div class="container text-center about">
+        <div class="row">
+            <div class="col-4 left">
+                <div class="one">
                     <h1>Berita Terkini</h1>
-                    @foreach ($berita as $berita)
-                    <p><i><a href="#">{{ $berita->judul }}</a></i></p>
-                    @endforeach
-                    
-                   
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
+                    <hr>
                 </div>
             </div>
-            <div class="col-md-9 kanan">
-                @foreach ($about_us as $item)
-                    <div class="col-12 one shadow">
-                        <h1 class="bg-primary text-white">Info Kontak</h1>
-                        <h3><i class="bi bi-telephone-fill"></i>Telepon : {{ $item->no_telepon }}</h3>
-                        <h3><i class="bi bi-envelope"></i>Email :  {{ $item->email}}</h3>
-                        <h3><i class="bi bi-house-door-fill"></i>Alamat :  {{ $item->alamat}}</h3>
-                    </div>
-                @endforeach
-
-                <div class="col-12 two shadow">
+            <div class="col-8 right">
+                <div class="two">
+                    <h1>Info Kontak</h1>
+                    <h4><i class="bi bi-telephone-fill"></i>Telepon : 063221612</h4>
+                    <h4><i class="bi bi-envelope-fill"></i>Email : smpn4balige@yahoo.com</h4>
+                    <h4><i class="bi bi-house-door-fill"></i>Alamat : Toba Samosir, Kecamatan Balige, Kabupaten Toba, Sumatera Utara</h4>
+                </div>
+                <div class="three">
                     <h1>MAPS</h1>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.5309524302907!2d99.04738347592607!3d2.3260285976536585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e04f1116aadad%3A0xee0a9a7c9f1693f7!2sSMP%20Negeri%204%20BALIGE!5e0!3m2!1sid!2sid!4v1714019721349!5m2!1sid!2sid"
-                        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1418352102305!2d99.0469476716618!3d2.3261271552038028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e04f1116aadad%3A0xee0a9a7c9f1693f7!2sSMP%20Negeri%204%20BALIGE!5e0!3m2!1sid!2sid!4v1716953171828!5m2!1sid!2sid"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
