@@ -12,7 +12,7 @@
     
     
     <tr>
-        <th class="col-md-6 table-secondary">ACTION </th>
+        <th class="col-md-6 table-secondary">Aksi</th>
         <td class="col-md-6 ">
             <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditkatasambutan' . $item->id }}">
                 <i class="lni lni-pencil"></i>

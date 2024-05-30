@@ -29,18 +29,13 @@
             </div>
             <div class="col-md-8 col-xl-8">
                 <div class="hero1">
+                    
                     <h2>KEPALA SEKOLAH SMPN 4 BALIGE</h2>
                     <h3>Berliana Pasaribu, S.Pd.</h3>
-                    <p>Pembelajaran elearning merupakan bagian dari tuntutan kemajuan teknologi dan
-                        komunikasi saat ini
-                        Melalui pembelajaran model ini diharapkan pendidik dan peserta didik dapat lebih interaktif dan
-                        menyenangkan.
-                        Alhamdulillah kita patut bersyukur, SMP Negeri 4 Balige menjadi pelopor di Kota Balige yang
-                        menerapkan
-                        pembelajaran UKBM dalam bentuk eLearning.
-                        Oleh karena itu, kami berharap melalui pembelajaran elearning ini SMP Negeri 4 Balige menjadi bagian
-                        daripendidikan yang bermutu dan berkualitas.
-                    </p>
+                    @foreach ($kata_sambutan as $kata_sambutan)
+                        <p>{{$kata_sambutan->isi}}</p>
+                    @endforeach
+
                 </div>
             </div>
         </div>

@@ -18,7 +18,7 @@
                             style="height: 450px;filter: brightness(60%);" />
                         <div class="carousel-caption d-none d-md-block" style="padding-bottom: 100px">
                             <h1 class="text-white"style="font-family: 'Poppins', sans-serif;">
-                                SELAMAT DATANG DI DASHBOARD ADMIN <br />
+                                SELAMAT DATANG DI BERANDA ADMIN <br />
                                 SMP N 4 BALIGE
                             </h1>
                         </div>
@@ -28,7 +28,7 @@
                             style="height: 450px ; filter: brightness(60%);" />
                         <div class="carousel-caption d-none d-md-block" style="padding-bottom: 100px">
                             <h1 class="text-white" style="font-family: 'Poppins', sans-serif; ">
-                                SELAMAT DATANG DI DASHBOARD ADMIN <br />
+                                SELAMAT DATANG DI BERANDA ADMIN <br />
                                 SMP N 4 BALIGE
                             </h1>
                         </div>
@@ -38,7 +38,7 @@
                             style="height: 450px; filter: brightness(60%);" />
                         <div class="carousel-caption d-none d-md-block fixed" style="padding-bottom: 100px">
                             <h1 class="text-white" style="font-family: 'Poppins', sans-serif;">
-                                SELAMAT DATANG DI DASHBOARD ADMIN <br />
+                                SELAMAT DATANG DI BERANDA ADMIN <br />
                                 SMP N 4 BALIGE
                             </h1>
                         </div>

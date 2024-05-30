@@ -7,6 +7,7 @@ use App\Models\berita;
 use App\Models\data_sarpras;
 use App\Models\data_sekolah;
 use App\Models\gurustaff;
+use App\Models\kata_Sambutan;
 use Illuminate\Support\Facades\DB;
 
 class userviewController extends Controller
@@ -15,7 +16,8 @@ class userviewController extends Controller
     {
         $halaman ='beranda';
         $berita = berita::get();
-        return view('dashboarduser', compact('berita', 'halaman'));
+        $kata_sambutan = kata_Sambutan::get();
+        return view('dashboarduser', compact('berita', 'halaman', 'kata_sambutan'));
     }
     public function gurustaff()
     {

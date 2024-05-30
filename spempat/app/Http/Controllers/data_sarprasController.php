@@ -14,7 +14,7 @@ class data_sarprasController extends Controller
         $data = data_sarpras::get();
        
         return view('admin.data_sarpras',[
-            'title'=>'Data sarpras'
+            'title'=>'Data Sarpras'
         ],compact('data'));
     }
     public function store(Request $request){

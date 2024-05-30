@@ -7,7 +7,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel">tambah berita</h5>
+                    <h5 class="modal-title" id="staticBackdropLabel">Tambah Berita</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -15,9 +15,9 @@
                         @csrf
                         <div class="card-body">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">judul berita</label>
+                                <label for="exampleInputEmail1">Judul berita</label>
                                 <input type="text" class="form-control" name="judul" id="exampleInputEmail1"
-                                    placeholder="masukkan judul berita"  value="{{ old('photo') }}">
+                                    placeholder="Masukkan judul berita"  value="{{ old('photo') }}">
                                 @error('judul')
                                     <small style="color: red">{{ $message }}</small>
                                 @enderror
@@ -31,7 +31,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">isi berita</label>
-                                    <textarea name="isi" class="form-control" id="exampleInputEmail1" placeholder="masukkan isi berita"></textarea>
+                                    <textarea name="isi" class="form-control" id="exampleInputEmail1" placeholder="Masukkan isi berita"></textarea>
                                 
                                 @error('isi')
                                     <small style="color: red">{{ $message }}</small>
@@ -47,8 +47,8 @@
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div> --}}
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Understood</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn btn-primary">Simpan </button>
                         </div>
                     </form>
                 </div>
@@ -107,8 +107,8 @@
                             <button type="submit" class="btn btn-primary">Submit</button>
                         </div> --}}
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="submit" class="btn btn-primary">Understood</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
                             </div>
                         </form>
                         {{-- @endforeach --}}
@@ -126,17 +126,17 @@
 
     <div class="container">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            tambah berita
+            Tambah Berita
         </button>
         
         <table class="table mt-3 shadow">
             <thead>
 
                 <tr class="table-secondary">
-                    <th scope="col">gambar </th>
+                    <th scope="col">Gambar </th>
                     <th scope="col">Judul Berita</th>
                     <th scope="col">Isi Berita</th>
-                    <th scope="col">ACTION</th>
+                    <th scope="col">Aksi</th>
 
                 </tr>
             </thead>

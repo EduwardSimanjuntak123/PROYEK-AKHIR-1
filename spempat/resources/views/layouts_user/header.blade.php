@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse text-right" id="navbarNav">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item title">
-                    <a class="nav-link" href="{{ route('dashboarduser') }}">Home</a>
+                    <a class="nav-link" href="{{ route('dashboarduser') }}">Beranda</a>
                 </li>
                 <li class="nav-item dropdown menu">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -36,7 +36,7 @@
                     <a class="nav-link" href="#">Galeri</a>
                 </li>
                 <li class="nav-item title">
-                    <a class="nav-link" href="About_us">About Us</a>
+                    <a class="nav-link" href="About_us">Tentang Kami</a>
                 </li>
                 @if (Route::has('login'))
                     <li class="-mx-3 flex flex-1 justify-end">

@@ -19,7 +19,7 @@ class gurudanstaffController extends Controller
            
            
             return view('admin.gurustaff',[
-                'title'=>'guru dan staff',
+                'title'=>'Guru dan Staff',
                 
             ],compact('data'));
         } catch (\Exception $e) {

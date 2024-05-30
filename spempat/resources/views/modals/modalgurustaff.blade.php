@@ -101,7 +101,7 @@
                             @enderror
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">tanggallahir</label>
+                            <label for="exampleInputEmail1">Tanggal Lahir</label>
                             <input type="date" id="tanggallahir" name="tanggallahir"
                                 value="{{ $item->tanggallahir }}">
 
@@ -110,17 +110,17 @@
                             <small style="color: brown">{{ $message }}</small>
                         @enderror
                         <div class="form-group">
-                            <label for="exampleInputEmail1">alamat lahir</label>
+                            <label for="exampleInputEmail1">Alamat Lahir</label>
                             <input type="text" class="form-control" name="alamat_lahir" id="exampleInputEmail1"
-                                placeholder="masukkan alamat lahir" value="{{ $item->alamat_lahir }}">
+                                placeholder="Masukkan alamat lahir" value="{{ $item->alamat_lahir }}">
                             @error('alamat_lahir')
                                 <small style="color: brown">{{ $message }}</small>
                             @enderror
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Understood</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
                     </div>
                 </form>
             </div>

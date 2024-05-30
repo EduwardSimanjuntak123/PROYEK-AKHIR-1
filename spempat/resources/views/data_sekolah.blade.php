@@ -34,37 +34,34 @@
         </div>
         <div class="col-lg-12 dua">
           <h1>Berita Terkini</h1>
-          <hr>
-          <hr>
-          <hr>
-          <hr>
-          <hr>
-          <hr>
-          <hr>
-          <hr>
-          <hr>
+          @foreach ($berita as $berita)
+          <hr>{{$berita->judul}} <br>
+          {{-- {{$berita->isi}}     --}}
+          @endforeach
         </div>
       </div>
 
       <div class="col-lg-8 col-7 kanan">
         <div class="col-lg-12 one">
+          @foreach ($data_sekolah as $data_sekolah)
+              
+          
           <h1>IDENTITAS SEKOLAH</h1>
-          <h3>NPSN :</h3>
-          <h3>Status :</h3>
-          <h3>Bentuk Pendidikan :</h3>
-          <h3>Status Kepemilikan :</h3>
-          <h3>SK Pendirian Sekolah :</h3>
-          <h3>Tanggal SK Pendirian</h3>
-          <h3>SK Izin Operasional</h3>
-          <h3>Tanggal SK Izin Operasional :</h3>
+          <h3>NPSN : {{$data_sekolah->NPSN}}</h3>
+          <h3>Status : {{$data_sekolah->status}}</h3>
+          <h3>Bentuk Pendidikan : {{$data_sekolah->Bentuk_kepemilikan}}</h3>
+          <h3>Tanggal SK Pendirian: {{$data_sekolah->Tanggal_SK_pendirian_sekolah}}</h3>
+          <h3>SK Pendirian Sekolah : {{$data_sekolah->SK_pendirian_sekolah}}</h3>
+          <h3>Status Kepemilikan : {{$data_sekolah->status_kepemilikan}}</h3>
+          <h3>SK Izin Operasional : {{$data_sekolah->SK_ijin_operasional}} </h3>
+          <h3>Tanggal SK Izin Operasional : {{$data_sekolah->tanggak_SK_ijin_operasional}} </h3>
         </div>
         <div class="col-lg-12 two">
           <h1>DATA PELENGKAP</h1>
-          <h3>Status BOS :</h3>
-          <h3>Sumber listrik :</h3>
-          <h3>Daya listrik :</h3>
-          <h3>Kecepatan Internet :</h3>
-          <h3>Luas Tanah :</h3>
+          <h3>Status BOS : {{$data_sekolah->status_BOS}} </h3>
+          <h3>Sumber listrik : {{$data_sekolah->Sumber_Listrik}} </h3>
+          <h3>Daya listrik : {{$data_sekolah->Daya_Listrik}} </h3>
+          <h3>Kecepatan Internet : {{$data_sekolah->Kecepatan_Internet}} </h3>
         </div>
         <div class="col-lg-12 three">
           <h1>DATA ROMBONGAN BELAJAR</h1>
@@ -135,5 +132,6 @@
 
     </div>
   </div>
+  @endforeach
 @endsection
 <!--tampilan awal-->

@@ -13,7 +13,7 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nama Sarpras</label>
                             <input type="text" class="form-control" name="nama_sarpras" id="exampleInputEmail1"
-                                placeholder="masukkan nama sarpras">
+                                placeholder="Masukkan nama sarpras">
                             @error('nama_guru')
                                 <small style="color: brown">{{ $message }}</small>
                             @enderror
@@ -24,7 +24,7 @@
                         <div class="form-group">
                             <label for="exampleInputEmail1">Jumlah Sarpras</label>
                             <input type="text" class="form-control" name="jumlah_sarpras" id="exampleInputEmail1"
-                                placeholder="masukkan jumlah">
+                                placeholder="Masukkan jumlah">
                             @error('alamat_lahir')
                                 <small style="color: brown">{{ $message }}</small>
                             @enderror
@@ -69,7 +69,7 @@
                         
                        
                         <div class="form-group">
-                            <label for="exampleInputEmail1">jumlah sarpras</label>
+                            <label for="exampleInputEmail1">Jumlah sarpras</label>
                             <input type="text" class="form-control" name="jumlah_sarpras" id="exampleInputEmail1"
                             value="{{ $item->jumlah_sarpras }}">
                             @error('alamat_lahir')
@@ -79,8 +79,8 @@
                     </div>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">batal</button>
-                        <button type="submit" class="btn btn-primary">tambah</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-primary">Tambah</button>
                     </div>
                 </form>
             </div>

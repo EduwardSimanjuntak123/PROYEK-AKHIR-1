@@ -15,7 +15,7 @@
                         <div class="card-body">
                             <div class="form-group">
                                 @if ($item->file)
-                                    <center><img class="border shadow" src="{{ asset('storage/img/' . $item->file) }}"
+                                    <center><img class="border shadow" src="{{ asset('storage/images/' . $item->file) }}"
                                             alt="Gambar Profil" style="max-width: 100px;"></center>
                                 @endif
                                 <div>
@@ -40,7 +40,7 @@
                                     <label for="exampleInputEmail1">Operator</label>
                                     <input type="text" class="form-control" name="operator"
                                         value="{{ $item->operator }}" id="exampleInputEmail1"
-                                        placeholder="masukkan judul berita">
+                                        placeholder="Masukkan Judul Berita">
                                 </div>
                                 @error('operator')
                                     <div class="error" style="color: red">{{ $message }}</div>
@@ -118,7 +118,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                            <button type="submit" class="btn btn-primary">Perbarui</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                     </form>
                 </div>
@@ -166,8 +166,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Understood</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                     </form>
 
@@ -225,8 +225,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Understood</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                     </form>
                 </div>
@@ -270,8 +270,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Understood</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                     </form>
                 </div>

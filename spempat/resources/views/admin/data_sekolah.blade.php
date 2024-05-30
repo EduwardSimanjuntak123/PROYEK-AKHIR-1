@@ -8,19 +8,19 @@
                     <h1>DETAIL SEKOLAH</h1>
                 </caption>
                 <tr>
-                    <th class="col-md-6 table-secondary">NAMA KEPALA SEKOLAH </tj>
+                    <th class="col-md-6 table-secondary">Nama Kepala Sekolah</tj>
                     <td class="col-md-6 ">{{ $item->nama_kepala_sekolah }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">AKREDITAS</th>
+                    <th class="col-md-6 table-secondary">Akreditas</th>
                     <td class="col-md-6 ">{{ $item->akreditas }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">OPERATOR</th>
+                    <th class="col-md-6 table-secondary">Operator</th>
                     <td class="col-md-6 ">{{ $item->operator }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">ACTION </th>
+                    <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditdetailsekolah' . $item->id }}">
                             <i class="lni lni-pencil"></i>
@@ -39,27 +39,27 @@
                     <td class="col-md-6 ">{{ $item->NPSN }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">STATUS </th>
+                    <th class="col-md-6 table-secondary">Status </th>
                     <td class="col-md-6 ">{{ $item->status }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">SK PENDIRIAN SEKOLAH </th>
+                    <th class="col-md-6 table-secondary">SK Pendirian Sekolah</th>
                     <td class="col-md-6 ">{{ $item->SK_pendirian_sekolah }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">TANGGAL SK PENDIRIAN SEKOLAH </th>
+                    <th class="col-md-6 table-secondary">Tanggal SK Pendirian Sekolah</th>
                     <td class="col-md-6 ">{{ $item->Tanggal_SK_pendirian_sekolah }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">SK IJIN OPERASIONAL</th>
+                    <th class="col-md-6 table-secondary">SK Izin Operasional</th>
                     <td class="col-md-6 ">{{ $item->SK_ijin_operasional }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">TANGGAL SK IZIN OPERASIONAL</th>
+                    <th class="col-md-6 table-secondary">Tanggal SK Izin Operasional</th>
                     <td class="col-md-6 ">{{ $item->tanggak_SK_ijin_operasional }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">ACTION </th>
+                    <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditindentitassekolah' . $item->id }}">
                             <i class="lni lni-pencil"></i>
@@ -89,7 +89,7 @@
                     <td class="col-md-6 ">{{ $item->Kecepatan_Internet }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">ACTION </th>
+                    <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditdatapelengkap' . $item->id }}">
                             <i class="lni lni-pencil"></i>
@@ -115,7 +115,7 @@
                     <td class="col-md-6 ">{{ $item->jumlah_tingkat_9 }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">ACTION </th>
+                    <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditdatarombel' . $item->id }}">
                             <i class="lni lni-pencil"></i>
@@ -137,7 +137,7 @@
                     <td class="col-md-6 ">{{ $item->jumlah_perempuan }}</td>
                 </tr>
                 <tr>
-                    <th class="col-md-6 table-secondary">ACTION </th>
+                    <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
                         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditdatasiswa' . $item->id }}">
                             <i class="lni lni-pencil"></i>
