@@ -29,11 +29,11 @@
                                 data-bs-target="#editgurudanstaff">
                                 edit
                             </button>
-                            <form action="{{ route('coba', ['id' => $item->id]) }}" method="POST" type="button"
+                            <form action="{{ route('coba', ['id' => $item->id]) }}" method="POST"
                                 class="btn btn-danger p-0" onsubmit="return confirm('Delete?')">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-danger m-0">Delete</button>
+                                <button class="btn btn-danger m-0" onclick="window.deleteConfirm(event)">Delete</button>
                             </form>
                         </div>
                     </div>

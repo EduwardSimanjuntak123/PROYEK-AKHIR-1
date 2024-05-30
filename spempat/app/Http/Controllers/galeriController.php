@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
+use RealRashid\SweetAlert\Facades\Alert;
+
 class galeriController extends Controller
 {
     
@@ -38,6 +40,7 @@ class galeriController extends Controller
         $data['user_id']= $userId;
         $data['nama_galeri']= $request->Nama_Galeri;
         galeri::create($data);
+        Alert::success('Media Berhasil Ditambah','Success Message');
       
         return redirect()->route('galeri.index')->with('filename', $filename);
      }

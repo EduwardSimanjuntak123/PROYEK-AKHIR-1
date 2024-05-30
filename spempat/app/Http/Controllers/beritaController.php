@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\Berita;
+
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class beritaController extends Controller
 {
@@ -50,6 +52,7 @@ class beritaController extends Controller
         $data['user_id']= $userId;
 
         berita::create($data);
+        Alert::success('Berita Berhasil di Tambah','Success Message');
         return redirect()->route('berita.index')->with('filename', $filename);
      }
 
@@ -90,7 +93,7 @@ class beritaController extends Controller
         $berita->judul = $request->judul;
         $berita->isi = $request->isi;
         $berita->save();
-    
+        Alert::success('Data Berhasil di Update','Success Message');
         return redirect()->route('berita.index');
     }
     

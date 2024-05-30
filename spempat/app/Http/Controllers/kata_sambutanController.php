@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Validator;
 use App\Models\kata_Sambutan;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class kata_sambutanController extends Controller
 {
@@ -33,6 +34,7 @@ class kata_sambutanController extends Controller
        $data['isi']= $request->isi;
       
        kata_Sambutan::whereId($id)->update($data);
+       Alert::success('Data Berhasil di Update','Success Message');
        
        return redirect()->route('kata_sambutan.index');
 
