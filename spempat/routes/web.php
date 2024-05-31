@@ -3,7 +3,6 @@
 use App\Http\Controllers\about_usController;
 use App\Http\Controllers\beritaController;
 use App\Http\Controllers\cobaController;
-use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\data_sarprasController;
 use App\Http\Controllers\data_sekolahController;
 use App\Http\Controllers\galeriController;
@@ -12,12 +11,10 @@ use App\Http\Controllers\kata_sambutanController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\userviewController;
-use App\Http\Controllers\ImageController;
-use App\Models\berita;
+use App\Http\Controllers\KritikController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/images/{imageName}', [ImageController::class, 'show'])->name('image.show');
 Route::get('/', [userviewController::class, 'dashboard'])->name('dashboarduser');
 Route::get('/fasilitas', [userviewController::class, 'fasilitas'])->name('fasilitas');
 Route::get('/Sejarah', [userviewController::class, 'sejarah'])->name('sejarah');
@@ -26,6 +23,10 @@ Route::get('/Data_Sekolah', [userviewController::class, 'data_sekolah'])->name('
 Route::get('/About_us', [userviewController::class, 'about_us']);
 Route::get('/guru_staff', [userviewController::class, 'gurustaff'])->name('guru_staff');
 Route::get('/show/{id}', [userviewController::class, 'show_berita'])->name('berita.show');
+
+
+Route::post('/kritik', [userviewController::class, 'storekritik'])->name('kritik.store');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -39,6 +40,12 @@ Route::middleware('auth')->group(function () {
     Route::prefix('dashboard')->group(function () {
         Route::get('/', [loginController::class, 'index'])->name('dashboard');
     });
+    
+Route::prefix('admin')->name('admin.')->group(function() {
+    Route::get('/kritik', [KritikController::class, 'index'])->name('kritik');
+    Route::put('/kritik/{kritik}', [KritikController::class, 'update'])->name('kritik.update');
+    Route::post('/kritik/{kritik}/reply', [KritikController::class, 'reply'])->name('kritik.reply');
+});
     Route::prefix('gurustaff')->group(function () {
         Route::post('/store', [gurudanstaffController::class, 'store'])->name('gurustaff.store');
         Route::get('/', [gurudanstaffController::class, 'index'])->name('gurustaff.index');

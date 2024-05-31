@@ -13,6 +13,12 @@
             </a>
         </li>
         <li class="sidebar-item ">
+            <a href="/kritikadmin" class="sidebar-link ">
+                <i class="lni lni-popup"></i>
+                <span>Kritik dan saran</span>
+            </a>
+        </li>
+        <li class="sidebar-item ">
             <a href="{{ route('kata_sambutan.index') }}" class="sidebar-link ">
                 <i class="lni lni-popup"></i>
                 <span>Kata sambutan</span>

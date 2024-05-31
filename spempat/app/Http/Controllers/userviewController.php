@@ -8,7 +8,10 @@ use App\Models\data_sarpras;
 use App\Models\data_sekolah;
 use App\Models\gurustaff;
 use App\Models\kata_Sambutan;
+use App\Models\Kritik;
 use Illuminate\Support\Facades\DB;
+
+use Illuminate\Http\Request;
 
 class userviewController extends Controller
 {
@@ -36,7 +39,19 @@ class userviewController extends Controller
         $halaman ='about_us';
         $about_us = about_us::get();
         $berita = berita::get();
-        return view('about_us', compact('about_us', 'halaman', 'berita'));
+        $kritiks = Kritik::where('ditampilkan', true)->with('balasan')->get();
+        return view('about_us', compact('about_us', 'halaman', 'berita','kritiks'));
+    }
+    public function storekritik(Request $request)
+    {
+        $request->validate([
+            'nama' => 'nullable|string|max:255',
+            'email' => 'nullable|string|email|max:255',
+            'isi_kritik' => 'required|string',
+        ]);
+
+        Kritik::create($request->all());
+        return redirect()->back()->with('success', 'Kritik berhasil dikirim.');
     }
     public function fasilitas()
     {
