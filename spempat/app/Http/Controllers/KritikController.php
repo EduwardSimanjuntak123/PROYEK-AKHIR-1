@@ -19,6 +19,12 @@ class KritikController extends Controller
         return redirect()->back()->with('success', 'Status kritik berhasil diubah.');
     }
 
+    public function destroy($id)
+    {
+        $data= Kritik::find($id);
+        $data->delete();
+        return redirect()->back()->with('success', 'Kritik berhasil dihapus.');
+    }
     public function reply(Request $request, Kritik $kritik)
     {
         $request->validate([
@@ -28,4 +34,13 @@ class KritikController extends Controller
         $kritik->balasan()->create($request->all());
         return redirect()->back()->with('success', 'Balasan berhasil dikirim.');
     }
+
+    public function hide(Request $request, Kritik $kritik)
+    {
+        $kritik->update(['ditampilkan' => false]);
+        return redirect()->back()->with('success', 'Kritik berhasil disembunyikan.');
+    }
+
+    
 }
+

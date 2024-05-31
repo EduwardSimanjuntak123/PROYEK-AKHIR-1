@@ -45,6 +45,8 @@ Route::prefix('kritik')->group(function() {
     Route::get('/kritik', [KritikController::class, 'index'])->name('kritik');
     Route::put('/kritik/{kritik}', [KritikController::class, 'update'])->name('kritik.update');
     Route::post('/kritik/{kritik}/reply', [KritikController::class, 'reply'])->name('kritik.reply');
+    Route::post('/kritik/{kritik}/hide', [KritikController::class, 'hide'])->name('kritik.hide');
+    Route::delete('/kritik/{id}', [KritikController::class, 'destroy'])->name('kritik.destroy');
 });
     Route::prefix('gurustaff')->group(function () {
         Route::post('/store', [gurudanstaffController::class, 'store'])->name('gurustaff.store');
