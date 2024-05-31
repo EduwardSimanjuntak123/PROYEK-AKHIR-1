@@ -41,7 +41,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/', [loginController::class, 'index'])->name('dashboard');
     });
     
-Route::prefix('admin')->name('admin.')->group(function() {
+Route::prefix('kritik')->group(function() {
     Route::get('/kritik', [KritikController::class, 'index'])->name('kritik');
     Route::put('/kritik/{kritik}', [KritikController::class, 'update'])->name('kritik.update');
     Route::post('/kritik/{kritik}/reply', [KritikController::class, 'reply'])->name('kritik.reply');

@@ -67,28 +67,51 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div>
-                    <h1>Kritik</h1>
-                    @foreach ($kritiks as $kritik)
-                        <div>
-                            <h2>{{ $kritik->nama ?? 'Anonymous' }}</h2>
-                            <p>{{ $kritik->isi_kritik }}</p>
-                            @foreach ($kritik->balasan as $balas)
-                                <div>
-                                    <p>{{ $balas->isi_balasan }}</p>
-                                </div>
-                            @endforeach
-                        </div>
-                    @endforeach
+                    
+                    <h1 class="mb-4 ">Ulasan Pengunjung kami</h1>
+                    <hr>
+                    <div class="mb-4">
+                        @foreach ($kritiks as $kritik)
+                            <div class="chat-bubble user">
+                                <h6 class="text-start text-success">{{ $kritik->nama ?? 'Anonymous' }}</h6>
+                                <p class="text-start">{{ $kritik->isi_kritik }}</p>
+                            </div>
+                            <div>
+                                @foreach ($kritik->balasan as $balas)
+                                    <div class="d-flex justify-content-end">
+                                        <div class="chat-bubble admin">
+                                            <h6 class="text-end text-primary">Admin</h6>
+                                            <p class="text-end">{{ $balas->isi_balasan }}</p>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endforeach
 
-                    <form action="{{ route('kritik.store') }}" method="POST">
-                        @csrf
-                        <input type="text" name="nama" placeholder="Nama (Optional)">
-                        <input type="email" name="email" placeholder="Email (Optional)">
-                        <textarea name="isi_kritik" placeholder="Kritik"></textarea>
-                        <button type="submit">Kirim</button>
-                    </form>
+                    </div>
+                    <div class="four text-center">
+                        <form action="{{ route('kritik.store') }}" method="POST" class="mt-4">
+                            @csrf
+                            <h1>Buat Ulasan </h1>
+                            <div class="form-group">
+                                <label for="nama">Nama (Optional)</label>
+                                <input type="text" class="form-control" name="nama" id="nama"
+                                    placeholder="Nama (Optional)">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email (Optional)</label>
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Email (Optional)">
+                            </div>
+                            <div class="form-group">
+                                <label for="isi_kritik">Kritik</label>
+                                <textarea class="form-control" name="isi_kritik" id="isi_kritik" rows="3" placeholder="Kritik"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim</button>
+                        </form>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </div>
-@endsection
+    @endsection

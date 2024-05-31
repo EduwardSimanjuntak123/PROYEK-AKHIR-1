@@ -13,7 +13,7 @@
             </a>
         </li>
         <li class="sidebar-item ">
-            <a href="/kritikadmin" class="sidebar-link ">
+            <a href="{{ route('kritik') }}" class="sidebar-link ">
                 <i class="lni lni-popup"></i>
                 <span>Kritik dan saran</span>
             </a>

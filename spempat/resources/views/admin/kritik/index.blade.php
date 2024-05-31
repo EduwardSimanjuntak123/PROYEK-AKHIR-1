@@ -6,7 +6,7 @@
         <div>
             <h2>{{ $kritik->nama ?? 'Anonymous' }}</h2>
             <p>{{ $kritik->isi_kritik }}</p>
-            <form action="{{ route('admin.kritik.update', $kritik->id) }}" method="POST">
+            <form action="{{ route('kritik.update', $kritik->id) }}" method="POST">
                 @csrf
                 @method('PUT')
                 <label>
@@ -20,7 +20,7 @@
                     <p>{{ $balas->isi_balasan }}</p>
                 </div>
             @endforeach
-            <form action="{{ route('admin.kritik.reply', $kritik->id) }}" method="POST">
+            <form action="{{ route('kritik.reply', $kritik->id) }}" method="POST">
                 @csrf
                 <textarea name="isi_balasan" placeholder="Balasan"></textarea>
                 <button type="submit">Balas</button>
