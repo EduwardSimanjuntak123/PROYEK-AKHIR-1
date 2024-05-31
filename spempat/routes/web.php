@@ -20,11 +20,11 @@ Route::get('/fasilitas', [userviewController::class, 'fasilitas'])->name('fasili
 Route::get('/Sejarah', [userviewController::class, 'sejarah'])->name('sejarah');
 Route::get('/visi&misi', [userviewController::class, 'visimisi'])->name('visimisi');
 Route::get('/Data_Sekolah', [userviewController::class, 'data_sekolah'])->name('data_sekolah');
-Route::get('/About_us', [userviewController::class, 'about_us']);
+Route::get('About_us', [userviewController::class, 'about_us']);
 Route::get('/guru_staff', [userviewController::class, 'gurustaff'])->name('guru_staff');
 Route::get('/show/{id}', [userviewController::class, 'show_berita'])->name('berita.show');
 
-
+    
 Route::post('/kritik', [userviewController::class, 'storekritik'])->name('kritik.store');
 
 Route::get('/dashboard', function () {

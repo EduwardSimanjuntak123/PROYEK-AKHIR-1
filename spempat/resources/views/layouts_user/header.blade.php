@@ -1,4 +1,4 @@
-<header style="margin-bottom: 80px;">
+<header style="margin-bottom: 70px;">
     <nav class="navbar navbar-expand-lg fixed-top col-md-12 header">
         <a style="font-size: 30px; color: #fff; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);" class="navbar-brand logo" href="#">
             <img  src="{{ asset('img/Tutwuri.png') }}" alt="SMPN 4" width="40" />

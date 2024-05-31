@@ -25,7 +25,7 @@
     
     <!--header-->
     @include('layouts_user.header')
-    
+    @include('sweetalert::alert')
 
     <!--kata sambutan-->
 @yield('content')

@@ -12,6 +12,7 @@ use App\Models\Kritik;
 use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class userviewController extends Controller
 {
@@ -51,7 +52,8 @@ class userviewController extends Controller
         ]);
 
         Kritik::create($request->all());
-        return redirect()->back()->with('success', 'Kritik berhasil dikirim.');
+        Alert::success('ulasan berhasil dikirim','Ulasan anda akan ditampilkan bila admin mengijinkannya');
+        return redirect()->back();
     }
     public function fasilitas()
     {
