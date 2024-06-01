@@ -247,11 +247,11 @@ body {
   }
 
   .satu h2 {
-      font-size: 0.9rem;
+      font-size: 1rem;
   }
 
   .satu h4 {
-      font-size: 0.55rem;
+      font-size: 0.51rem;
       padding: 5px;
   }
 
@@ -287,7 +287,7 @@ body {
   }
 
   .satu h4 {
-      font-size: 1.1rem;
+      font-size: 1.14rem;
       padding: 10px;
   }
 
@@ -368,11 +368,28 @@ body {
   margin-bottom: 30px;
 }
 
+.three .tabel {
+  padding: 10px;
+}
+.three .tabel th {
+  font-size: 10px;
+  color: #fff;
+}
+.three .tabel td {
+  font-size: 10px;
+}
+.four .tabel th {
+  font-size: 10px;
+  color: #fff;
+}
+.four .tabel td {
+  font-size: 10px;
+}
+
 .three h6 {
   padding: 15px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 .kanan .four {
@@ -391,6 +408,19 @@ body {
 .kanan .total {
   padding: 50px;
 }
+
+.three .tabel, .four .tabel {
+  padding: 30px;
+}
+.three .tabel th, .four .tabel th {
+  font-size: 18px;
+  color: #fff;
+}
+.three .tabel td, .four .tabel td {
+  font-size: 18px;
+}
+
+
 
 /*android*/
 @media only screen and (max-width : 767px) {
@@ -414,16 +444,20 @@ body {
       padding-left: 10px;
   }
 
-  .four h6,
-  .three h6 {
-      font-size: 0.5rem;
-      padding: 5px;
-  }
-
   .kanan .total {
       padding: 10px;
   }
 
+  .three .tabel, .four .tabel {
+      padding: 15px;
+  }
+  .three .tabel th, .four .tabel th {
+      font-size: 10px;
+      color: #fff;
+  }
+  .three .tabel td, .four .tabel td {
+      font-size: 10px;
+  }
 }
 
 /*android landscape dan tablet landscape*/
@@ -453,9 +487,19 @@ body {
       font-size: 1rem;
       padding: 10px;
   }
-
   .kanan .total {
       padding: 15px;
+  }
+
+  .three .tabel, .four .tabel {
+      padding: 20px;
+  }
+  .three .tabel th, .four .tabel th {
+      font-size: 14px;
+      color: #fff;
+  }
+  .three .tabel td, .four .tabel td {
+      font-size: 14px;
   }
 }
 

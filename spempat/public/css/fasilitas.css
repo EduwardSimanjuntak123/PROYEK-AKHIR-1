@@ -238,7 +238,7 @@ img[alt="foto_3"] {
   }
 
   img[alt="foto_1"] {
-      top: 4%;
+      top: 1%;
       left: 2%;
   }
 
@@ -403,20 +403,18 @@ img[alt="foto_3"] {
   background: #00A9FF;
   color: #fff;
 }
-
-.sarpras .row {
-  background: #26BEFF;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.sarpras .ganjil {
-  background-color: #fff;
-  border: none;
-}
-
-.sarpras .genap {
+.sarpras .genap td{
   background: rgba(196, 196, 196, 0.35);
-  border: none;
+}
+.sarpras .tabel{
+  padding: 10px;
+  text-align: center;
+}
+.sarpras .tabel th{
+  font-size: 18px;
+}
+.sarpras .tabel td{
+  font-size: 18px;
 }
 
 /*android*/
@@ -431,6 +429,15 @@ img[alt="foto_3"] {
   .sarpras h3 {
       font-size: 0.7rem;
   }
+  .sarpras .tabel{
+      text-align: center;
+    }
+  .sarpras .tabel th{
+      font-size: 12px;
+    }
+  .sarpras .tabel td{
+      font-size: 12px;
+    }
 }
 
 /*android landscape dan tablet*/
@@ -445,6 +452,15 @@ img[alt="foto_3"] {
   .sarpras h3 {
       font-size: 1rem;
   }
+  .sarpras .tabel{
+      text-align: center;
+    }
+  .sarpras .tabel th{
+      font-size: 15px;
+    }
+  .sarpras .tabel td{
+      font-size: 15px;
+    }
 }
 /*dekstop*/
 @media only screen and (min-width: 993px) and (max-width : 1200px) {
@@ -459,6 +475,7 @@ img[alt="foto_3"] {
       font-size: 1.2rem;
   }
 }
+
 
 
 /* /Informasi/Kontak(footer)/ */

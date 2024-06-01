@@ -171,10 +171,58 @@ body {
   }
 }
 
+.tampilan {
+  background-image: url(/img/3.jpg);
+  background-size: cover;
+  height: 649px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tampilan h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+/*android*/
+@media only screen and (max-width : 600px) {
+  .tampilan {
+    height: 250px;
+  }
+
+  .tampilan h1 {
+    font-size: 15px;
+  }
+}
+
+/*android landscape dan tablet*/
+@media only screen and (min-width: 601px) and (max-width : 992px) {
+  .tampilan {
+    height: 350px;
+  }
+
+  .tampilan h1 {
+    font-size: 25px;
+  }
+}
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .tampilan {
+    height: 450px;
+  }
+
+  .tampilan h1 {
+    font-size: 35px;
+  }
+}
+
 
 /*tampilan isi*/
 .isi {
-  background-image: url(/img/1.jpg);
+  background-image: url(/img/3.jpg);
   background-size: cover;
   margin: 40px;
   justify-content: center;
@@ -196,14 +244,17 @@ body {
   padding: 20px;
 }
 
-.total h6 {
-  padding: 15px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+.guru .tabel{
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
 }
-
-.total {
-  padding: 50px;
+.guru .tabel th{
+  font-size: 18px;
+  color: #fff;
+}
+.guru .tabel td{
+  font-size: 18px;
 }
 
 /*android*/
@@ -231,6 +282,17 @@ body {
   .total {
     padding: 15px;
   }
+
+  .guru .tabel{
+    margin-bottom: 0;
+  }
+  .guru .tabel th{
+    font-size: 12px;
+    color: #fff;
+  }
+  .guru .tabel td{
+    font-size: 12px;
+  }
 }
 
 /*android landscape dan tablet*/
@@ -257,6 +319,16 @@ body {
 
   .total {
     padding: 25px;
+  }
+  .guru .tabel{
+    margin-bottom: 10px;
+  }
+  .guru .tabel th{
+    font-size: 15px;
+    color: #fff;
+  }
+  .guru .tabel td{
+    font-size: 15px;
   }
 }
 

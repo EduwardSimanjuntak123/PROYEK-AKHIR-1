@@ -3,9 +3,9 @@
 <div class="container-fluid text-center word">
     <div class="row">
       <div class="col">
-        <img src="{{ asset('img/1.jpg') }}" alt="foto_1" width="285" height="285">
-        <img src="{{ asset('img/1.jpg') }}" alt="foto_2" width="285" height="285">
-        <img src="{{ asset('img/1.jpg') }}" alt="foto_3" width="285" height="285">
+        <img src="gambar/ruang_lab.jpg" alt="foto_1" width="285" height="285">
+        <img src="gambar/sekolah3.jpg" alt="foto_2" width="285" height="285">
+        <img src="gambar/ruangkelas.jpg" alt="foto_3" width="285" height="285">
       </div>
       <div class="col">
         <h1>FASILITAS</h1>
@@ -27,19 +27,19 @@
     <div class="container-fluid text-center">
       <div class="row row-cols-2 justify-content-evenly">
         <div class="col-6">
-          <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
+          <img src="gambar/tanaman.jpg" width="300" height="300">
           <h2>Tata Usaha</h2>
         </div>
         <div class="col-6">
-          <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
+          <img src="" width="300" height="300">
           <h2>Ruang Lab</h2>
         </div>
         <div class="col-6">
-          <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
+          <img src="" width="300" height="300">
           <h2>Ruang Kelas</h2>
         </div>
         <div class="col-6">
-          <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
+          <img src="" width="300" height="300">
           <h2>Kebun Modern</h2>
         </div>
       </div>
@@ -54,220 +54,107 @@
     <div class="container-fluid text-center sarpras">
       <div class="row">
         <h1>DATA SARANA DAN PRASARANA (SARPRAS)</h1>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h2>NO</h2>
+        <div class="tabel">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th style="background-color: #00A9FF;">No</th>
+                <th style="background-color: #00A9FF;">Jenis Sarpras</th>
+                <th style="background-color: #00A9FF;">Jumlah Satuan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ruang Kelas</td>
+                <td>22</td>
+              </tr>
+              <tr class="genap">
+                <td>2</td>
+                <td>Ruang Perpustakaan</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Ruang Laboratorium</td>
+                <td>3</td>
+              </tr>
+              <tr class="genap">
+                <td>4</td>
+                <td>Ruang Praktik</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Ruang Pimpinan</td>
+                <td>1</td>
+              </tr>
+              <tr class="genap">
+                <td>6</td>
+                <td>Ruang Guru</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>Ruang Ibadah</td>
+                <td>0</td>
+              </tr>
+              <tr class="genap">
+                <td>8</td>
+                <td>Ruang UKS</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Ruang Toilet</td>
+                <td>14</td>
+              </tr>
+              <tr class="genap">
+                <td>10</td>
+                <td>Ruang Gudang</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Ruang Sirkulasi</td>
+                <td>0</td>
+              </tr>
+              <tr class="genap">
+                <td>12</td>
+                <td>Tempat Bermain/Olahraga</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Ruang Tata Usaha</td>
+                <td>0</td>
+              </tr>
+              <tr class="genap">
+                <td>14</td>
+                <td>Ruang Konseling</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>Ruang OSIS</td>
+                <td>0</td>
+              </tr>
+              <tr class="genap">
+                <td>16</td>
+                <td>Ruang Bangunan</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <th colspan="2">Total</th>
+                <th>52</th>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h2>Jenis Sarpras</h2>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h2>JUMLAH SATUAN</h2>
-        </div>
-      </div>
-
-      <div class="row ganjil">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>1</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Kelas</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>22</h3>
-        </div>
-      </div>
-
-      <div class="row genap">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>2</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Perpustakaan</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>1</h3>
-        </div>
-      </div>
-
-      <div class="row ganjil">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>3</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Laboratorium</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>3</h3>
-        </div>
-      </div>
-
-      <div class="row genap">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>4</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Praktik</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row ganjil">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>5</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Pimpinan</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>1</h3>
-        </div>
-      </div>
-
-      <div class="row genap">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>6</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Guru</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row ganjil">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>7</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Ibadah</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row genap">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>8</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang UKS</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row ganjil">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>9</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Toilet</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>14</h3>
-        </div>
-      </div>
-
-      <div class="row genap">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>10</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Gudang</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row ganjil">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>11</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Sirkulasi</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row genap">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>12</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Tempat Bermain/Olahraga</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row ganjil">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>13</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang TU</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row genap">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>14</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Konseling</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row ganjil">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>15</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang OSIS</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>0</h3>
-        </div>
-      </div>
-
-      <div class="row genap">
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>16</h3>
-        </div>
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Ruang Bangunan</h3>
-        </div>
-        <div class="col-2 col-md-2 col-lg-2">
-          <h3>11</h3>
-        </div>
-      </div>
-
-      <div class="row ganjil">
-        <div class="col-8 col-md-8 col-lg-8">
-          <h3>Total</h3>
-        </div>
-        <div class="col-4 col-md-4 col-lg-4">
-          <h3>52</h3>
-        </div>
-      </div>
 
     </div>
   </div>
+
 
 
 @endsection
