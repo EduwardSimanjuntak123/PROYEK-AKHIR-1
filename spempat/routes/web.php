@@ -52,6 +52,7 @@ Route::prefix('kritik')->group(function() {
         Route::post('/store', [gurudanstaffController::class, 'store'])->name('gurustaff.store');
         Route::get('/', [gurudanstaffController::class, 'index'])->name('gurustaff.index');
         Route::delete('/delete/{id}', [gurudanstaffController::class, 'delete'])->name('coba');
+        Route::put('/update/{id}', [gurudanstaffController::class, 'update'])->name('gurustaff.update');
     });
     Route::prefix('data_sekolah')->group(function () {
         Route::get('/', [data_sekolahController::class, 'index'])->name('data_sekolah.index');

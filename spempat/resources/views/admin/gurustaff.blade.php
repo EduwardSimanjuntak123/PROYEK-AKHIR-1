@@ -12,7 +12,7 @@
             @foreach ($data as $key => $item)
                 <div class="col mb-5">
                     <div class="card shadow p-3" style="width: 18rem; ">
-                        <center><img class="border shadow" src="{{ asset('storage/images/' . $item->file) }}"
+                        <center><img class="border shadow" src="{{ asset('storage/img/' . $item->file) }}"
                                 alt="Gambar berita" style="max-width: 100px;height:100px;">
                             <div class="card-body">
                                 <h5 class="card-title">{{ $data->firstItem() + $key }}. {{ $item->nama }}</h5>
