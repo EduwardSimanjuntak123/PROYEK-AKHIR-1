@@ -55,6 +55,7 @@
       <div class="row">
         <h1>DATA SARANA DAN PRASARANA (SARPRAS)</h1>
         <div class="tabel">
+          {{ $fasilitas->links() }}
           <table class="table table-bordered">
             <thead>
               <tr>
@@ -64,92 +65,16 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Ruang Kelas</td>
-                <td>22</td>
-              </tr>
-              <tr class="genap">
-                <td>2</td>
-                <td>Ruang Perpustakaan</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Ruang Laboratorium</td>
-                <td>3</td>
-              </tr>
-              <tr class="genap">
-                <td>4</td>
-                <td>Ruang Praktik</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Ruang Pimpinan</td>
-                <td>1</td>
-              </tr>
-              <tr class="genap">
-                <td>6</td>
-                <td>Ruang Guru</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Ruang Ibadah</td>
-                <td>0</td>
-              </tr>
-              <tr class="genap">
-                <td>8</td>
-                <td>Ruang UKS</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Ruang Toilet</td>
-                <td>14</td>
-              </tr>
-              <tr class="genap">
-                <td>10</td>
-                <td>Ruang Gudang</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>Ruang Sirkulasi</td>
-                <td>0</td>
-              </tr>
-              <tr class="genap">
-                <td>12</td>
-                <td>Tempat Bermain/Olahraga</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td>Ruang Tata Usaha</td>
-                <td>0</td>
-              </tr>
-              <tr class="genap">
-                <td>14</td>
-                <td>Ruang Konseling</td>
-                <td>0</td>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td>Ruang OSIS</td>
-                <td>0</td>
-              </tr>
-              <tr class="genap">
-                <td>16</td>
-                <td>Ruang Bangunan</td>
-                <td>11</td>
-              </tr>
-              <tr>
-                <th colspan="2">Total</th>
-                <th>52</th>
-              </tr>
+              @foreach ($fasilitas as $item)
+               <tr>
+                <td>{{ ($fasilitas->currentPage() - 1) * $fasilitas->perPage() + $loop->iteration }}</td>
+                <td>{{ $item->nama_sarpras }}</td>
+                <td>{{ $item->jumlah_sarpras }}</td>
+              </tr>   
+              @endforeach
             </tbody>
           </table>
+          
         </div>
 
     </div>

@@ -26,7 +26,7 @@ class userviewController extends Controller
     public function gurustaff()
     {
         $halaman ='gurustaff';
-        $gurustaff = gurustaff::Paginate(5);
+        $gurustaff = gurustaff::Paginate(10);
         return view('gurustaff', compact('gurustaff', 'halaman'));
     }
     public function show_berita(string $id)
@@ -58,7 +58,7 @@ class userviewController extends Controller
     public function fasilitas()
     {
         $halaman ='fasilitas';
-        $fasilitas = data_sarpras::get();
+        $fasilitas = data_sarpras::Paginate(6);
         return view('fasilitas', compact('fasilitas','halaman'));
     }
     public function sejarah()
@@ -73,14 +73,17 @@ class userviewController extends Controller
     }
     public function data_sekolah()
     {
-        $total_siswa = DB::table('data_sekolah')
-        ->where('id', 2)
+        $total_murid = DB::table('data_sekolah')
         ->select(DB::raw('SUM(jumlah_perempuan + jumlah_laki_laki) as total'))
+        ->where('id', 1) // Ubah kondisi ini sesuai dengan kebutuhan Anda
         ->first();
-        
+        $total_rombel = DB::table('data_sekolah')
+        ->select(DB::raw('SUM(jumlah_tingkat_7 + jumlah_tingkat_8 +jumlah_tingkat_9) as total_rombel'))
+        ->where('id', 1) // Ubah kondisi ini sesuai dengan kebutuhan Anda
+        ->first();
         $halaman ='data_sekolah';
         $data_sekolah = data_sekolah::get();
         $berita=berita::get();
-        return view('data_Sekolah',compact('total_siswa','data_sekolah','halaman','berita'));
+        return view('data_Sekolah',compact('total_rombel','total_murid','data_sekolah','halaman','berita'));
     }
 }

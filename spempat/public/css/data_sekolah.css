@@ -218,19 +218,16 @@ body {
   height: auto;
 }
 
-.kiri .dua {
+.kiri {
   text-align: center;
   background: rgba(217, 217, 217, 0.22);
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .dua h1 {
-  background: #D9D9D9;
+  background: #00A9FF;
 }
 
-.dua hr {
-  padding: 30px;
-}
 
 /*android*/
 @media only screen and (max-width : 767px) {
@@ -263,9 +260,7 @@ body {
       font-size: 1rem;
   }
 
-  .dua hr {
-      padding: 10px;
-  }
+ 
 }
 
 /*android landscape dan tablet landscape*/
@@ -295,9 +290,7 @@ body {
       font-size: 1.5rem;
   }
 
-  .dua hr {
-      padding: 15px;
-  }
+  
 }
 
 /*dekstop*/
@@ -327,9 +320,7 @@ body {
       font-size: 1.7rem;
   }
 
-  .dua hr {
-      padding: 19px;
-  }
+ 
 }
 
 /*kanan*/

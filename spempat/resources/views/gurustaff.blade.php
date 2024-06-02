@@ -27,6 +27,7 @@
 
 <div class="container guru">
     <div class="tabel">
+      {{ $gurustaff->links() }}
       <table class="table table-bordered">
         <thead>
           <tr>
@@ -36,21 +37,15 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td>Ruang Kelas</td>
-            <td>22</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Ruang Perpustakaan</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Ruang Laboratorium</td>
-            <td>3</td>
-          </tr>
+          @foreach ($gurustaff as $item)
+           <tr>
+            <td>{{ ($gurustaff->currentPage() - 1) * $gurustaff->perPage() + $loop->iteration }}</td>
+            <td>{{ $item->nama }}</td>
+            <td>{{ $item->jenis_kelamin }}</td>
+          </tr>   
+          @endforeach
+          
+         
         </tbody>
       </table>
     </div>
