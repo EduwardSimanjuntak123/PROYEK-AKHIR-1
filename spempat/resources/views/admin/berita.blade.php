@@ -137,7 +137,7 @@
         
         <table class="table mt-3 shadow">
             <thead>
-
+                
                 <tr class="table-secondary">
                     <th scope="col">Gambar </th>
                     <th scope="col">Judul Berita</th>
