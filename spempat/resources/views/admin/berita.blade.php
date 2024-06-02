@@ -86,7 +86,13 @@
                                     @enderror
                                 </div>
                             
-                                
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Gambar</label>
+                                    <input type="file" class="form-control" name="photo" id="exampleInputEmail1" value="{{ old('photo') }}">
+                                    @error('photo')
+                                        <small style="color: red">{{ $message }}</small>
+                                    @enderror
+                                </div>
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">isi berita</label>
                                     <textarea name="isi" class="form-control" id="exampleInputEmail1" placeholder="Enter content">{{ $item->isi }}</textarea>
@@ -144,7 +150,7 @@
                 @foreach ($data as $item)
                     <tr>
                         <td class="">
-                            <img class="border shadow" src="{{ asset('storage/images/' . $item->file) }}"
+                            <img class="border shadow" src="{{ asset('storage/img/' . $item->file) }}"
                                 style="height:100px;">
                             
                         </td>
