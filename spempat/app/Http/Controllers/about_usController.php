@@ -14,7 +14,7 @@ class about_usController extends Controller
     public function index(){
         $data = about_us::get();
         return view('admin.about_us',[
-            'title'=>'About Us'
+            'title'=>'Tentang Kami'
         ],compact('data'));
       
     }

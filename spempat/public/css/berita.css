@@ -117,368 +117,371 @@ body {
   }
   
   
-  
-  /*Kata Sambutan*/
-  .hero {
-    background-color: #fff;
-    padding: 3%;
-    position: relative;
-  }
-  
-  .scroll img {
-    width: 500px;
-    height: 400px;
-    margin-right: 2%;
-    margin-top: 50px;
-    object-fit: cover;
-    border-radius: 20px;
-    clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 15% 50%);
-  }
-  
-  .sambutan {
-    height: 500px;
-    border-radius: 15px;
-    background: #7fd4ff;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, ifr));
-    grid-gap:10px;
-  }
-  .text-light h3 {
-    margin-top: 4.5rem;
-    text-align: left;
-    padding-left: 80px;
-    font-size: 50px;  
-  }
-  
-  .text-light h4 {
-    text-align: left;
-    padding-left: 80px;
-    font-size: 40px;
-    margin-top: 1rem;
-  }
-  
-  .text-light p {
-    font-size: 26px;
-    text-align: left;
-    padding-left: 80px;
-  }
-  /*android*/
-  @media only screen and (max-width : 767px){
-    .hero{
-      padding: 2%;
-    }
-    .sambutan{
-      height: auto;
-      margin-top: 10px;
-    }
-    .scroll{
-   display: none;
-    }
-    .text-light h3, .text-light h4{
-      font-size: 25px;
-      padding-left: 25px;
-      margin-top: 10px;
-    }
-    .text-light p{
-      font-size: 18px;
-      padding-left: 30px;
-    }
-  }
-  /*android landscape dan tablet*/
-  @media only screen and (min-width: 768px) and (max-width : 992px){
-    .sambutan{
-      height: auto;
-      margin-top: 1rem;
-    }
-    .scroll img{
-      margin-top: 4rem;
-      padding-right: 5rem;
-      width: 390px;
-      height: 290px;
-    }
-    .text-light h3, .text-light h4{
-      font-size: 28px;
-    }
-    .text-light p{
-      font-size: 18px;
-    }
-  }
-  @media only screen and (min-width: 993px) and (max-width : 1200px){
-    .sambutan{
-      height: auto;
-      margin-top: 1rem;
-    }
-    .scroll img{
-      margin-top: 4rem;
-      padding-right: 3rem;
-      width: 400px;
-      height: 300px;
-    }
-    .text-light h3, .text-light h4{
-      font-size: 35px;
-    }
-    .text-light p{
-      font-size: 22px;
-    }
-  }
-
- 
-  .hero {
-    background-color: #fff;
+  /*tampilan awal*/
+.hero {
+  background-color: #fff;
 }
 
 .hero h1 {
-    text-align: center;
-    padding: 20px;
-    font-size: 65px;
+  text-align: center;
+  padding: 20px;
+  font-size: 65px;
 }
 
 .gambar img {
-    background-size: cover;
-    width: 480px;
-    height: 480px;
+  background-size: cover;
+  width: 100%;
+  height: auto;
 }
 
 .list {
-    padding: 20px;
-    background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
+  padding: 20px;
+  background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
+  margin-top: 3rem;
+}
+/*android*/
+@media only screen and (max-width : 767px){
+  .hero h1 {
+      font-size: 1.5rem;
+      padding: 5px;
+  }
+
+  .gambar img {
+      height: auto;
+  }
+
+  .list {
+      padding: 10px;
+      margin-top: 1rem;
+  }
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 768px) and (max-width : 992px){
+  .hero h1 {
+      font-size: 2rem;
+      padding: 9px;
+  }
+
+  .gambar img {
+      height: auto;
+  }
+
+  .list {
+      padding: 15px;
+      margin-top: 1.5rem;
+  }
 }
 
-.news{
-    background-color: #fff;
-    padding: 30px;
-    padding-bottom: 500px;
-}
-.news h1{
-    text-align: center;
-    font-weight: bold;
-}
-.news img{
-    width: 800px;
-    height: 400px;
-    object-fit: cover;
-}
-.news h2{
-    text-align: right;
-    font-weight: bold;
-}
-.news p{
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /Informasi/Kontak(footer)/ */
-footer {
-    background-color: #00A9FF;
-  }
-  
-  .kontak {
-    margin: 30px;
-  }
-  
-  .box {
-    background: rgba(217, 217, 217, 0.25);
-    padding: 15px;
-    color: #fff;
-  }
-  .tautan h6{
-    font-size: 1.7rem;
-  }
-  .box .tautan {
-    display: flex;
-  }
-  
-  .tautan .link {
-    padding-right: 50px;
-  }
-  
-  .box .sosmed {
-    margin-bottom: 30px;
-  }
-  
-  .up .info {
-    text-align: left;
-    display: flex;
-  }
-  
-  .up h2 {
-    font-size: 40px;
-    font-weight: bold;
-    text-decoration: underline black;
-  }
-  
-  .up h4 {
-    font-size: 30px;
-  }
-  
-  .icon {
-    margin-bottom: 58px;
-    font-size: 3.5rem;
-  }
-  .box .garis{
-    margin-top: 3rem;
-  }
-  
-  /* /android/ */
-  @media only screen and (max-width : 767px) {
-    .up h2 {
-        font-size: 25px;
-    }
-  
-    .up h4 {
-        font-size: 18px;
-    }
-  
-    .icon {
-        font-size: 2.4rem;
-    }
-    .tautan h6{
-      font-size: 1rem;
-    }
-  }
-  
-  /* /android landscape dan tablet landscape/ */
-  @media only screen and (min-width: 768px) and (max-width : 992px) {
-    .up h2 {
-        font-size: 32px;
-    }
-  
-    .up h4 {
-        font-size: 25px;
-    }
-    .tautan h6{
-      font-size: 1.15rem;
-    }
-  }
-  @media only screen and (min-width: 993px) and (max-width : 1200px){
-    .up h2 {
-      font-size: 35px;
-  }
-  
-  .up h4 {
-      font-size: 27px;
-  }
-  .icon {
-    font-size: 2.4rem;
-  }
-  .tautan h6{
-    font-size: 1.4rem;
-  }
-  }
-  /* /footer/ */
-  .footer {
-    margin-top: 20px;
-    padding: 25px;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  
-  .footer i {
-    font-size: 4rem;
-  }
-  
-  .footer h4 {
-    font-size: 20px;
-    color: #fff;
-    text-align: left;
-    margin-top: 10px;
-  }
-  
-  .footer .info {
-    display: flex;
-    flex-direction: row;
-  }
-  .info .garis1{
-    margin-left: 12.2rem;
-  }
-  .info .garis2{
-    margin-left: 3rem;
-  }
-  
-  /* /android/ */
-  @media only screen and (max-width : 767px) {
-    .footer {
-        padding: 10px;
-    }
-  
-    .footer i {
-        font-size: 2.5rem;
-    }
-  
-    .footer h4 {
-        font-size: 15px;
-    }
-    .info .garis1, .info .garis2{
-      display: none;
-    }
-    .copyright div{
-      font-size: 13px;
-    }
-  }
-  
-  /* /android landscape dan tablet landscape/ */
-  @media only screen and (min-width: 768px) and (max-width : 992px) {
-    .footer {
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px){ 
+  .hero h1 {
+      font-size: 2.7rem;
       padding: 13px;
   }
-    .footer h4 {
-        font-size: 15px;
-    }
-  
-    .footer i {
-        font-size: 3rem;
-    }
-  
-    .footer h4 {
-        font-size: 17px;
-    }
-    .info .garis1, .info .garis2{
-      display: none;
-    }
-    .copyright div{
-      font-size: 17px;
-    }
+
+  .gambar img {
+      height: auto;
   }
-  /* /dekstop/ */
-  @media only screen and (min-width: 993px) and (max-width : 1199px){
-    .footer {
-      padding: 15px;
+
+  .list {
+      padding: 18px;
+      margin-top: 2rem;
   }
-    .footer h4 {
+}
+
+
+
+/*Tampilan isi berita*/
+.news{
+  background-color: #ffffff;
+  padding: 30px;
+  padding-bottom: 50px;
+}
+.news h1{
+  text-align: center;
+  font-weight: bold;
+}
+.news img{
+  width: 800px;
+  height: auto;
+  
+}
+.news h2{
+  margin-left: 800px;
+  font-weight: bold;
+}
+.news p{
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+/*android*/
+@media only screen and (max-width : 767px){
+  .news{
+      padding: 8px;
+      padding-bottom: 20px;
+  }
+  .news h1{
+      font-size: 1.5rem;
+  }
+  .news img{
+      height: auto;
+      width: 400px;
+  }
+  .news h2{
+      font-size: 1.15rem;
+      margin-left: 230px;
+  }
+  .news p{
+      text-align: left;
+      font-size: 1.2rem;
+      padding: 3px;
+  }
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 768px) and (max-width : 992px){
+  .news{
+      padding: 12px;
+      padding-bottom: 30px;
+  }
+  .news h1{
+      font-size: 2rem;
+  }
+  .news img{
+      height: auto;
+      width: 600px;
+  }
+  .news h2{
+      font-size: 1.5rem;
+      margin-left: 500px;
+  }
+  .news p{
+      text-align: left;
+      font-size: 1.5rem;
+      padding: 5px;
+  }
+}
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1200px){
+  .news{
+      padding: 16px;
+  }
+  .news h1{
+      font-size: 2.5rem;
+  }
+  .news img{
+      height: auto;
+      width: 700px;
+  }
+  .news h2{
+      font-size: 1.8rem;
+  }
+  .news p{
+      text-align: left;
+      font-size: 1.8rem;
+      padding: 7px;
+  } 
+}
+
+
+/*Informasi/Kontak(footer)*/
+footer {
+  background-color: #00A9FF;
+}
+
+.kontak {
+  margin: 30px;
+}
+
+.box {
+  background: rgba(217, 217, 217, 0.25);
+  padding: 15px;
+  color: #fff;
+}
+.tautan h6{
+  font-size: 1.7rem;
+}
+.tautan a{
+  text-decoration: none;
+  color: white;
+}
+.box .tautan {
+  display: flex;
+}
+
+.tautan .link {
+  padding-right: 50px;
+}
+
+.box .sosmed {
+  margin-bottom: 30px;
+}
+.box a {
+  text-decoration: none;
+  color: white;
+}
+
+.up .info {
+  text-align: left;
+  display: flex;
+}
+
+.up h2 {
+  font-size: 40px;
+  font-weight: bold;
+  /* text-decoration: underline rgb(255, 255, 255); */
+}
+
+.up h4 {
+  font-size: 30px;
+}
+
+.icon {
+  margin-bottom: 58px;
+  font-size: 3.5rem;
+}
+.box .garis{
+  margin-top: 3rem;
+}
+
+/*android*/
+@media only screen and (max-width : 767px) {
+  .up h2 {
+      font-size: 25px;
+  }
+
+  .up h4 {
+      font-size: 18px;
+  }
+
+  .icon {
+      font-size: 2.4rem;
+  }
+  .tautan h6{
+    font-size: 1rem;
+  }
+}
+
+/*android landscape dan tablet landscape*/
+@media only screen and (min-width: 768px) and (max-width : 992px) {
+  .up h2 {
+      font-size: 32px;
+  }
+
+  .up h4 {
+      font-size: 25px;
+  }
+  .tautan h6{
+    font-size: 1.15rem;
+  }
+}
+@media only screen and (min-width: 993px) and (max-width : 1200px){
+  .up h2 {
+    font-size: 35px;
+}
+
+.up h4 {
+    font-size: 27px;
+}
+.icon {
+  font-size: 2.4rem;
+}
+.tautan h6{
+  font-size: 1.4rem;
+}
+}
+/*footer*/
+.footer {
+  margin-top: 20px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer i {
+  font-size: 4rem;
+}
+
+.footer h4 {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.footer .info {
+  display: flex;
+  flex-direction: row;
+}
+.info .garis1{
+  margin-left: 12.2rem;
+}
+.info .garis2{
+  margin-left: 3rem;
+}
+
+/*android*/
+@media only screen and (max-width : 767px) {
+  .footer {
+      padding: 10px;
+  }
+
+  .footer i {
+      font-size: 2.5rem;
+  }
+
+  .footer h4 {
       font-size: 15px;
   }
-  
-  .footer i {
-      font-size: 3.7rem;
+  .info .garis1, .info .garis2{
+    display: none;
   }
-  
+  .copyright div{
+    font-size: 10px;
+  }
+}
+
+/*android landscape dan tablet landscape*/
+@media only screen and (min-width: 768px) and (max-width : 992px) {
+  .footer {
+    padding: 13px;
+}
+  .footer h4 {
+      font-size: 15px;
+  }
+
+  .footer i {
+      font-size: 3rem;
+  }
+
   .footer h4 {
       font-size: 17px;
   }
-  .info .garis1{
-    margin-left: 6rem;
+  .info .garis1, .info .garis2{
+    display: none;
   }
-  .info .garis2{
-    margin-left:1rem;
-  }
-  .info{
-    width: 500px;
-  }
-  .copyright div{
-    font-size: 22px;
-  }
-  }
-  
+}
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1195px){
+  .footer {
+    padding: 15px;
+}
+  .footer h4 {
+    font-size: 15px;
+}
+
+.footer i {
+    font-size: 3.7rem;
+}
+
+.footer h4 {
+    font-size: 17px;
+}
+.info .garis1{
+  margin-left: 6rem;
+}
+.info .garis2{
+  margin-left: 1rem;
+}
+}

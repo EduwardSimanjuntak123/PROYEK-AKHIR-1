@@ -5,7 +5,7 @@
 
 <table class="table table-border  caption-top shadow">
     <caption>
-        <h1>About Us</h1>
+        <h1>Tentang Kami</h1>
     </caption>
     <tr>
         <th class="col-md-6 table-secondary">Email</tj>
@@ -22,7 +22,7 @@
     
     
     <tr>
-        <th class="col-md-6 table-secondary">ACTION </th>
+        <th class="col-md-6 table-secondary">Aksi </th>
         <td class="col-md-6 ">
             <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#{{ 'staticBackdropeditaboutus' . $item->id }}">
                 <i class="lni lni-pencil"></i>
@@ -76,7 +76,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                            <button type="submit" class="btn btn-primary">Perbarui</button>
+                            <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
                     </form>
                 </div>

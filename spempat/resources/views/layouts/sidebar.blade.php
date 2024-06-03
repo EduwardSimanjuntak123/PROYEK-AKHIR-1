@@ -2,14 +2,20 @@
     <div class="d-flex">
         <button id="toogle-btn" type="button"> <i class="lni lni-grid-alt"></i></button>
         <div class="sidebar-logo">
-            <a href="{{ route('dashboard') }}"> smp n 4 balige</a>
+            <a href="{{ route('dashboard') }}"> SMP N 4 Balige</a>
         </div>
     </div>
     <ul class="sidebar-nav">
         <li class="sidebar-item">
             <a href="{{ route('dashboard') }}" class="sidebar-link">
                 <i class="lni lni-dashboard"></i>
-                <span>Dashboard</span>
+                <span>Beranda</span>
+            </a>
+        </li>
+        <li class="sidebar-item ">
+            <a href="{{ route('kritik') }}" class="sidebar-link ">
+                <i class="lni lni-wechat"></i>
+                <span>Kritik dan saran</span>
             </a>
         </li>
         <li class="sidebar-item ">
@@ -21,19 +27,19 @@
         <li class="sidebar-item">
             <a href="{{ route('gurustaff.index') }}" class="sidebar-link">
                 <i class="lni lni-users"></i>
-                <span>GURU DAN STAFF</span>
+                <span>Guru dan Staff</span>
             </a>
         </li>
         <li class="sidebar-item">
             <a href="{{ route('data_sekolah.index') }}" class="sidebar-link">
                 <i class="lni lni-folder"></i>
-                <span>DATA SEKOLAH</span>
+                <span>Data Sekolah</span>
             </a>
         </li>
         <li class="sidebar-item">
             <a href="{{ route('data_sarpras.index') }}" class="sidebar-link">
                 <i class="lni lni-dropbox"></i>
-                <span>DATA SARPRAS</span>
+                <span>Data Sarpras</span>
             </a>
         </li>
         <li class="sidebar-item">
@@ -52,8 +58,8 @@
         
         <li class="sidebar-item">
             <a href="{{ route('about_us.index') }}" class="sidebar-link">
-                <i class="lni lni-cogs"></i>
-                <span>ABOUT US</span>
+                <i class="lni lni-flag-alt"></i>
+                <span>Tentang Kami</span>
             </a>
         </li>
     </ul>

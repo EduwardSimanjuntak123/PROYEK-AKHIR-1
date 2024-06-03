@@ -1,10 +1,9 @@
 @extends('layouts_user.main')
 @section('content')
-    <div class="hero ">
+    <div class="hero">
         <div class="container text-center sambutan">
             <div class="row justify-content-evenly">
-                <div class=" col-xs-6 col-md-6 col-xl-6 text-light">
-
+                <div class=" col-xs-6 col-md-6 text-light">
                     <h3>Selamat Datang</h3>
                     <h4>Website SMPN 4 Balige</h4>
                     <p>Menyambut anda di halaman utama
@@ -12,8 +11,8 @@
                         pengetahuan dan pengalaman yang
                         tak terbatas</p>
                 </div>
-                <div class=" col-xs-6 col-md-6 col-xl-6 scroll pb-5">
-                    <img src="{{ asset('img/2.jpg') }}">
+                <div class=" col-xs-6 col-md-6 mb-5 scroll1">
+                    <img src={{ asset('img/2.jpg') }}>
                 </div>
             </div>
         </div>
@@ -39,32 +38,39 @@
                         menerapkan
                         pembelajaran UKBM dalam bentuk eLearning.
                         Oleh karena itu, kami berharap melalui pembelajaran elearning ini SMP Negeri 4 Balige menjadi bagian
-                        daripendidikan yang bermutu dan berkualitas.
-                    </p>
+                        dari
+                        pendidikan yang bermutu dan berkualitas.</p>
                 </div>
             </div>
         </div>
     </div>
     </div>
+
     <div class="list">
     </div>
+
     <!-- Berita/Pengumuman -->
     <div class="latar">
         <div class="container text-center berita">
             <h1 style="text-align: left;">B E R I T A</h1>
             <div class="row justify-content-evenly">
-                @foreach ($berita as $item)
-                    <div class="col-10 col-lg-5 news">
-                        <img src="{{ asset('storage/images/' . $item->file) }}" width="100" height="100">
-                        <div>
-                            <h5 style="-webkit-line-clamp: 1; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden;">{{ $item->judul }}</h5>
-                            <p style="-webkit-line-clamp: 1; display: -webkit-box; -webkit-box-orient: vertical;overflow: hidden;">{{ $item->isi }}</p>
-                            <u>{{ $item->created_at }}</u><br>
-                            <a href="{{ route('berita.show', ['id' => $item->id]) }}">Selengkapnnya..</a>
-                        </div>
+@foreach ($berita as $item)
+                <div class="col-10 col-lg-5 news ">
+                    <div >
+                        <img src="{{ asset('storage/img/'. $item->file) }}" width="100" height="100">
+
                     </div>
+                    <div class="text-start" >
+                        <h5 class="text-start" style="-webkit-line-clamp:2; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden;">{{ $item->judul }}</h5>
+                        <a class="text-start" href="{{ route('berita.show' , ['id'=>$item->id]) }}">Selengkapnnya..</a>
+                    </div>
+                </div>
                 @endforeach
             </div>
+
+
+
+
         </div>
     </div>
 @endsection

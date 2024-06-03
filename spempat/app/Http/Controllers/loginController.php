@@ -19,7 +19,7 @@ class loginController extends Controller
        
         Alert::success('Anda Berhasil Login', 'Success Message');
         return view('admin.dashboard',[
-            'title'=>'Dashboard',
+            'title'=>'Beranda',
             'totalDataGuru' => $totalDataGuru,
             'totalDataSarpras' => $totalDataSarpras,
             'totalDataGaleri' => $totalDataGaleri,
