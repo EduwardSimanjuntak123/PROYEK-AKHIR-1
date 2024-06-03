@@ -11,7 +11,7 @@
                         pengetahuan dan pengalaman yang
                         tak terbatas</p>
                 </div>
-                <div class=" col-xs-6 col-md-6 mb-5 scroll">
+                <div class=" col-xs-6 col-md-6 mb-5 scroll1">
                     <img src={{ asset('img/2.jpg') }}>
                 </div>
             </div>
@@ -55,12 +55,14 @@
             <h1 style="text-align: left;">B E R I T A</h1>
             <div class="row justify-content-evenly">
 @foreach ($berita as $item)
-                <div class="col-10 col-lg-5 news">
-                    <img src="{{ asset('storage/img/'. $item->file) }}" width="100" height="100">
-                    <div style="padding-left: 1rem">
-                        <h4 class="text-start" style="-webkit-line-clamp:2; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden; margin-left:10rem;">{{ $item->judul }}</h4>
+                <div class="col-10 col-lg-5 news ">
+                    <div >
+                        <img src="{{ asset('storage/img/'. $item->file) }}" width="100" height="100">
 
-                        <a href="{{ route('berita.show' , ['id'=>$item->id]) }}">Selengkapnnya..</a>
+                    </div>
+                    <div class="text-start" >
+                        <h5 class="text-start" style="-webkit-line-clamp:2; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden;">{{ $item->judul }}</h5>
+                        <a class="text-start" href="{{ route('berita.show' , ['id'=>$item->id]) }}">Selengkapnnya..</a>
                     </div>
                 </div>
                 @endforeach

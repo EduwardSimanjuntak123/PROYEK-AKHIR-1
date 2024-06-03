@@ -5,4 +5,4 @@ const sr = ScrollReveal ({
     reset: true
 });
 
-sr.reveal('.scroll', {delay:200, origin:'right'});
+sr.reveal('.scroll1', {delay:200, origin:'right'});

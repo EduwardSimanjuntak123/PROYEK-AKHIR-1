@@ -127,7 +127,7 @@ body {
   padding: 2%;
 }
 
-.scroll img {
+.scroll1 img {
   width: 500px;
   height: 400px;
   margin-right: 2%;
@@ -144,10 +144,12 @@ body {
   background: #7fd4ff;
 }
 .text-light h3 {
-  margin-top: 4.5rem;
+  margin-top: 7rem;
   text-align: left;
   padding-left: 80px;
   font-size: 50px;  
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+
 }
 
 .text-light h4 {
@@ -155,12 +157,16 @@ body {
   padding-left: 80px;
   font-size: 40px;
   margin-top: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+
 }
 
 .text-light p {
   font-size: 26px;
   text-align: left;
   padding-left: 80px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
 }
 /*android*/
 @media only screen and (max-width : 767px){
@@ -172,7 +178,7 @@ body {
     height: auto;
     padding: 15px;
   }
-  .scroll{
+  .scroll1{
  display: none;
   }
   .text-light h3{
@@ -199,7 +205,7 @@ body {
     padding: 18px;
     height: auto;
   }
-  .scroll img{
+  .scroll1 img{
     padding-right: 6rem;
     width: 390px;
     height: 290px;
@@ -227,7 +233,7 @@ body {
     height: auto;
     padding: 21px;
   }
-  .scroll img{
+  .scroll1 img{
     padding-right: 3rem;
     width: 400px;
     height: 300px;
@@ -255,7 +261,9 @@ body {
 
 .list {
   height: 40px;
-  background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
+  background: #00A9FF;
+
+
 }
 .person .col{
   flex-wrap: wrap;
@@ -266,12 +274,19 @@ body {
 }
 .hero1 h2{
   font-size: 45px;
+  text-shadow: 2px 2px 5px rgb(250, 250, 250);
+
+
 }
 .hero1 h3{
   font-size: 35px;
+  text-shadow: 2px 2px 5px rgb(250, 250, 250);
+
 }
 .hero1 p{
   font-size: 23px;
+  text-shadow: 2px 2px 5px rgb(250, 250, 250);
+
 }
 .hero1 {
   padding-left: 50px;
@@ -342,61 +357,48 @@ body {
 }
 
 /* Berita*/
-.latar {
-  background-color: #fff;
-}
+
 
 .berita {
   padding-bottom: 30px;
 }
 
 .berita h1 {
-  padding-left: 15px;
-  text-decoration: underline;
+  padding: 2rem;
+  text-shadow: 2px 2px 5px rgb(250, 250, 250);
   font-weight: bold;
-  padding: 30px;
+ 
 }
 
-.berita h2 {
-  font-weight: bold;
-}
 
-.berita h3 {
-  font-size: 18px;
-}
 
 .news {
-  background: #89CFF3;
-  padding: 25px;
-  margin-bottom: 40px;
-  border-radius: 10px;
-  justify-content: space-between;
-  color: #fff;
+display: flex;
+gap: 2rem;
+background: #7fd4ff;
+border-radius: 18px;
+padding: 1rem;
+padding-left: 2rem;
+margin: 2rem;
+color: #fff;
 }
-
 .news img {
-  width: 30%;
-  height: 10rem;
-  float: left;
-  margin-left: 20px;
+  margin-left: 1rem;
+}
+.news a {
+text-align: left;
 }
 /*android*/
 @media only screen and (max-width : 767px){
   .berita h1{
     font-size: 20px;
   }
-  .berita h2{
-    font-size: 20px;
-  }
-  .berita h3{
-    font-size: 15px;
-  }
-  .news img{
-    margin-left: 10px;
-    height: auto;
-  }
+ 
+ .news h5{
+  font-size: 14px;
+ }
   .news a{
-    font-size: 1rem;
+    font-size: 12px ;
   }
 }
 
@@ -405,12 +407,7 @@ body {
   .berita h1{
     font-size: 28px;
   }
-  .berita h2{
-    font-size: 29px;
-  }
-  .berita h3{
-    font-size: 26px;
-  }
+ 
   .news img{
     height: auto;
   }
