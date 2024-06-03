@@ -40,7 +40,7 @@ $validator=Validator::make($request->all(),
 
         $photo =$request->file('photo');
         $filename = date('Y-m-d_H-i-s').$photo->getClientOriginalName();//mengubah nama ke database
-        $path ='images/'.$filename;
+        $path ='img/'.$filename;
 
         Storage::disk('public')->put($path,file_get_contents($photo));
 
@@ -76,7 +76,7 @@ $validator=Validator::make($request->all(),
 
             // Ambil data berita yang akan diupdate
             $berita = Berita::findOrFail($id);
-
+// $nonExistentProperty = $user->nonExistentProperty;//bila ingin tau fungsi trycatch
             // Hapus foto lama jika ada foto baru yang diunggah
             if ($request->hasFile('photo')) {
                 $filenameLama = $berita->file;
@@ -84,7 +84,7 @@ $validator=Validator::make($request->all(),
                     // Hapus foto lama dari penyimpanan
                     Storage::disk('public')->delete('img/' . $filenameLama);
                 }
-
+                
                 // Simpan foto baru
                 $photo = $request->file('photo');
                 $filenameBaru = date('Y-m-d') . $photo->getClientOriginalName();

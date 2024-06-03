@@ -39,21 +39,7 @@
                 <li class="nav-item title">
                     <a class="nav-link" href="/About_us">Tentang Kami</a>
                 </li>
-                @if (Route::has('login'))
-                    <li class="-mx-3 flex flex-1 justify-end">
-                        @auth
-                            <a href="{{ route('dashboard') }}"
-                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                                Dashboard
-                            </a>
-                        @else
-                            <a href="{{ route('login') }}"
-                                class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white">
-                                Log in
-                            </a>
-                        @endauth
-                    </li>
-                @endif
+               
             </ul>
         </div>
     </nav>

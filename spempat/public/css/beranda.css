@@ -1,429 +1,414 @@
 body {
-  margin: 0;
-  font-family: "Kaisei Tokumin", serif;
-  font-weight: 800; /* Ubah warna latar belakang body */
+    margin: 0;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 800; /* Ubah warna latar belakang body */
 }
 
 /* CSS untuk header */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #00A9FF;
-  padding: 10px 20px;
-  font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00a9ff;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .logo img {
-  width: 65px;
-  height: 65px;
-  margin-right: 20px;
-  background: none;
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    background: none;
 }
 
 .navbar-nav {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  color: #fff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
 }
 
 .navbar-nav .nav-item {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-item a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 5px 10px;
-  border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .navbar-nav .nav-item a:hover {
-  background: #77C8FE;
+    background: #77c8fe;
 }
 
 .navbar-nav .nav-item a {
-  color: #fff;
+    color: #fff;
 }
 
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  z-index: 1;
-  border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
 }
 
 .dropdown-menu li {
-  padding: 10px;
+    padding: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 
 .dropdown {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-toggle {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {
-  .logo img {
-    width: 45px;
-    height: 45px;
-    margin-right: 10px;
-  }
+    .logo img {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+    }
 
-  .logo {
-    font-size: 20px;
-  }
+    .logo {
+        font-size: 20px;
+    }
 
-  .navbar-nav .nav-item a {
-    font-size: 20px;
-    padding: 5px 8px;
-  }
+    .navbar-nav .nav-item a {
+        font-size: 20px;
+        padding: 5px 8px;
+    }
 
-  .text-light h2 {
-    margin-left: 20px;
-    width: auto;
-  }
+    .text-light h2 {
+        margin-left: 20px;
+        width: auto;
+    }
 
-  .text-light h3,
-  .text-light h4,
-  .text-light p {
-    padding-left: 20px;
-  }
+    .text-light h3,
+    .text-light h4,
+    .text-light p {
+        padding-left: 20px;
+    }
 
-  .shape {
-    width: 300px;
-    height: 250px;
-  }
+    .shape {
+        width: 300px;
+        height: 250px;
+    }
 }
-
 
 /*Kata Sambutan*/
 .hero {
-  background-color: #fff;
-  position: relative;
-  padding: 2%;
+    background-color: #fff;
+    position: relative;
+    padding: 2%;
 }
 
 .scroll1 img {
-  width: 500px;
-  height: 400px;
-  margin-right: 2%;
-  margin-top: 50px;
-  object-fit: cover;
-  border-radius: 20px;
-  clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 15% 50%);
+    width: 500px;
+    height: 400px;
+    margin-right: 2%;
+    margin-top: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+    clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 35% 100%, 15% 50%);
 }
 
 .sambutan {
-  margin-top: 20px;
-  height: 500px;
-  border-radius: 15px;
-  background: #7fd4ff;
+    margin-top: 20px;
+    height: 500px;
+    border-radius: 15px;
+    background: #7fd4ff;
 }
 .text-light h3 {
-  margin-top: 7rem;
-  text-align: left;
-  padding-left: 80px;
-  font-size: 50px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
-
+    margin-top: 7rem;
+    text-align: left;
+    padding-left: 80px;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
 }
 
 .text-light h4 {
-  text-align: left;
-  padding-left: 80px;
-  font-size: 40px;
-  margin-top: 1rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
-
+    text-align: left;
+    padding-left: 80px;
+    font-size: 40px;
+    margin-top: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
 }
 
 .text-light p {
-  font-size: 26px;
-  text-align: left;
-  padding-left: 80px;
-  text-shadow: 2px 2px 5px rgb(0, 0, 0);
-
+    font-size: 26px;
+    text-align: left;
+    padding-left: 80px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 /*android*/
-@media only screen and (max-width : 767px){
-  .hero{
-    padding: 1%;
-  }
-  .sambutan{
-    margin-top: 0;
-    height: auto;
-    padding: 15px;
-  }
-  .scroll1{
- display: none;
-  }
-  .text-light h3{
-    font-size: 25px;
-    padding-left: 25px;
-    margin-top: 1rem;
-  }
-  .text-light h4{
-    font-size: 20px;
-    padding-left: 25px;
-  }
-  .text-light p{
-    font-size: 19px;
-    padding-left: 25px;
-  }
+@media only screen and (max-width: 767px) {
+    .hero {
+        padding: 1%;
+    }
+    .sambutan {
+        margin-top: 0;
+        height: auto;
+        padding: 15px;
+    }
+    .scroll1 {
+        display: none;
+    }
+    .text-light h3 {
+        font-size: 25px;
+        padding-left: 25px;
+        margin-top: 1rem;
+    }
+    .text-light h4 {
+        font-size: 20px;
+        padding-left: 25px;
+    }
+    .text-light p {
+        font-size: 19px;
+        padding-left: 25px;
+    }
 }
 /*android landscape dan tablet*/
-@media only screen and (min-width: 768px) and (max-width : 992px){
-  .hero{
-    padding: 3%;
-  }
-  .sambutan{
-    margin-top: 0;
-    padding: 18px;
-    height: auto;
-  }
-  .scroll1 img{
-    padding-right: 6rem;
-    width: 390px;
-    height: 290px;
-  }
-  .text-light h3{
-    margin-top: 3rem;
-    padding-left: 50px;
-    font-size: 30px;
-  }
-  .text-light h4{
-    padding-left: 50px;
-    font-size: 25px;
-  }
-  .text-light p{
-    font-size: 22px;
-    padding-left: 50px;
-  }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .hero {
+        padding: 3%;
+    }
+    .sambutan {
+        margin-top: 0;
+        padding: 18px;
+        height: auto;
+    }
+    .scroll1 img {
+        padding-right: 6rem;
+        width: 390px;
+        height: 290px;
+    }
+    .text-light h3 {
+        margin-top: 3rem;
+        padding-left: 50px;
+        font-size: 30px;
+    }
+    .text-light h4 {
+        padding-left: 50px;
+        font-size: 25px;
+    }
+    .text-light p {
+        font-size: 22px;
+        padding-left: 50px;
+    }
 }
-@media only screen and (min-width: 993px) and (max-width : 1200px){
-  .hero{
-    padding: 3%;
-  }
-  .sambutan{
-    margin-top: 1.4rem;
-    height: auto;
-    padding: 21px;
-  }
-  .scroll1 img{
-    padding-right: 3rem;
-    width: 400px;
-    height: 300px;
-  }
-  .text-light h3{
-    margin-top: 3.5rem;
-    font-size: 35px;
-    padding-left: 60px;
-  }
-  .text-light h4{
-    font-size: 30px;
-    padding-left: 60px;
-  }
-  .text-light p{
-    font-size: 25px;
-    padding-left: 60px;
-  }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .hero {
+        padding: 3%;
+    }
+    .sambutan {
+        margin-top: 1.4rem;
+        height: auto;
+        padding: 21px;
+    }
+    .scroll1 img {
+        padding-right: 3rem;
+        width: 400px;
+        height: 300px;
+    }
+    .text-light h3 {
+        margin-top: 3.5rem;
+        font-size: 35px;
+        padding-left: 60px;
+    }
+    .text-light h4 {
+        font-size: 30px;
+        padding-left: 60px;
+    }
+    .text-light p {
+        font-size: 25px;
+        padding-left: 60px;
+    }
 }
 
 /* CSS untuk person section */
 .person {
-  background-image: url(/img/murid.jpg);
-  background-size: cover;
+    background-image: url(/img/murid.jpg);
+    background-size: cover;
 }
 
 .list {
-  height: 40px;
-  background: #00A9FF;
-
-
+    height: 40px;
+    background: linear-gradient(90deg, #00a9ff 0%, #e6e8ff 100%);
 }
-.person .col{
-  flex-wrap: wrap;
+.person .col {
+    flex-wrap: wrap;
 }
-.person img{
-  width: 100%;
-  height: auto;
+
+.hero1 h2 {
+    font-size: 45px;
 }
-.hero1 h2{
-  font-size: 45px;
-  text-shadow: 2px 2px 5px rgb(250, 250, 250);
-
-
+.hero1 h3 {
+    font-size: 35px;
 }
-.hero1 h3{
-  font-size: 35px;
-  text-shadow: 2px 2px 5px rgb(250, 250, 250);
-
-}
-.hero1 p{
-  font-size: 23px;
-  text-shadow: 2px 2px 5px rgb(250, 250, 250);
-
+.hero1 p {
+    font-size: 23px;
 }
 .hero1 {
-  padding-left: 50px;
-  margin: 20px;
-  font-weight: bold;
-  text-align: left;
+    padding-left: 50px;
+    margin: 20px;
+    font-weight: bold;
+    text-align: left;
 }
-/*android*/
-@media only screen and (max-width : 767px){
-  .hero1 {
-    padding-left: 0.7rem;
-  }
-  .hero1 h2{
-    font-size: 1.2rem;
-  }
-  .hero1 h3{
-    font-size: 1.1rem;
-  }
-  .hero1 p{
-    font-size: 0.9rem;
-  }
-  .person img{
-    display: none;
-  }
+/* /android/ */
+@media only screen and (max-width: 767px) {
+    .hero1 {
+        padding-left: 0.7rem;
+    }
+    .hero1 h2 {
+        font-size: 1.2rem;
+    }
+    .hero1 h3 {
+        font-size: 1.1rem;
+    }
+    .hero1 p {
+        font-size: 0.9rem;
+    }
+    .person img {
+        display: none;
+    }
 }
-/*android landscape dan tablet*/
-@media only screen and (min-width: 768px) and (max-width : 992px){
-  .hero1 {
-    padding-left: 1rem;
-  }
-  .hero1 h2{
-    font-size: 1.8rem;
-  }
-  .hero1 h3{
-    font-size: 1.4rem;
-    margin-top: 1rem;
-  }
-  .hero1 p{
-    font-size: 0.9rem;
-  }
-  .person img{
-    width: 20rem;
-    height: auto;
-    margin-top: 1rem;
-  }
+/* /android landscape dan tablet/ */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .hero1 {
+        padding-left: 1rem;
+    }
+    .hero1 h2 {
+        font-size: 1.8rem;
+    }
+    .hero1 h3 {
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+    .hero1 p {
+        font-size: 0.9rem;
+    }
+    .person img {
+        width: 20rem;
+        height: auto;
+    }
 }
-/*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1200px){
-  .hero1 {
-    padding-left: 1rem;
-    margin-top: 1.5rem;
-  }
-  .hero1 h2{
-    font-size: 2.2rem;
-  }
-  .hero1 h3{
-    font-size: 1.8rem;
-    margin-top: 1rem;
-  }
-  .hero1 p{
-    font-size: 1.2rem;
-  }
-  .person img{
-    width: 23rem;
-    height: auto;
-    margin-top: 2rem;
-  }
+/* /dekstop/ */
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+    .hero1 {
+        padding-left: 1rem;
+        margin-top: 1.5rem;
+    }
+    .hero1 h2 {
+        font-size: 2.2rem;
+    }
+    .hero1 h3 {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+    .hero1 p {
+        font-size: 1.2rem;
+    }
+    .person img {
+        width: 23rem;
+        height: auto;
+        margin-top: 2rem;
+    }
 }
-
 /* Berita*/
 
-
 .berita {
-  padding-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 .berita h1 {
-  padding: 2rem;
-  text-shadow: 2px 2px 5px rgb(250, 250, 250);
-  font-weight: bold;
-
+    padding: 2rem;
+    text-shadow: 2px 2px 5px rgb(250, 250, 250);
+    font-weight: bold;
 }
-
-
 
 .news {
-display: flex;
-gap: 2rem;
-background: #7fd4ff;
-border-radius: 18px;
-padding: 1rem;
-padding-left: 2rem;
-margin: 2rem;
-color: #fff;
+    display: flex;
+    gap: 2rem;
+    background: #7fd4ff;
+    border-radius: 18px;
+    padding: 1rem;
+    padding-left: 2rem;
+    margin: 2rem;
 }
 .news img {
-  margin-left: 1rem;
+    margin-left: 1rem;
+    border-radius: 8px;
 }
 .news a {
-text-align: left;
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+}
+.news a :hover {
+    color: #042182;
 }
 /*android*/
-@media only screen and (max-width : 767px){
-  .berita h1{
-    font-size: 20px;
-  }
+@media only screen and (max-width: 767px) {
+    .berita h1 {
+        font-size: 20px;
+    }
 
- .news h5{
-  font-size: 14px;
- }
-  .news a{
-    font-size: 12px ;
-  }
+    .news h5 {
+        font-size: 14px;
+    }
+    .news a {
+        font-size: 12px;
+    }
 }
 
 /*android landscape dan tablet*/
-@media only screen and (min-width: 768px) and (max-width : 992px){
-  .berita h1{
-    font-size: 28px;
-  }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .berita h1 {
+        font-size: 28px;
+    }
 
-  .news img{
-    height: auto;
-  }
-  .news a{
-    font-size: 1.3rem;
-  }
+    .news img {
+        height: auto;
+    }
+    .news a {
+        font-size: 1.3rem;
+    }
 }
 
-
-/*Informasi/Kontak(footer)*/
+/* /Informasi/Kontak(footer)/ */
 footer {
-    background-color: #00A9FF;
+    background-color: #00a9ff;
 }
 
 .kontak {
-    margin: 30px;
+    margin: 20px;
+}
+.kontak a {
+    color: white;
 }
 
 .box {
@@ -433,27 +418,26 @@ footer {
 }
 
 .tautan h6 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
-
+.tautan a {
+    color: #fff;
+    text-decoration: none;
+}
+.tautan a:hover {
+    color: blue;
+    text-decoration: underline;
+}
 .box .tautan {
     display: flex;
 }
-.box a {
-    text-decoration: none;
-    color:white;
-  }
 
 .tautan .link {
-    padding-right: 50px;
+    margin: 12px;
 }
-.tautan a{
-    text-decoration: none;
-    color:white;
-  }
 
 .box .sosmed {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .up .info {
@@ -462,90 +446,102 @@ footer {
 }
 
 .up h2 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
-
-}
-
-.up h4 {
-    font-size: 30px;
+    text-decoration: underline black;
 }
 
 .icon {
-    margin-bottom: 58px;
-    font-size: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4.2rem;
+    margin-bottom: 20px;
 }
-
-.box .garis {
+.garis {
     margin-top: 3rem;
 }
-
-/*android*/
-@media only screen and (max-width : 767px) {
+/* /android/ */
+@media only screen and (max-width: 767px) {
+    .kontak {
+        margin: 10px;
+    }
     .up h2 {
         font-size: 25px;
     }
-
-    .up h4 {
-        font-size: 18px;
+    .box {
+        padding: 5px;
     }
-
+    .up h4 {
+        font-size: 15px;
+    }
     .icon {
         font-size: 2.4rem;
     }
+    .tautan h6 {
+        font-size: 0.7rem;
+    }
+    .tautan .link {
+        padding: 2px;
+    }
+}
 
+/* /android landscape dan tablet landscape/ */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .kontak {
+        margin: 15px;
+    }
+    .up h2 {
+        font-size: 28px;
+    }
+    .box {
+        padding: 0.5rem;
+    }
+    .up h4 {
+        font-size: 18px;
+    }
+    .icon {
+        font-size: 2.8rem;
+    }
+    .tautan h6 {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .kontak {
+        margin: 17px;
+    }
+    .up h2 {
+        font-size: 30px;
+    }
+    .box {
+        padding: 0.9rem;
+    }
+    .up h4 {
+        font-size: 18px;
+    }
+    .icon {
+        font-size: 3.5rem;
+    }
     .tautan h6 {
         font-size: 1rem;
     }
 }
 
-/*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 992px) {
-    .up h2 {
-        font-size: 32px;
-    }
-
-    .up h4 {
-        font-size: 25px;
-    }
-
-    .tautan h6 {
-        font-size: 1.15rem;
-    }
-}
-
-@media only screen and (min-width: 993px) and (max-width : 1200px) {
-    .up h2 {
-        font-size: 35px;
-    }
-
-    .up h4 {
-        font-size: 27px;
-    }
-
-    .icon {
-        font-size: 2.4rem;
-    }
-
-    .tautan h6 {
-        font-size: 1.4rem;
-    }
-}
-
-/*footer*/
+/* /footer/ */
 .footer {
-    margin-top: 20px;
-    padding: 25px;
+    padding: 15px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .footer i {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .footer h4 {
-    font-size: 20px;
+    font-size: 12px;
     color: #fff;
     text-align: left;
     margin-top: 10px;
@@ -564,14 +560,14 @@ footer {
     margin-left: 3rem;
 }
 
-/*android*/
-@media only screen and (max-width : 767px) {
+/* /android/ */
+@media only screen and (max-width: 767px) {
     .footer {
         padding: 10px;
     }
 
     .footer i {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .footer h4 {
@@ -582,28 +578,27 @@ footer {
     .info .garis2 {
         display: none;
     }
-
     .copyright div {
         font-size: 10px;
     }
 }
 
-/*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 992px) {
+/* /android landscape dan tablet landscape/ */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     .footer {
         padding: 13px;
     }
 
     .footer h4 {
-        font-size: 15px;
+        font-size: 5px;
     }
 
     .footer i {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .footer h4 {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .info .garis1,
@@ -612,8 +607,8 @@ footer {
     }
 }
 
-/*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1195px) {
+/* /dekstop/ */
+@media only screen and (min-width: 993px) and (max-width: 1195px) {
     .footer {
         padding: 15px;
     }
@@ -623,7 +618,7 @@ footer {
     }
 
     .footer i {
-        font-size: 3.7rem;
+        font-size: 3.3rem;
     }
 
     .footer h4 {

@@ -14,7 +14,16 @@ class kata_sambutanSeeder extends Seeder
     public function run(): void
     {
         DB::table('kata_sambutan')->insert([
-            'isi' => 'ini kata sambutan',
+            'isi' => 'Pembelajaran elearning merupakan bagian dari tuntutan kemajuan teknologi dan
+            komunikasi saat ini
+            Melalui pembelajaran model ini diharapkan pendidik dan peserta didik dapat lebih interaktif dan
+            menyenangkan.
+            Alhamdulillah kita patut bersyukur, SMP Negeri 4 Balige menjadi pelopor di Kota Balige yang
+            menerapkan
+            pembelajaran UKBM dalam bentuk eLearning.
+            Oleh karena itu, kami berharap melalui pembelajaran elearning ini SMP Negeri 4 Balige menjadi bagian
+            dari
+            pendidikan yang bermutu dan berkualitas.',
             'file' => 'sacasc',
             'user_id' => 1
             

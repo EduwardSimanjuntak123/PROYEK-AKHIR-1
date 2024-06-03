@@ -1,359 +1,361 @@
 body {
-  margin: 0;
-  font-family: "Kaisei Tokumin", serif;
-  font-weight: 800;
-  font-style: normal;
+    margin: 0;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 800;
+    font-style: normal;
 }
 
 /* CSS untuk header */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #00A9FF;
-  padding: 10px 20px;
-  font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00a9ff;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .logo img {
-  width: 65px;
-  height: 65px;
-  margin-right: 20px;
-  background: none;
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    background: none;
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .navbar-nav {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  color: #fff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
 }
 
 .navbar-nav .nav-item {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-item a {
-  text-decoration: none;
-  font-size: 18px;
-  padding: 5px 10px;
-  border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .navbar-nav .nav-item a:hover {
-  background: #77C8FE;
+    background: #77c8fe;
 }
 
 .navbar-nav .nav-item a {
-  color: #fff;
+    color: #fff;
 }
 
-
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  z-index: 1;
-  border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
 }
 
 .dropdown-menu li {
-  padding: 10px;
+    padding: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 
 .dropdown {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-toggle {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 /* Untuk header */
 @media (max-width: 767px) {
-  .logo img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
+    .logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
 
-  .logo {
-    font-size: 20px;
-  }
+    .logo {
+        font-size: 20px;
+    }
 
-  .navbar-nav .nav-item a {
-    font-size: 14px;
-    padding: 5px 8px;
-  }
+    .navbar-nav .nav-item a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
 
-  .text-light h2 {
-    margin-left: 20px;
-    width: auto;
-  }
+    .text-light h2 {
+        margin-left: 20px;
+        width: auto;
+    }
 
-  .text-light h3,
-  .text-light h4,
-  .text-light p {
-    padding-left: 20px;
-  }
+    .text-light h3,
+    .text-light h4,
+    .text-light p {
+        padding-left: 20px;
+    }
 
-  .shape {
-    width: 300px;
-    height: 250px;
-  }
+    .shape {
+        width: 300px;
+        height: 250px;
+    }
 }
-
 
 /*tampilan awal*/
 .info h1 {
-  font-size: 45px;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+    font-size: 45px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .info .first,
 .info.second {
-  padding: 11rem;
+    padding: 11rem;
 }
 
 .pertama .info {
-  background: linear-gradient(0deg, #7FD4FF, #7FD4FF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
-  text-align: center;
+    background: linear-gradient(0deg, #7fd4ff, #7fd4ff),
+        linear-gradient(0deg, #ffffff, #ffffff),
+        linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
+    text-align: center;
 }
 
 .info .second {
-  background-image: url(/img/visimisi.jpg);
-  background-size: cover;
-  text-align: center;
+    background-image: url(/img/visimisi.jpg);
+    background-size: cover;
+    text-align: center;
 }
 
 /*android*/
-@media only screen and (max-width : 600px) {
-  .info h1 {
-    font-size: 1.3rem;
-  }
+@media only screen and (max-width: 600px) {
+    .info h1 {
+        font-size: 1.3rem;
+    }
 
-  .info .first,
-  .info .second {
-    padding: 1.3rem;
-  }
+    .info .first,
+    .info .second {
+        padding: 1.3rem;
+    }
 }
 
 /*android landscape dan tablet*/
-@media only screen and (min-width: 601px) and (max-width : 992px) {
-  .info h1 {
-    font-size: 1.5rem;
-  }
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .info h1 {
+        font-size: 1.5rem;
+    }
 
-  .info .first,
-  .info .second {
-    padding: 6rem;
-  }
+    .info .first,
+    .info .second {
+        padding: 6rem;
+    }
 }
 /*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1200px){
-  .info h1 {
-    font-size: 2rem;
-  }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .info h1 {
+        font-size: 2rem;
+    }
 
-  .info .first,
-  .info .second {
-    padding: 9.5rem;
-  }
+    .info .first,
+    .info .second {
+        padding: 9.5rem;
+    }
 }
 
 /*visi & misi*/
 .kedua {
-  background-color: #fff;
-  padding: 80px;
+    background-color: #fff;
+    padding: 80px;
 }
 
 .isi {
-  background-color: #fff;
-  border-radius: 10px;
-  text-align: center;
-  padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
 }
 
 .isi .visi {
     background: #b6b4b4;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  margin-bottom: 100px;
-  padding: 80px;
-  max-width: 1200px;
-  /* Diganti menjadi max-width agar lebih responsif */
-  position: relative;
-  /* Tambahkan position: relative untuk container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 100px;
+    padding: 80px;
+    max-width: 1200px;
+    /* Diganti menjadi max-width agar lebih responsif */
+    position: relative;
+    /* Tambahkan position: relative untuk container */
 }
 
 .visi .judul {
-  background: #010101;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  padding: 20px;
-  width: 24rem;
-  top: -2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
+    background: #010101;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    width: 24rem;
+    top: -2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
 
 .visi h4 {
-  color: black;
-  text-align: center;
+    color: black;
+    text-align: center;
 }
 
 .judul h1 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .isi .misi {
-  background: #b6b4b4;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding: 80px;
-  max-width: 1200px;
+    background: #b6b4b4;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 80px;
+    max-width: 1200px;
 
-  /* Diganti menjadi max-width agar lebih responsif */
-  position: relative;
-  /* Tambahkan position: relative untuk container */
+    /* Diganti menjadi max-width agar lebih responsif */
+    position: relative;
+    /* Tambahkan position: relative untuk container */
 }
 
 .misi .judul {
-  background: #000000;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  padding: 20px;
-  width: 24rem;
-  top: -1%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
+    background: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 20px;
+    width: 24rem;
+    top: -1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
 }
 
 .misi h4 {
-  color: black;
-  text-align: left;
+    color: black;
+    text-align: left;
 }
 
 /*android*/
-@media only screen and (max-width : 600px) {
-  .kedua {
-    padding: 30px;
-  }
+@media only screen and (max-width: 600px) {
+    .kedua {
+        padding: 30px;
+    }
 
-  .isi .visi {
-    margin-bottom: 50px;
-    padding: 30px;
-  }
+    .isi .visi {
+        margin-bottom: 50px;
+        padding: 30px;
+    }
 
-  .visi .judul {
-    padding: 4px;
-    width: 9rem;
-    top: -2%;
-    left: 50%;
-  }
+    .visi .judul {
+        padding: 4px;
+        width: 9rem;
+        top: -2%;
+        left: 50%;
+    }
 
-  .visi h4,
-  .misi h4 {
-    font-size: 12px;
-  }
+    .visi h4,
+    .misi h4 {
+        font-size: 12px;
+    }
 
-  .judul h1 {
-    font-size: 20px;
-  }
+    .judul h1 {
+        font-size: 20px;
+    }
 
-  .isi .misi {
-    padding: 30px;
-  }
+    .isi .misi {
+        padding: 30px;
+    }
 
-  .misi .judul {
-    padding: 4px;
-    width: 9rem;
-    top: -1%;
-    left: 50%;
-    /* Ubah nilai bottom sesuai kebutuhan */
-  }
+    .misi .judul {
+        padding: 4px;
+        width: 9rem;
+        top: -1%;
+        left: 50%;
+        /* Ubah nilai bottom sesuai kebutuhan */
+    }
 }
 
 /*android landscape dan tablet*/
-@media only screen and (min-width: 601px) and (max-width : 992px) {
-  .kedua {
-    padding: 50px;
-  }
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .kedua {
+        padding: 50px;
+    }
 
-  .isi .visi {
-    margin-bottom: 80px;
-    padding: 40px;
-  }
+    .isi .visi {
+        margin-bottom: 80px;
+        padding: 40px;
+    }
 
-  .visi .judul {
-    padding: 8px;
-    width: 15rem;
-    top: -2%;
-    left: 50%;
-  }
+    .visi .judul {
+        padding: 8px;
+        width: 15rem;
+        top: -2%;
+        left: 50%;
+    }
 
-  .visi h4,
-  .misi h4 {
-    font-size: 15px;
-  }
+    .visi h4,
+    .misi h4 {
+        font-size: 15px;
+    }
 
-  .judul h1 {
-    font-size: 25px;
-  }
+    .judul h1 {
+        font-size: 25px;
+    }
 
-  .isi .misi {
-    padding: 40px;
-  }
+    .isi .misi {
+        padding: 40px;
+    }
 
-  .misi .judul {
-    padding: 8px;
-    width: 15rem;
-    top: -1%;
-    left: 50%;
-    /* Ubah nilai bottom sesuai kebutuhan */
-  }
+    .misi .judul {
+        padding: 8px;
+        width: 15rem;
+        top: -1%;
+        left: 50%;
+        /* Ubah nilai bottom sesuai kebutuhan */
+    }
 }
 
 /*dekstop*/
 
-
-/*Informasi/Kontak(footer)*/
+/* /Informasi/Kontak(footer)/ */
 footer {
-    background-color: #00A9FF;
+    background-color: #00a9ff;
 }
 
 .kontak {
-    margin: 30px;
+    margin: 20px;
+}
+.kontak a {
+    color: white;
 }
 
 .box {
@@ -363,27 +365,26 @@ footer {
 }
 
 .tautan h6 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
 }
-
+.tautan a {
+    color: #fff;
+    text-decoration: none;
+}
+.tautan a:hover {
+    color: blue;
+    text-decoration: underline;
+}
 .box .tautan {
     display: flex;
 }
-.box a {
-    text-decoration: none;
-    color:white;
-  }
 
 .tautan .link {
-    padding-right: 50px;
+    margin: 12px;
 }
-.tautan a{
-    text-decoration: none;
-    color:white;
-  }
 
 .box .sosmed {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .up .info {
@@ -392,9 +393,9 @@ footer {
 }
 
 .up h2 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
-
+    text-decoration: underline black;
 }
 
 .up h4 {
@@ -402,69 +403,85 @@ footer {
 }
 
 .icon {
-    margin-bottom: 58px;
-    font-size: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4.2rem;
+    margin-bottom: 20px;
 }
-
-.box .garis {
+.garis {
     margin-top: 3rem;
 }
-
-/*android*/
-@media only screen and (max-width : 767px) {
+/* /android/ */
+@media only screen and (max-width: 767px) {
+    .kontak {
+        margin: 10px;
+    }
     .up h2 {
         font-size: 25px;
     }
-
-    .up h4 {
-        font-size: 18px;
+    .box {
+        padding: 5px;
     }
-
+    .up h4 {
+        font-size: 15px;
+    }
     .icon {
         font-size: 2.4rem;
     }
+    .tautan h6 {
+        font-size: 0.7rem;
+    }
+    .tautan .link {
+        padding: 2px;
+    }
+}
 
+/* /android landscape dan tablet landscape/ */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .kontak {
+        margin: 15px;
+    }
+    .up h2 {
+        font-size: 28px;
+    }
+    .box {
+        padding: 0.5rem;
+    }
+    .up h4 {
+        font-size: 18px;
+    }
+    .icon {
+        font-size: 2.8rem;
+    }
+    .tautan h6 {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .kontak {
+        margin: 17px;
+    }
+    .up h2 {
+        font-size: 30px;
+    }
+    .box {
+        padding: 0.9rem;
+    }
+    .up h4 {
+        font-size: 18px;
+    }
+    .icon {
+        font-size: 3.5rem;
+    }
     .tautan h6 {
         font-size: 1rem;
     }
 }
 
-/*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 992px) {
-    .up h2 {
-        font-size: 32px;
-    }
-
-    .up h4 {
-        font-size: 25px;
-    }
-
-    .tautan h6 {
-        font-size: 1.15rem;
-    }
-}
-
-@media only screen and (min-width: 993px) and (max-width : 1200px) {
-    .up h2 {
-        font-size: 35px;
-    }
-
-    .up h4 {
-        font-size: 27px;
-    }
-
-    .icon {
-        font-size: 2.4rem;
-    }
-
-    .tautan h6 {
-        font-size: 1.4rem;
-    }
-}
-
-/*footer*/
+/* /footer/ */
 .footer {
-    margin-top: 20px;
     padding: 25px;
     display: flex;
     justify-content: space-evenly;
@@ -494,14 +511,14 @@ footer {
     margin-left: 3rem;
 }
 
-/*android*/
-@media only screen and (max-width : 767px) {
+/* /android/ */
+@media only screen and (max-width: 767px) {
     .footer {
         padding: 10px;
     }
 
     .footer i {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .footer h4 {
@@ -512,28 +529,27 @@ footer {
     .info .garis2 {
         display: none;
     }
-
     .copyright div {
         font-size: 10px;
     }
 }
 
-/*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 992px) {
+/* /android landscape dan tablet landscape/ */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
     .footer {
         padding: 13px;
     }
 
     .footer h4 {
-        font-size: 15px;
+        font-size: 5px;
     }
 
     .footer i {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .footer h4 {
-        font-size: 17px;
+        font-size: 20px;
     }
 
     .info .garis1,
@@ -542,8 +558,8 @@ footer {
     }
 }
 
-/*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1195px) {
+/* /dekstop/ */
+@media only screen and (min-width: 993px) and (max-width: 1195px) {
     .footer {
         padding: 15px;
     }
@@ -553,7 +569,7 @@ footer {
     }
 
     .footer i {
-        font-size: 3.7rem;
+        font-size: 3.3rem;
     }
 
     .footer h4 {
