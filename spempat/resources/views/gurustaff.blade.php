@@ -33,7 +33,7 @@
           <tr>
             <th style="background-color: #00A9FF;">No</th>
             <th style="background-color: #00A9FF;">Nama Guru/Staff</th>
-            <th style="background-color: #00A9FF;">Jumlah Kelamin</th>
+            <th style="background-color: #00A9FF;">Jenis Kelamin</th>
           </tr>
         </thead>
         <tbody>
@@ -42,10 +42,10 @@
             <td>{{ ($gurustaff->currentPage() - 1) * $gurustaff->perPage() + $loop->iteration }}</td>
             <td>{{ $item->nama }}</td>
             <td>{{ $item->jenis_kelamin }}</td>
-          </tr>   
+          </tr>
           @endforeach
-          
-         
+
+
         </tbody>
       </table>
     </div>

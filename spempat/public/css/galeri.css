@@ -137,7 +137,7 @@ body {
 }
 .kalimat .text{
     text-align: left;
-    background: rgba(38, 190, 255, 0.35);
+    background: rgba(58, 58, 58, 0.081);
 }
 .all{
     padding: 20px;
@@ -289,10 +289,18 @@ footer {
 .box .tautan {
     display: flex;
 }
+.box a {
+    text-decoration: none;
+    color:white;
+  }
 
 .tautan .link {
     padding-right: 50px;
 }
+.tautan a{
+    text-decoration: none;
+    color:white;
+  }
 
 .box .sosmed {
     margin-bottom: 30px;
