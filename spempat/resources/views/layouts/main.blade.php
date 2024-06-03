@@ -88,7 +88,7 @@
                         </button>
                         <!-- Dropdown menu -->
                         <div id="dropdownMenu" class="dropdown-content">
-                            <a href="{{ route('profile.edit') }}"><i class="lni lni-pencil"></i>edit profil</a>
+                            
                             <a href="{{ route('logout') }}"><i class="lni lni-exit"></i>log out</a>
                         </div>
                     </div>

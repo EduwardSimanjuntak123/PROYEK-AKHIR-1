@@ -14,7 +14,7 @@
         </li>
         <li class="sidebar-item ">
             <a href="{{ route('kritik') }}" class="sidebar-link ">
-                <i class="lni lni-popup"></i>
+                <i class="lni lni-wechat"></i>
                 <span>Kritik dan saran</span>
             </a>
         </li>
@@ -58,7 +58,7 @@
         
         <li class="sidebar-item">
             <a href="{{ route('about_us.index') }}" class="sidebar-link">
-                <i class="lni lni-cogs"></i>
+                <i class="lni lni-flag-alt"></i>
                 <span>Tentang Kami</span>
             </a>
         </li>

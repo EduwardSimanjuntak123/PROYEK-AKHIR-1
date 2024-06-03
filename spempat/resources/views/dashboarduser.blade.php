@@ -57,9 +57,9 @@
 @foreach ($berita as $item)
                 <div class="col-10 col-lg-5 news">
                     <img src="{{ asset('storage/img/'. $item->file) }}" width="100" height="100">
-                    <div>
-                        <h2 class="text-start" style="-webkit-line-clamp:1; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden;">{{ $item->judul }}</h2>
-                        <h3></h3>
+                    <div style="padding-left: 1rem">
+                        <h4 class="text-start" style="-webkit-line-clamp:2; display:-webkit-box; -webkit-box-orient:vertical; overflow:hidden; margin-left:10rem;">{{ $item->judul }}</h4>
+
                         <a href="{{ route('berita.show' , ['id'=>$item->id]) }}">Selengkapnnya..</a>
                     </div>
                 </div>
