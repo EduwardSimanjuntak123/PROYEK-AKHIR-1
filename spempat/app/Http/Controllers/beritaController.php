@@ -32,7 +32,7 @@ class beritaController extends Controller
         [
          'photo'=>'required',
          'judul'=>'required',
-         'isi'=>'required',
+         'isi'=>'required|string',
         
         ]);
         if ($validator->fails()) return redirect()->back()->withInput()->withErrors($validator);
