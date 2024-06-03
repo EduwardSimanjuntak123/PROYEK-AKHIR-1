@@ -28,13 +28,14 @@
                 <li class="nav-item title">
                     <a class="nav-link" href="{{ route('visimisi') }}">Visi Misi</a>
                 </li>
-                
+
                 <li class="nav-item title">
                     <a class="nav-link" href="{{ route('fasilitas') }}">Fasilitas</a>
                 </li>
                 <li class="nav-item title">
-                    <a class="nav-link" href="#">Galeri</a>
+                    <a class="nav-link" href="/Galeri">Galeri</a>
                 </li>
+
                 <li class="nav-item title">
                     <a class="nav-link" href="/About_us">Tentang Kami</a>
                 </li>

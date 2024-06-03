@@ -22,9 +22,10 @@ Route::get('/visi&misi', [userviewController::class, 'visimisi'])->name('visimis
 Route::get('/Data_Sekolah', [userviewController::class, 'data_sekolah'])->name('data_sekolah');
 Route::get('/About_us', [userviewController::class, 'about_us']);
 Route::get('/guru_staff', [userviewController::class, 'gurustaff'])->name('guru_staff');
+Route::get('/Galeri', [userviewController::class, 'galeri']);
 Route::get('/show/{id}', [userviewController::class, 'show_berita'])->name('berita.show');
 
-    
+
 Route::post('/kritik', [userviewController::class, 'storekritik'])->name('kritik.store');
 
 Route::get('/dashboard', function () {
@@ -40,7 +41,7 @@ Route::middleware('auth')->group(function () {
     Route::prefix('dashboard')->group(function () {
         Route::get('/', [loginController::class, 'index'])->name('dashboard');
     });
-    
+
 Route::prefix('kritik')->group(function() {
     Route::get('/kritik', [KritikController::class, 'index'])->name('kritik');
     Route::put('/kritik/{kritik}', [KritikController::class, 'update'])->name('kritik.update');
@@ -81,7 +82,7 @@ Route::prefix('kritik')->group(function() {
         Route::get('/', [BeritaController::class, 'index'])->name('berita.index');
         Route::post('/store', [BeritaController::class, 'store'])->name('berita.store');
         Route::put('/update/{id}', [BeritaController::class, 'update'])->name('berita.update');
-        Route::delete('/delete/{id}', [BeritaController::class, 'delete'])->name('berita.delete'); 
+        Route::delete('/delete/{id}', [BeritaController::class, 'delete'])->name('berita.delete');
     });
 });
 

@@ -7,6 +7,7 @@ use App\Models\berita;
 use App\Models\data_sarpras;
 use App\Models\data_sekolah;
 use App\Models\gurustaff;
+use App\Models\galeri;
 use App\Models\kata_Sambutan;
 use App\Models\Kritik;
 use Illuminate\Support\Facades\DB;
@@ -29,6 +30,14 @@ class userviewController extends Controller
         $gurustaff = gurustaff::Paginate(10);
         return view('gurustaff', compact('gurustaff', 'halaman'));
     }
+
+    public function galeri()
+    {
+        $halaman ='galeri';
+        $galeri = galeri::get();
+        return view('galeri', compact('galeri', 'halaman'));
+    }
+
     public function show_berita(string $id)
     {
         $halaman ='berita';
