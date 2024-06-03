@@ -9,16 +9,16 @@
                         <h2>Tautan</h2>
                         <nav class="tautan">
                             <div class="link">
-                                <h6>-Home</h6>
-                                <h6>-Visi misi</h6>
-                                <h6>-Data sekolah</h6>
-                                <h6>-Guru dan Staff</h6>
+                                <h6><a href="{{ route('dashboarduser') }}">-Beranda</a></h6>
+                                <h6><a href="{{ route('visimisi') }}">-Visi misi</a></h6>
+                                <h6><a href="{{ route('data_sekolah') }}">-Data sekolah</a></h6>
+                                <h6><a href="/guru_staff">-Guru dan Staff</a></h6>
                             </div>
                             <div>
-                                <h6>-Sejarah sekolah</h6>
-                                <h6>-Identitas sekolah</h6>
-                                <h6>-Fasilitas</h6>
-                                <h6>-Kemdikbud</h6>
+                                <h6><a href="{{ route('sejarah') }}">-Sejarah sekolah</a></h6>
+                                <h6><a href="#">-Galeri</a></h6>
+                                <h6><a href="{{ route('fasilitas') }}">-Fasilitas</a></h6>
+                                <h6><a href="">-Kemdikbud</a></h6>
                             </div>
                         </nav>
                     </div>
@@ -32,10 +32,16 @@
                         <div class="container">
                             <div class="row justify-content-evenly">
                                 <div class="col-3 col-lg-3 col-md-4  icon">
-                                    <i class="bi bi-facebook"></i>
+                                    <a href="https://www.facebook.com/smpn4balige"><i class="bi bi-facebook"></i></a>
+                                    
                                 </div>
                                 <div class="col-3 col-lg-3 col-md-4  icon">
-                                    <i class="bi bi-whatsapp"></i>
+                                    <a href="https://www.youtube.com/@smpnegeri4balige339"><i class="bi bi-youtube"></i></a>
+                                    
+                                </div>
+                                <div class="col-3 col-lg-3 col-md-4  icon">
+                                    <a href="https://www.instagram.com/smpn4balige"><i class="bi bi-instagram"></i></a>
+                                    
                                 </div>
                             </div>
                         </div>

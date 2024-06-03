@@ -436,6 +436,10 @@ footer {
 .tautan h6{
   font-size: 1.7rem;
 }
+.tautan a{
+  text-decoration: none;
+  color: white;
+}
 .box .tautan {
   display: flex;
 }
@@ -447,6 +451,10 @@ footer {
 .box .sosmed {
   margin-bottom: 30px;
 }
+.box a {
+  text-decoration: none;
+  color: white;
+}
 
 .up .info {
   text-align: left;
@@ -456,7 +464,7 @@ footer {
 .up h2 {
   font-size: 40px;
   font-weight: bold;
-  text-decoration: underline black;
+  /* text-decoration: underline rgb(255, 255, 255); */
 }
 
 .up h4 {

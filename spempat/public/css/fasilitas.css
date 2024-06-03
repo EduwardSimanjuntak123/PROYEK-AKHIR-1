@@ -394,14 +394,20 @@ img[alt="foto_3"] {
 
 
 /*Data Sarpras*/
+.word h1, .word p{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+}
 .sarpras {
   background-color: #fff;
   padding: 80px;
 }
-
+.scroll{
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
 .sarpras h1 {
   background: #00A9FF;
   color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
 }
 .sarpras .genap td{
   background: rgba(196, 196, 196, 0.35);
@@ -412,6 +418,8 @@ img[alt="foto_3"] {
 }
 .sarpras .tabel th{
   font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
 }
 .sarpras .tabel td{
   font-size: 18px;
@@ -478,7 +486,7 @@ img[alt="foto_3"] {
 
 
 
-/* /Informasi/Kontak(footer)/ */
+
 /*Informasi/Kontak(footer)*/
 footer {
   background-color: #00A9FF;
@@ -493,11 +501,13 @@ footer {
   padding: 15px;
   color: #fff;
 }
-
-.tautan h6 {
+.tautan h6{
   font-size: 1.7rem;
 }
-
+.tautan a{
+  text-decoration: none;
+  color: white;
+}
 .box .tautan {
   display: flex;
 }
@@ -509,6 +519,10 @@ footer {
 .box .sosmed {
   margin-bottom: 30px;
 }
+.box a {
+  text-decoration: none;
+  color: white;
+}
 
 .up .info {
   text-align: left;
@@ -518,7 +532,7 @@ footer {
 .up h2 {
   font-size: 40px;
   font-weight: bold;
-  text-decoration: underline black;
+  /* text-decoration: underline rgb(255, 255, 255); */
 }
 
 .up h4 {
@@ -529,8 +543,7 @@ footer {
   margin-bottom: 58px;
   font-size: 3.5rem;
 }
-
-.box .garis {
+.box .garis{
   margin-top: 3rem;
 }
 
@@ -547,9 +560,8 @@ footer {
   .icon {
       font-size: 2.4rem;
   }
-
-  .tautan h6 {
-      font-size: 1rem;
+  .tautan h6{
+    font-size: 1rem;
   }
 }
 
@@ -562,30 +574,25 @@ footer {
   .up h4 {
       font-size: 25px;
   }
-
-  .tautan h6 {
-      font-size: 1.15rem;
+  .tautan h6{
+    font-size: 1.15rem;
   }
 }
-
-@media only screen and (min-width: 993px) and (max-width : 1200px) {
+@media only screen and (min-width: 993px) and (max-width : 1200px){
   .up h2 {
-      font-size: 35px;
-  }
-
-  .up h4 {
-      font-size: 27px;
-  }
-
-  .icon {
-      font-size: 2.4rem;
-  }
-
-  .tautan h6 {
-      font-size: 1.4rem;
-  }
+    font-size: 35px;
 }
 
+.up h4 {
+    font-size: 27px;
+}
+.icon {
+  font-size: 2.4rem;
+}
+.tautan h6{
+  font-size: 1.4rem;
+}
+}
 /*footer*/
 .footer {
   margin-top: 20px;
@@ -609,12 +616,10 @@ footer {
   display: flex;
   flex-direction: row;
 }
-
-.info .garis1 {
-  margin-left: 11rem;
+.info .garis1{
+  margin-left: 12.2rem;
 }
-
-.info .garis2 {
+.info .garis2{
   margin-left: 3rem;
 }
 
@@ -631,10 +636,8 @@ footer {
   .footer h4 {
       font-size: 15px;
   }
-
-  .info .garis1,
-  .info .garis2 {
-      display: none;
+  .info .garis1, .info .garis2{
+    display: none;
   }
   .copyright div{
     font-size: 10px;
@@ -644,9 +647,8 @@ footer {
 /*android landscape dan tablet landscape*/
 @media only screen and (min-width: 768px) and (max-width : 992px) {
   .footer {
-      padding: 13px;
-  }
-
+    padding: 13px;
+}
   .footer h4 {
       font-size: 15px;
   }
@@ -658,36 +660,30 @@ footer {
   .footer h4 {
       font-size: 17px;
   }
-
-  .info .garis1,
-  .info .garis2 {
-      display: none;
+  .info .garis1, .info .garis2{
+    display: none;
   }
 }
-
 /*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1195px) {
+@media only screen and (min-width: 993px) and (max-width : 1195px){
   .footer {
-      padding: 15px;
-  }
-
+    padding: 15px;
+}
   .footer h4 {
-      font-size: 15px;
-  }
+    font-size: 15px;
+}
 
-  .footer i {
-      font-size: 3.7rem;
-  }
+.footer i {
+    font-size: 3.7rem;
+}
 
-  .footer h4 {
-      font-size: 17px;
-  }
-
-  .info .garis1 {
-      margin-left: 6rem;
-  }
-
-  .info .garis2 {
-      margin-left: 1rem;
-  }
+.footer h4 {
+    font-size: 17px;
+}
+.info .garis1{
+  margin-left: 6rem;
+}
+.info .garis2{
+  margin-left: 1rem;
+}
 }

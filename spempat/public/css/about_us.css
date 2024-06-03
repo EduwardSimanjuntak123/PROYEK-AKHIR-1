@@ -285,12 +285,15 @@ text-decoration: underline;
             border-radius: 15px;
             padding: 10px;
             margin: 10px 0;
+          
         }
         .chat-bubble.user {
-          background-color: #e9ecef;
+          background-color: #b9bbbe80;
+          width: max-content;
+        
         }
         .chat-bubble.admin {
-            background-color: #e9ecef;
+          background-color: #b9bbbe80;
         }
 
 
@@ -311,6 +314,10 @@ footer {
 .tautan h6{
   font-size: 1.7rem;
 }
+.tautan a{
+  text-decoration: none;
+  color: white;
+}
 .box .tautan {
   display: flex;
 }
@@ -322,6 +329,10 @@ footer {
 .box .sosmed {
   margin-bottom: 30px;
 }
+.box a {
+  text-decoration: none;
+  color: white;
+}
 
 .up .info {
   text-align: left;
@@ -331,7 +342,7 @@ footer {
 .up h2 {
   font-size: 40px;
   font-weight: bold;
-  text-decoration: underline black;
+  /* text-decoration: underline rgb(255, 255, 255); */
 }
 
 .up h4 {
@@ -416,7 +427,7 @@ footer {
   flex-direction: row;
 }
 .info .garis1{
-  margin-left: 11rem;
+  margin-left: 12.2rem;
 }
 .info .garis2{
   margin-left: 3rem;
@@ -437,6 +448,9 @@ footer {
   }
   .info .garis1, .info .garis2{
     display: none;
+  }
+  .copyright div{
+    font-size: 10px;
   }
 }
 

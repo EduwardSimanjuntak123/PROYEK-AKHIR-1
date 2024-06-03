@@ -124,6 +124,8 @@ body {
   text-align: center;
   padding: 20px;
   font-size: 65px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.911);
+
 }
 
 .gambar img {
@@ -528,7 +530,8 @@ body {
 }
 
 
-/* /Informasi/Kontak(footer)/ */
+
+/*Informasi/Kontak(footer)*/
 footer {
   background-color: #00A9FF;
 }
@@ -545,6 +548,10 @@ footer {
 .tautan h6{
   font-size: 1.7rem;
 }
+.tautan a{
+  text-decoration: none;
+  color: white;
+}
 .box .tautan {
   display: flex;
 }
@@ -556,6 +563,10 @@ footer {
 .box .sosmed {
   margin-bottom: 30px;
 }
+.box a {
+  text-decoration: none;
+  color: white;
+}
 
 .up .info {
   text-align: left;
@@ -565,7 +576,7 @@ footer {
 .up h2 {
   font-size: 40px;
   font-weight: bold;
-  text-decoration: underline black;
+  /* text-decoration: underline rgb(255, 255, 255); */
 }
 
 .up h4 {
@@ -580,7 +591,7 @@ footer {
   margin-top: 3rem;
 }
 
-/* /android/ */
+/*android*/
 @media only screen and (max-width : 767px) {
   .up h2 {
       font-size: 25px;
@@ -598,7 +609,7 @@ footer {
   }
 }
 
-/* /android landscape dan tablet landscape/ */
+/*android landscape dan tablet landscape*/
 @media only screen and (min-width: 768px) and (max-width : 992px) {
   .up h2 {
       font-size: 32px;
@@ -611,7 +622,6 @@ footer {
     font-size: 1.15rem;
   }
 }
-/* dekstop */
 @media only screen and (min-width: 993px) and (max-width : 1200px){
   .up h2 {
     font-size: 35px;
@@ -627,7 +637,7 @@ footer {
   font-size: 1.4rem;
 }
 }
-/* /footer/ */
+/*footer*/
 .footer {
   margin-top: 20px;
   padding: 25px;
@@ -657,7 +667,7 @@ footer {
   margin-left: 3rem;
 }
 
-/* /android/ */
+/*android*/
 @media only screen and (max-width : 767px) {
   .footer {
       padding: 10px;
@@ -674,11 +684,11 @@ footer {
     display: none;
   }
   .copyright div{
-    font-size: 13px;
+    font-size: 10px;
   }
 }
 
-/* /android landscape dan tablet landscape/ */
+/*android landscape dan tablet landscape*/
 @media only screen and (min-width: 768px) and (max-width : 992px) {
   .footer {
     padding: 13px;
@@ -697,12 +707,9 @@ footer {
   .info .garis1, .info .garis2{
     display: none;
   }
-  .copyright div{
-    font-size: 17px;
-  }
 }
-/* /dekstop/ */
-@media only screen and (min-width: 993px) and (max-width : 1199px){
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width : 1195px){
   .footer {
     padding: 15px;
 }
@@ -721,9 +728,6 @@ footer {
   margin-left: 6rem;
 }
 .info .garis2{
-  margin-left: 1rem;
-}
-.copyright div{
-  font-size: 22px;
+  margin-left: 1rem;
 }
 }

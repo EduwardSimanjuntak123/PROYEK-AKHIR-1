@@ -5,13 +5,13 @@
     <h1>DATA SEKOLAH</h1>
     <div class="row gambar">
         <div class="col-4 col-md-4">
-            <img src="{{ asset('img/Tutwuri.png') }}" width="500" height="500">
+            <img src="{{ asset('img/halaman_ruangguru.jpg') }}" width="500" height="500">
         </div>
         <div class="col-4 col-md-4">
-            <img src="{{ asset('img/Tutwuri.png') }}" width="500" height="500">
+            <img src="{{ asset('img/hero2.jpg') }}" width="500" height="500">
         </div>
         <div class="col-4 col-md-4">
-            <img src="{{ asset('img/Tutwuri.png') }}" width="500" height="500">
+            <img src="{{ asset('img/halaman3.jpg') }}" width="500" height="500">
         </div>
     </div>
     <h1>SMPN 4 BALIGE</h1>

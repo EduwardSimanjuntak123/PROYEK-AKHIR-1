@@ -3,9 +3,9 @@
 <div class="container-fluid text-center word">
     <div class="row">
       <div class="col">
-        <img src="gambar/ruang_lab.jpg" alt="foto_1" width="285" height="285">
-        <img src="gambar/sekolah3.jpg" alt="foto_2" width="285" height="285">
-        <img src="gambar/ruangkelas.jpg" alt="foto_3" width="285" height="285">
+        <img src="{{ asset('img/1.jpg') }}" alt="foto_1" width="285" height="285">
+        <img src="{{ asset('img/1.jpg') }}" alt="foto_2" width="285" height="285">
+        <img src="{{ asset('img/1.jpg') }}" alt="foto_3" width="285" height="285">
       </div>
       <div class="col">
         <h1>FASILITAS</h1>
@@ -22,24 +22,24 @@
   </div>
 
 <!--overflow-->
-  <div class="container-fluid scrolldown">
+  <div class="container-fluid scrolldown scroll">
     <h1>Fasilitas-fasilitas yang ada di SMPN 4 BALIGE</h1>
     <div class="container-fluid text-center">
       <div class="row row-cols-2 justify-content-evenly">
         <div class="col-6">
-          <img src="gambar/tanaman.jpg" width="300" height="300">
+          <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
           <h2>Tata Usaha</h2>
         </div>
         <div class="col-6">
-          <img src="" width="300" height="300">
+          <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
           <h2>Ruang Lab</h2>
         </div>
         <div class="col-6">
-          <img src="" width="300" height="300">
+          <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
           <h2>Ruang Kelas</h2>
         </div>
         <div class="col-6">
-          <img src="" width="300" height="300">
+          <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
           <h2>Kebun Modern</h2>
         </div>
       </div>
@@ -52,7 +52,7 @@
   <!--Data Sarpras-->
   <div style="background-color: #fff;" class="container-fluid">
     <div class="container-fluid text-center sarpras">
-      <div class="row">
+      <div class="row shadow">
         <h1>DATA SARANA DAN PRASARANA (SARPRAS)</h1>
         <div class="tabel">
           {{ $fasilitas->links() }}
