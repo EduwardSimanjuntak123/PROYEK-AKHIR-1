@@ -101,10 +101,7 @@ $validator=Validator::make($request->all(),
             $berita->save();
             return redirect()->route('berita.index');
         } catch (\Exception $e) {
-            // Tangani pengecualian di sini
-            // Misalnya, tampilkan pesan error dan kembalikan pengguna ke halaman sebelumnya
             Alert::warning('maaf terjadi kesalahan dalam mengupdate data','Silahkan coba beberapa saat lagi');
-
             return redirect()->back()->withInput();
         }
     }

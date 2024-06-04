@@ -12,7 +12,8 @@ use RealRashid\SweetAlert\Facades\Alert;
 class loginController extends Controller
 {
     public function index(){
-        $totalDataSarpras = gurustaff::count();
+        try{
+           $totalDataSarpras = gurustaff::count();
         $totalDataGaleri = galeri::count();
         $totalDataGuru = gurustaff::count();
         $totalDataberita = berita::count();
@@ -25,7 +26,12 @@ class loginController extends Controller
             'totalDataGaleri' => $totalDataGaleri,
             'totalDataberita' => $totalDataberita
 
-        ]);
+        ]); 
+        }catch (\Exception $e) {
+            Alert::warning('maaf terjadi kesalahan dalam memuat halaman', 'Silahkan coba beberapa lagi');
+            return redirect()->back()->withInput();
+        }
+        
        
     }
     

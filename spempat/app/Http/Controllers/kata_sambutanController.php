@@ -47,7 +47,7 @@ class kata_sambutanController extends Controller
 
             return redirect()->route('kata_sambutan.index');
         } catch (\Exception $e) {
-            Alert::warning('maaf terjadi kesalahan saat memuat data', 'Silahkan coba beberapa saat lagi');
+            Alert::warning('maaf terjadi kesalahan saat memperbarui data', 'Silahkan coba beberapa saat lagi');
             return redirect()->back();
         }
     }

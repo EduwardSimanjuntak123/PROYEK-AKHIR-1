@@ -285,6 +285,7 @@ body {
 }
 
 /* /Informasi/Kontak(footer)/ */
+/* /Informasi/Kontak(footer)/ */
 footer {
     background-color: #00a9ff;
 }
@@ -292,8 +293,8 @@ footer {
 .kontak {
     margin: 20px;
 }
-.kontak a{
-  color: white;
+.kontak a {
+    color: white;
 }
 
 .box {
@@ -305,12 +306,13 @@ footer {
 .tautan h6 {
     font-size: 1.3rem;
 }
-.tautan a{
-  color: #fff;
-  text-decoration: none;
-}.tautan a:hover {
-  color: blue;
-  text-decoration: underline;
+.tautan a {
+    color: #fff;
+    text-decoration: none;
+}
+.tautan a:hover {
+    color: blue;
+    text-decoration: underline;
 }
 .box .tautan {
     display: flex;
@@ -333,10 +335,6 @@ footer {
     font-size: 32px;
     font-weight: bold;
     text-decoration: underline black;
-}
-
-.up h4 {
-    font-size: 30px;
 }
 
 .icon {
@@ -419,17 +417,17 @@ footer {
 
 /* /footer/ */
 .footer {
-    padding: 25px;
+    padding: 15px;
     display: flex;
     justify-content: space-evenly;
 }
 
 .footer i {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .footer h4 {
-    font-size: 20px;
+    font-size: 12px;
     color: #fff;
     text-align: left;
     margin-top: 10px;

@@ -1,6 +1,6 @@
 @extends('layouts_user.main')
 @section('content')
-     <!--tampilan awal-->
+    <!--tampilan awal-->
     <div class="container-fluid pertama">
         <div class="row justify-content-center info">
             <div class="col-6 col-lg-6 first">
@@ -42,6 +42,3 @@
         </div>
     </div>
 @endsection
-   
-
-

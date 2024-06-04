@@ -5,43 +5,41 @@
         <button type="button " class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Tambah Guru atau Staff
         </button>
-     
+
         <div class="m-4">{{ $data->links() }}</div>
-        
-        <div class="row mt-3">
-            @foreach ($data as $key => $item)
-                <div class="col mb-5">
-                    <div class="card shadow p-3" style="width: 18rem; ">
-                        <center><img class="border shadow" src="{{ asset('storage/img/' . $item->file) }}"
-                                alt="Gambar berita" style="max-width: 100px;height:100px;">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ $data->firstItem() + $key }}. {{ $item->nama }}</h5>
-                            </div>
-                        </center>
-                        <ul class="list-group list-group-flush">
 
-                            <li class="list-group-item">Jenis kelamin : {{ $item->jenis_kelamin }}</li>
-                            <li class="list-group-item">TTL:
-                                {{ $item->alamat_lahir }} \ {{ $item->tanggallahir }}</li>
-                        </ul>
-                        <div class="card-body">
-                            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
-                                data-bs-target="#editgurudanstaff">
-                                Edit
-                            </button>
-                            <form action="{{ route('coba', ['id' => $item->id]) }}" method="POST"
-                                class="btn btn-danger p-0" onsubmit="return confirm('Delete?')">
-                                @csrf
-                                @method('DELETE')
-                                <button class="btn btn-danger m-0" onclick="window.deleteConfirm(event)">Hapus</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-
+        <div class="table-responsive mt-3">
+            <table class="table table-striped table-bordered shadow p-3">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($data as $key => $item)
+                        <tr>
+                            <td>{{ $data->firstItem() + $key }}</td>
+                            <td>{{ $item->nama }}</td>
+                            <td>{{ $item->jenis_kelamin }}</td>
+                            <td>
+                                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                    data-bs-target={{ '#editgurudanstaff' . $item->id }} data-id="{{ $item->id }}">
+                                    <i class="lni lni-pencil"></i>
+                                </button>
+                                <form action="{{ route('coba', ['id' => $item->id]) }}" method="POST" class="d-inline" onsubmit="return confirm('Delete?')">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="btn btn-danger" onclick="window.deleteConfirm(event)"><i class="lni lni-trash-can"></i></button>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
         </div>
     </div>
     @include('modals.modalgurustaff')
-    
 @endsection

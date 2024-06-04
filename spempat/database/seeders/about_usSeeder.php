@@ -15,7 +15,7 @@ class about_usSeeder extends Seeder
     {
         DB::table('about_us')->insert([
             'email' => 'smpn4@gmail.com',
-            'alamat' => 'soposurung,balige',
+            'alamat' => 'JL. kartini, Toba Samosir, Kecamatan Balige, Kabupaten Toba, Sumatera Utara',
             'no_telepon' => '0812-3512-3445',
             'user_id' => 1,
         ]);

@@ -1,238 +1,238 @@
 body {
-  margin: 0;
-  font-family: "Kaisei Tokumin", serif;
-  font-weight: 800; /* Ubah warna latar belakang body */
+    margin: 0;
+    font-family: "Kaisei Tokumin", "Istok Web", "Times New Roman", Times, serif;
+    font-weight: 800; /* Ubah warna latar belakang body */
 }
 
 /* CSS untuk header */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #00A9FF;
-  padding: 10px 20px;
-  font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00a9ff;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .logo img {
-  width: 65px;
-  height: 65px;
-  margin-right: 20px;
-  background: none;
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    background: none;
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .navbar-nav {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  color: #fff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
 }
 
 .navbar-nav .nav-item {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-item a {
-  text-decoration: none;
-  font-size: 18px;
-  padding: 5px 10px;
-  border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .navbar-nav .nav-item a:hover {
-  background: #77C8FE;
+    background: #77c8fe;
 }
 
 .navbar-nav .nav-item a {
-  color: #fff;
+    color: #fff;
 }
 
-
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  z-index: 1;
-  border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
 }
 
 .dropdown-menu li {
-  padding: 10px;
+    padding: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 
 .dropdown {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-toggle {
-  cursor: pointer;
+    cursor: pointer;
 }
 /* Untuk header */
 @media (max-width: 768px) {
-  .logo img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
+    .logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
 
-  .logo {
-    font-size: 20px;
-  }
+    .logo {
+        font-size: 20px;
+    }
 
-  .navbar-nav .nav-item a {
-    font-size: 14px;
-    padding: 5px 8px;
-  }
+    .navbar-nav .nav-item a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
 
-  .text-light h2 {
-    margin-left: 20px;
-    width: auto;
-  }
+    .text-light h2 {
+        margin-left: 20px;
+        width: auto;
+    }
 
-  .text-light h3,
-  .text-light h4,
-  .text-light p {
-    padding-left: 20px;
-  }
+    .text-light h3,
+    .text-light h4,
+    .text-light p {
+        padding-left: 20px;
+    }
 }
-
 
 /*tampilan awal*/
 .info h1 {
-  font-size: 50px;
-  color: #fff;
+    font-size: 50px;
+    color: #fff;
 }
 
 .info .first {
-  background: linear-gradient(0deg, #7FD4FF, #7FD4FF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 12rem;
+    background: linear-gradient(0deg, #7fd4ff, #7fd4ff),
+        linear-gradient(0deg, #ffffff, #ffffff),
+        linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 12rem;
 }
 
 .info .second {
-background-image: url(/img/visimisi.jpg);
-background-size: cover;
-  text-align: center;
+    background-image: url(/img/visimisi.jpg);
+    background-size: cover;
+    text-align: center;
 }
 /*android*/
-@media only screen and (max-width : 767px){
-.info h1{
-margin-top: 15px;
-font-size: 20px;
-}
-.info .first{
-padding: 32px;
-}
+@media only screen and (max-width: 767px) {
+    .info h1 {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .info .first {
+        padding: 32px;
+    }
 }
 /*android landscape dan tablet*/
-@media only screen and (min-width: 768px) and (max-width : 992px){
-.info h1{
-  margin-top: 30px;
-  font-size: 32px;
- }
- .info .first{
-  padding: 90px;
- }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .info h1 {
+        margin-top: 30px;
+        font-size: 32px;
+    }
+    .info .first {
+        padding: 90px;
+    }
 }
 /*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1200px){
-.info h1{
-  margin-top: 45px;
-  font-size: 40px;
- }
- .info .first{
-  padding: 100px;
- }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .info h1 {
+        margin-top: 45px;
+        font-size: 40px;
+    }
+    .info .first {
+        padding: 100px;
+    }
 }
 
 /*sejarah*/
-.kedua{
-  background-color: #fff;
-  padding: 80px;
+.kedua {
+    background-color: #fff;
+    padding: 80px;
 }
-.sejarah{
-  background-image: url(/img/sejarah_gelap.jpg);
-  background-size: cover;
-  color: #fff;
-  padding: 120px;
-  border-radius: 10px;
+.sejarah {
+    background-image: url(/img/sejarah_gelap.jpg);
+    background-size: cover;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    height: max-content;
 }
-.sejarah h1{
-  text-align: center;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
-  font-weight: bold;
+.sejarah h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+    font-weight: bold;
 }
-.sejarah p{
-  font-size: 38px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+.sejarah p {
+    font-size: 38px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
 }
 /*android*/
-@media only screen and (max-width : 767px){
-.kedua{
-  padding: 20px;
-}
-.sejarah{
-  padding: 20px;
-}
-.sejarah h1{
-  font-size: 23px;
-}
-.sejarah p{
-  font-size: 15px;
-}
+@media only screen and (max-width: 767px) {
+    .kedua {
+        padding: 20px;
+    }
+    .sejarah {
+        padding: 20px;
+    }
+    .sejarah h1 {
+        font-size: 23px;
+    }
+    .sejarah p {
+        font-size: 15px;
+    }
 }
 /*android landscape dan tablet*/
-@media only screen and (min-width: 768px) and (max-width : 992px){
-.kedua{
-  padding: 40px;
-}
-.sejarah{
-  padding: 60px;
-}
-.sejarah h1{
-  font-size: 30px;
-}
-.sejarah p{
-  font-size: 19px;
-}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .kedua {
+        padding: 40px;
+    }
+    .sejarah {
+        padding: 60px;
+    }
+    .sejarah h1 {
+        font-size: 30px;
+    }
+    .sejarah p {
+        font-size: 19px;
+    }
 }
 /*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1200px){
-.kedua{
-  padding: 60px;
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .kedua {
+        padding: 60px;
+    }
+    .sejarah {
+        padding: 70px;
+    }
+    .sejarah h1 {
+        font-size: 40px;
+    }
+    .sejarah p {
+        font-size: 28px;
+    }
 }
-.sejarah{
-  padding: 70px;
-}
-.sejarah h1{
-  font-size: 40px;
-}
-.sejarah p{
-  font-size: 28px;
-}
-}
-
 
 /* /Informasi/Kontak(footer)/ */
 footer {
@@ -242,8 +242,8 @@ footer {
 .kontak {
   margin: 20px;
 }
-.kontak a{
-color: white;
+.kontak a {
+  color: white;
 }
 
 .box {
@@ -255,12 +255,13 @@ color: white;
 .tautan h6 {
   font-size: 1.3rem;
 }
-.tautan a{
-color: #fff;
-text-decoration: none;
-}.tautan a:hover {
-color: blue;
-text-decoration: underline;
+.tautan a {
+  color: #fff;
+  text-decoration: none;
+}
+.tautan a:hover {
+  color: blue;
+  text-decoration: underline;
 }
 .box .tautan {
   display: flex;
@@ -283,10 +284,6 @@ text-decoration: underline;
   font-size: 32px;
   font-weight: bold;
   text-decoration: underline black;
-}
-
-.up h4 {
-  font-size: 30px;
 }
 
 .icon {
@@ -369,17 +366,17 @@ text-decoration: underline;
 
 /* /footer/ */
 .footer {
-  padding: 25px;
+  padding: 15px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .footer i {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .footer h4 {
-  font-size: 20px;
+  font-size: 12px;
   color: #fff;
   text-align: left;
   margin-top: 10px;

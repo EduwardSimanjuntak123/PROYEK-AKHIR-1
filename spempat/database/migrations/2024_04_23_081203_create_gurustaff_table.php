@@ -13,13 +13,11 @@ return new class extends Migration
     {
         Schema::create('gurustaff', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+
             $table->string('nama');
-            $table->enum('jenis_kelamin', ['L', 'P']);
-            $table->string('file')->nullable();
-            $table->string('alamat_lahir')->nullable();
-            $table->date('tanggallahir')->nullable(); // Kolom tanggal lahir
+            $table->enum('jenis_kelamin', ['Laki-Laki', 'Perempuan']);
             $table->unsignedBigInteger('user_id');
+            $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }

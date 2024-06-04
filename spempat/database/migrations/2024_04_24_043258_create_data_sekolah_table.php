@@ -19,7 +19,7 @@ return new class extends Migration
             $table->date('Tanggal_SK_pendirian_sekolah')->nullable();
             $table->string('SK_pendirian_sekolah')->nullable();
             $table->string('SK_ijin_operasional')->nullable();
-            $table->date('tanggak_SK_ijin_operasional')->nullable();
+            $table->date('tanggal_SK_ijin_operasional')->nullable();
             $table->string('status_kepemilikan')->nullable();
             $table->char('akreditas')->nullable();
             $table->string('operator')->nullable();
