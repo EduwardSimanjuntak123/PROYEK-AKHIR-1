@@ -2,7 +2,7 @@
 @section('content')
     <!--tampilan isi-->
     <div class="isi">
-        <div style="background: rgba(5, 5, 5, 0.348); height:max-content">
+        <div class="badan" style="background: rgba(5, 5, 5, 0.348); height:max-content;padding:2rem;">
             <h1>Guru dan Staff</h1>
             <div class="container ">
                 <p>Kami bangga memiliki tim guru dan staf yang luar biasa di SMP Negeri 4 Balige. Mereka bukan hanya
@@ -32,12 +32,12 @@
             <table class="table table-bordered shadow">
                 <thead>
                     <tr>
-                        <th style="background-color:rgb(8, 153, 201)" colspan="3">DAFTAR GURU DAN STAF</th>
+                        <th style="background-color:#80d3fc" colspan="3">DAFTAR GURU DAN STAF</th>
                     </tr>
                     <tr>
-                        <th style="background-color:  rgb(8, 153, 201)">No</th>
-                        <th style="background-color: rgb(8, 153, 201)">Nama Guru/Staff</th>
-                        <th style="background-color:  rgb(8, 153, 201)">Jenis Kelamin</th>
+                        <th style="background-color:  #80d3fc">No</th>
+                        <th style="background-color: #80d3fc">Nama Guru/Staff</th>
+                        <th style="background-color:  #80d3fc">Jenis Kelamin</th>
                     </tr>
                 </thead>
                 <tbody>

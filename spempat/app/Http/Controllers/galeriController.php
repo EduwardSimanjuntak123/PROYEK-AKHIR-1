@@ -34,10 +34,10 @@ class galeriController extends Controller
                     'photo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
                 ]
             );
-            if ($validator->fails())
-                Alert::warning('File yang anda masukkan tidak sesuai Kriteria', 'Silahkan coba lagi');
-            return redirect()->back()->withInput()->withErrors($validator);
-
+            if ($validator->fails()){
+              Alert::warning('maaf terjadi kesalahan dalam menyimpan data', 'Silahkan coba  lagi');
+                return redirect()->back()->withInput()->withErrors($validator);  
+            }
             $photo = $request->file('photo');
             $filename = date('Y-m-d') . $photo->getClientOriginalName(); //mengubah nama ke database
             $path = 'images/' . $filename;

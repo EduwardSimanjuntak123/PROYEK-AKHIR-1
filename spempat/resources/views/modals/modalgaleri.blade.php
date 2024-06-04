@@ -40,29 +40,4 @@
     </div>
 </div>
 
-<div class="modal fade" id="hapusgaleri" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Hapus Galeri</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                @foreach ($data as $item)
-                    {{ $item->id }}. {{ $item->nama_galeri}}<form
-                        action="{{ route('galeri.delete', ['id' => $item->id]) }}" method="POST"
-                        enctype="multipart/form-data">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">hapus</button>
-                    </form><br>
-                @endforeach
 
-
-
-            </div>
-
-        </div>
-    </div>
-</div>

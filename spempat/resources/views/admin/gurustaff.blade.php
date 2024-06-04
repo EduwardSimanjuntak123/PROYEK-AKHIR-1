@@ -29,7 +29,7 @@
                                     data-bs-target={{ '#editgurudanstaff' . $item->id }} data-id="{{ $item->id }}">
                                     <i class="lni lni-pencil"></i>
                                 </button>
-                                <form action="{{ route('coba', ['id' => $item->id]) }}" method="POST" class="d-inline" onsubmit="return confirm('Delete?')">
+                                <form action="{{ route('gurustaff.delete', ['id' => $item->id]) }}" method="POST" class="d-inline" onsubmit="return confirm('Delete?')">
                                     @csrf
                                     @method('DELETE')
                                     <button class="btn btn-danger" onclick="window.deleteConfirm(event)"><i class="lni lni-trash-can"></i></button>

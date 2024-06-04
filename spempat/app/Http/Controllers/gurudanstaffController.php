@@ -29,16 +29,11 @@ class gurudanstaffController extends Controller
 
     public function delete($id)
     {
-        try {
-            $gurustaff = gurustaff::findOrFail($id);
-            $gurustaff->delete();
-
-            return redirect()->route('gurustaff.index')->with('success', 'Data guru/staff berhasil dihapus.');
-        } catch (\Exception $e) {
-            Alert::warning('maaf terjadi kesalahan dalam menghapus data', 'Silahkan coba  lagi');
-            return redirect()->back()->withInput();
-        }
+        $gurustaff = Gurustaff::findOrFail($id);
+        $gurustaff->delete();
+        return redirect()->route('gurustaff.index');
     }
+
     public function store(Request $request)
     {
 
@@ -50,7 +45,11 @@ class gurudanstaffController extends Controller
                     'jeniskelamin' => 'required',
                 ]
             );
-            if ($validator->fails()) return redirect()->back()->withInput()->withErrors($validator);
+            if ($validator->fails()) {
+                Alert::warning('sepertinya ada kesalahan pada proses menginput data', 'Silahkan coba beberapa saat lagi');
+
+                return redirect()->back()->withInput()->withErrors($validator);
+            }
 
 
             $userId = Auth::id();

@@ -17,22 +17,23 @@
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Judul berita</label>
                                 <input type="text" class="form-control" name="judul" id="exampleInputEmail1"
-                                    placeholder="Masukkan judul berita"  value="{{ old('photo') }}">
+                                    placeholder="Masukkan judul berita" value="{{ old('photo') }}">
                                 @error('judul')
                                     <small style="color: red">{{ $message }}</small>
                                 @enderror
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Gambar</label>
-                                <input type="file" class="form-control" name="photo" id="exampleInputEmail1" value="{{ old('photo') }}">
+                                <input type="file" class="form-control" name="photo" id="exampleInputEmail1"
+                                    value="{{ old('photo') }}">
                                 @error('photo')
                                     <small style="color: red">{{ $message }}</small>
                                 @enderror
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">isi berita</label>
-                                    <textarea name="isi" class="form-control" id="exampleInputEmail1" placeholder="Masukkan isi berita"></textarea>
-                                
+                                <textarea name="isi" class="form-control" id="exampleInputEmail1" placeholder="Masukkan isi berita"></textarea>
+
                                 @error('isi')
                                     <small style="color: red">{{ $message }}</small>
                                 @enderror
@@ -48,7 +49,7 @@
                         </div> --}}
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-                            <button type="submit" class="btn btn-primary">Simpan </button>
+                            <button type="submit" class="btn btn-primary">Tambah</button>
                         </div>
                     </form>
                 </div>
@@ -68,15 +69,16 @@
                     </div>
                     <div class="modal-body">
                         {{-- @foreach ($data as $item) --}}
-                        <form action="{{ route('berita.update',['id'=>$item->id]) }}" method="POST" enctype="multipart/form-data">
+                        <form action="{{ route('berita.update', ['id' => $item->id]) }}" method="POST"
+                            enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
-                            
+
                             <div class="card-body">
                                 <div class="form-group">
                                     @if ($item->file)
-                                   <center><img class="border shadow" src="{{ asset('storage/img/'.$item->file) }}" alt="Gambar Profil" style="max-width: 100px;"></center> 
-                        
+                                        <center><img class="border shadow" src="{{ asset('storage/img/' . $item->file) }}"
+                                                alt="Gambar Profil" style="max-width: 100px;"></center>
                                     @endif
                                     <label for="exampleInputEmail1">judul berita</label>
                                     <input type="text" class="form-control" name="judul" value="{{ $item->judul }}"
@@ -85,10 +87,11 @@
                                         <small style="color: brown">{{ $message }}</small>
                                     @enderror
                                 </div>
-                            
+
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Gambar</label>
-                                    <input type="file" class="form-control" name="photo" id="exampleInputEmail1" value="{{ old('photo') }}">
+                                    <input type="file" class="form-control" name="photo" id="exampleInputEmail1"
+                                        value="{{ old('photo') }}">
                                     @error('photo')
                                         <small style="color: red">{{ $message }}</small>
                                     @enderror
@@ -134,10 +137,10 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
             Tambah Berita
         </button>
-        
+
         <table class="table mt-3 shadow">
             <thead>
-                
+
                 <tr class="table-secondary">
                     <th scope="col">Gambar </th>
                     <th scope="col">Judul Berita</th>
@@ -152,7 +155,7 @@
                         <td class="">
                             <img class="border shadow" src="{{ asset('storage/img/' . $item->file) }}"
                                 style="height:100px;">
-                            
+
                         </td>
                         <td class="p-3 border">{{ $item->judul }}</td>
                         <td class="p-3 border">{{ $item->isi }}</td>
@@ -161,13 +164,14 @@
                                 data-bs-target={{ '#staticBackdropedit' . $item->id }} data-id="{{ $item->id }}">
                                 <i class="lni lni-pencil"></i>
                             </button>
-                           
+
                             {{-- <a href="{{ route('berita.edit', ['id' => $item->id]) }}" class="btn btn-primary"><i class="fas fa-pen"></i>Edit</a> --}}
-                            <form action="{{ route('berita.delete',['id'=>$item->id]) }}" method="POST"  class="btn btn-danger p-0"
-                                >
+                            <form action="{{ route('berita.delete', ['id' => $item->id]) }}" method="POST"
+                                class="btn btn-danger p-0">
                                 @csrf
                                 @method('DELETE')
-                                <button class="btn btn-danger m-0" onclick="window.deleteConfirm(event)"><i class="lni lni-trash-can"></i></button>
+                                <button class="btn btn-danger m-0" onclick="window.deleteConfirm(event)"><i
+                                        class="lni lni-trash-can"></i></button>
                             </form>
                         </td>
                     </tr>
@@ -175,8 +179,4 @@
             </tbody>
         </table>
     </div>
-
-
-
-  
 @endsection
