@@ -193,7 +193,6 @@ body {
 .news {
     background-color: #fff;
     padding: 30px;
-    padding-bottom: 500px;
 }
 
 .news h2 {
@@ -202,19 +201,17 @@ body {
 }
 
 .news img {
-    width: 100%;
+    width: 500px;
     height: auto;
     object-fit: cover;
 }
 
 .news h6 {
-    margin-left: 800px;
     font-weight: bold;
 }
 
 .news p {
-    background-color: #d1d1d1;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
     padding: 10px;
 }
@@ -236,11 +233,9 @@ body {
 
     .news h2 {
         font-size: 1.15rem;
-        margin-left: 230px;
     }
 
     .news p {
-        text-align: left;
         font-size: 1.2rem;
         padding: 3px;
     }
@@ -250,7 +245,6 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .news {
         padding: 12px;
-        padding-bottom: 30px;
     }
 
     .news h1 {
@@ -263,11 +257,9 @@ body {
 
     .news h2 {
         font-size: 1.5rem;
-        margin-left: 500px;
     }
 
     .news p {
-        text-align: left;
         font-size: 1.5rem;
         padding: 5px;
     }
