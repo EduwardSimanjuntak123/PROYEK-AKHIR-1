@@ -15,14 +15,14 @@
     <div class="container-fluid kedua">
         <div class="container-fluid">
             <div class="row justify-content-center isi">
-                <div class="col-md-12 col-12 visi">
+                <div class="col-md-10 col-10 visi">
                     <div class="judul">
                         <h1 style="font-weight: bold;">Visi</h1>
                     </div>
                     <h4>MENCIPTAKAN PESERTA DIDIK YANG BERIMAN, BERAKHLAK, BERPRESTASI,KREATIF, INOVATIF, MELESTARIKAN
                         BUDAYA DAN RAMAH LINGKUNGAN DEMI TERWUJUDNYA PROFIL PELAJAR PANCASILA.</h4>
                 </div>
-                <div class="col-md-12 col-12 misi">
+                <div class="col-md-10 col-10 misi">
                     <div class="judul">
                         <h1 style="font-weight: bold;">Misi</h1>
                     </div>

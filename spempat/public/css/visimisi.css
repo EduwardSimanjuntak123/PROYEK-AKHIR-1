@@ -123,24 +123,18 @@ body {
 
 /*tampilan awal*/
 .info h1 {
-    font-size: 45px;
+    font-size: 50px;
     color: #fff;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
 }
 
-.info .first,
-.info.second {
-    padding: 11rem;
-}
-
-.pertama .info {
+.info .first {
     background: linear-gradient(0deg, #7fd4ff, #7fd4ff),
         linear-gradient(0deg, #ffffff, #ffffff),
         linear-gradient(0deg, #ffffff, #ffffff), #ffffff;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 12rem;
 }
 
 .info .second {
@@ -173,7 +167,7 @@ body {
     }
 }
 /*dekstop*/
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
     .info h1 {
         font-size: 2rem;
     }
@@ -346,7 +340,44 @@ body {
         /* Ubah nilai bottom sesuai kebutuhan */
     }
 }
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+    .kedua {
+        padding: 70px;
+    }
 
+    .isi .visi {
+        margin-bottom: 80px;
+        padding: 50px;
+    }
+
+    .visi .judul {
+        padding: 12px;
+        width: 20rem;
+        top: -2%;
+        left: 50%;
+    }
+
+    .visi h4,
+    .misi h4 {
+        font-size: 18px;
+    }
+
+    .judul h1 {
+        font-size: 30px;
+    }
+
+    .isi .misi {
+        padding: 50px;
+    }
+
+    .misi .judul {
+        padding: 12px;
+        width: 20rem;
+        top: -1%;
+        left: 50%;
+    }
+}
+/* Ubah nilai bottom sesuai kebutuhan */
 /*dekstop*/
 
 /* /Informasi/Kontak(footer)/ */

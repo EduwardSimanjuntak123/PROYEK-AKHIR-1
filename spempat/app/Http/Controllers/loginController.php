@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\berita;
+use App\Models\data_sarpras;
 use App\Models\galeri;
 use App\Models\gurustaff;
 use Illuminate\Http\Request;
@@ -13,7 +14,7 @@ class loginController extends Controller
 {
     public function index(){
         try{
-           $totalDataSarpras = gurustaff::count();
+           $totalDataSarpras = data_sarpras::count();
         $totalDataGaleri = galeri::count();
         $totalDataGuru = gurustaff::count();
         $totalDataberita = berita::count();

@@ -18,8 +18,6 @@ class UserSeeder extends Seeder
             'name' => 'ADMIN SMP4 BALIGE',
             'email' => 'smp4@gmail.com',
             'password' => bcrypt('admin12345'),
-
-            
         ]);
     }
 }
