@@ -32,12 +32,12 @@
             <table class="table table-bordered shadow">
                 <thead>
                     <tr>
-                        <th style="background-color:#80d3fc" colspan="3">DAFTAR GURU DAN STAF</th>
+                        <th style="background: #00a9ff;" colspan="3">DAFTAR GURU DAN STAF</th>
                     </tr>
                     <tr>
-                        <th style="background-color:  #80d3fc">No</th>
-                        <th style="background-color: #80d3fc">Nama Guru/Staff</th>
-                        <th style="background-color:  #80d3fc">Jenis Kelamin</th>
+                        <th style="background: #00a9ff;">No</th>
+                        <th style="background: #00a9ff;">Nama Guru/Staff</th>
+                        <th style="background: #00a9ff;">Jenis Kelamin</th>
                     </tr>
                 </thead>
                 <tbody>

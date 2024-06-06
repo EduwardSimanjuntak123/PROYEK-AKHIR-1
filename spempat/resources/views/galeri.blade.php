@@ -24,17 +24,17 @@
         <div class="container-fluid text-center foto">
             <div class="row">
                 @foreach ($galeri as $item)
-                    <div class="col-xs-4 col-lg-4 mb-4">
-                        <img class="thumbnail" src="{{ asset('storage/images/' . $item->file) }}">
-                        <h4>{{ $item->nama_galeri }}</h4>
-                        <div id="modal" class="modal">
-                            <span class="close">&times;</span>
-                            <img class="modal-content" id="fullImage">
-                        </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
+                        <img class="thumbnail" src="{{ asset('storage/images/' . $item->file) }}"
+                            alt="{{ $item->nama_galeri }}">
+                        <p>{{ $item->nama_galeri }}</p>
                     </div>
                 @endforeach
+            </div>
 
-
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="fullImage">
             </div>
         </div>
     </div>

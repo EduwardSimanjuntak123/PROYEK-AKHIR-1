@@ -4,7 +4,7 @@
         <button type="button " class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#tambahgaleri">
             Tambah Foto
         </button>
-        
+
         <div class="container mt-3">
             <div>
                 @foreach ($data as $item)
@@ -12,11 +12,11 @@
                         style=" display: inline-block;
                     width: 200px;
                     height: 300px;
-                    overflow: hidden;
+                 
                     margin: 1em;
                     text-align: center;">
                         <img class="border shadow m-1"
-                            style="width: 100%;
+                            style="width: 200px;
                         height: 200px;
                         object-fit: cover; "
                             src="{{ asset('storage/images/' . $item->file) }}" alt="{{ $item->nama_galeri }}">

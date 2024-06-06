@@ -1,774 +1,795 @@
 body {
-  margin: 0;
-  font-family: "Kaisei Tokumin", serif;
-  font-weight: 800; /* Ubah warna latar belakang body */
+    margin: 0;
+    font-family: "Kaisei Tokumin", serif;
+    font-weight: 800; /* Ubah warna latar belakang body */
 }
 
 /* CSS untuk header */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #00A9FF;
-  padding: 10px 20px;
-  font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00a9ff;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  color: #fff;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .logo img {
-  width: 65px;
-  height: 65px;
-  margin-right: 20px;
-  background: none;
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+    background: none;
 }
 
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .navbar-nav {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  color: #fff;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
 }
 
 .navbar-nav .nav-item {
-  margin-right: 20px;
+    margin-right: 20px;
 }
 
 .navbar-nav .nav-item a {
-  text-decoration: none;
-  font-size: 18px;
-  padding: 5px 10px;
-  border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .navbar-nav .nav-item a:hover {
-  background: #77C8FE;
+    background: #77c8fe;
 }
 
 .navbar-nav .nav-item a {
-  color: #fff;
+    color: #fff;
 }
 
-
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  z-index: 1;
-  border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
 }
 
 .dropdown-menu li {
-  padding: 10px;
+    padding: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 
 .dropdown {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-toggle {
-  cursor: pointer;
+    cursor: pointer;
 }
 /* Untuk header */
 @media (max-width: 768px) {
-  .logo img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
+    .logo img {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
 
-  .logo {
-    font-size: 20px;
-  }
+    .logo {
+        font-size: 20px;
+    }
 
-  .navbar-nav .nav-item a {
-    font-size: 14px;
-    padding: 5px 8px;
-  }
+    .navbar-nav .nav-item a {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
 
-  .text-light h2 {
-    margin-left: 20px;
-    width: auto;
-  }
+    .text-light h2 {
+        margin-left: 20px;
+        width: auto;
+    }
 
-  .text-light h3,
-  .text-light h4,
-  .text-light p {
-    padding-left: 20px;
-  }
+    .text-light h3,
+    .text-light h4,
+    .text-light p {
+        padding-left: 20px;
+    }
 }
 
 /*tampilan awal*/
 .hero {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .hero h1 {
-  text-align: center;
-  padding: 20px;
-  font-size: 65px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.911);
-
+    text-align: center;
+    padding: 20px;
+    font-size: 65px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.911);
 }
 
 .gambar img {
-  background-size: cover;
-  width: 100%;
-  height: auto;
+    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
-
 .list {
-  padding: 20px;
-  background-color: #00a9ff;
+    padding: 20px;
+    background-color: #00a9ff;
 }
 
 /*android*/
-@media only screen and (max-width : 767px) {
-  .hero h1 {
-      font-size: 1.5rem;
-      padding: 3px;
-  }
+@media only screen and (max-width: 767px) {
+    .hero h1 {
+        text-shadow: none;
+        font-size: 1.5rem;
+        padding: 3px;
+    }
 
-  .gambar img {
-      height: auto;
-  }
+    .gambar img {
+        height: auto;
+    }
 
-  .list {
-      padding: 10px;
-  }
+    .list {
+        padding: 10px;
+    }
 }
 
 /*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 992px) {
-  .hero h1 {
-      font-size: 2.2rem;
-      padding: 5px;
-  }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .hero h1 {
+        font-size: 2.2rem;
+        padding: 5px;
+    }
 
-  .list {
-      padding: 15px;
-  }
+    .list {
+        padding: 15px;
+    }
 }
 
 /*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1200px) {
-  .hero h1 {
-      font-size: 3rem;
-      padding: 7px;
-  }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .hero h1 {
+        font-size: 3rem;
+        padding: 7px;
+    }
 
-  .list {
-      padding: 20px;
-  }
+    .list {
+        padding: 20px;
+    }
 }
-
 
 /*data sekolah*/
 .data {
-  background-color: #fff;
-  padding: 30px;
+    background-color: #fff;
+    padding: 30px;
 }
 
 /*kiri*/
 .kiri {
-  padding: 20px;
+    padding: 20px;
 }
 
 .kiri .satu {
-  text-align: center;
-  background: rgb(255, 255, 255);
+    text-align: center;
+    background: rgb(255, 255, 255);
 
-  margin-bottom: 30px;
+    margin-bottom: 30px;
 }
-.kiri .dua{
+.kiri .dua {
     background: rgba(217, 217, 217, 0.22);
 }
-.dua a{
+.dua a {
     text-decoration: none;
     color: #333;
-  }
-  .dua a:hover{
+}
+.dua a:hover {
     color: #5e08fd;
     text-decoration: underline;
-    }
+}
 
 .satu i {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 .satu h2 {
-  background: #00A9FF;
-  color: #fff;
-  padding: 5px;
-  text-align: left;
+    background: #00a9ff;
+    color: #fff;
+    padding: 5px;
+    text-align: left;
 }
 
 .satu h4 {
-  text-align: left;
-  background-color: #fff;
-  padding: 10px;
+    text-align: left;
+    background-color: #fff;
+    padding: 10px;
 }
 
 .satu img {
-  width: 50%;
-  height: auto;
+    width: 50%;
+    height: auto;
 }
 
 .kiri {
-  text-align: center;
-  background: rgba(255, 255, 255, 0.997);
-
+    text-align: center;
+    background: rgba(255, 255, 255, 0.997);
 }
 
 .dua h1 {
-  background: #00A9FF;
+    background: #00a9ff;
 }
-
-
+.dua {
+    overflow-y: scroll;
+    height: 900px;
+}
 /*android*/
-@media only screen and (max-width : 767px) {
-  .kiri {
-      padding: 10px;
-  }
+@media only screen and (max-width: 767px) {
+    .kiri {
+        padding: 10px;
+    }
 
-  .kiri .satu {
-      margin-bottom: 10px;
-  }
+    .kiri .satu {
+        margin-bottom: 10px;
+    }
+    .dua hr {
+        display: none;
+    }
+    .dua a {
+        font-size: 6px;
+    }
+    .dua {
+        overflow-y: scroll;
+        height: 550px;
+    }
+    .dua p {
+        margin-left: 8px;
+        margin-bottom: 5px;
+    }
+    .satu i {
+        font-size: 0.8rem;
+    }
 
-  .satu i {
-      font-size: 0.8rem;
-  }
+    .satu h2 {
+        font-size: 1rem;
+    }
+    .kanan .one h3 {
+        font-size: 7px;
+    }
+    .kanan .two h3 {
+        font-size: 7px;
+    }
+    .kanan .three h3 {
+        font-size: 7px;
+    }
+    .satu h4 {
+        font-size: 0.51rem;
+        padding: 5px;
+    }
 
-  .satu h2 {
-      font-size: 1rem;
-  }
+    .satu img {
+        height: auto;
+    }
 
-  .satu h4 {
-      font-size: 0.51rem;
-      padding: 5px;
-  }
-
-  .satu img {
-      height: auto;
-  }
-
-  .dua h1 {
-      font-size: 1rem;
-  }
-
-
+    .dua h1 {
+        font-size: 1.2rem;
+    }
+    .dua p {
+        font-size: 8px;
+    }
 }
 
 /*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 992px) {
-  .kiri {
-      padding: 15px;
-  }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .kiri {
+        padding: 15px;
+    }
 
-  .kiri .satu {
-      margin-bottom: 15px;
-  }
+    .kiri .satu {
+        margin-bottom: 15px;
+    }
 
-  .satu i {
-      font-size: 1.2rem;
-  }
+    .satu i {
+        font-size: 1.2rem;
+    }
 
-  .satu h2 {
-      font-size: 1.5rem;
-  }
+    .satu h2 {
+        font-size: 1.5rem;
+    }
 
-  .satu h4 {
-      font-size: 1.14rem;
-      padding: 10px;
-  }
+    .satu h4 {
+        font-size: 1.14rem;
+        padding: 10px;
+    }
 
-  .dua h1 {
-      font-size: 1.5rem;
-  }
-
-
+    .dua h1 {
+        font-size: 1.5rem;
+    }
 }
 
 /*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1200px) {
-  .kiri {
-      padding: 17px;
-  }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .kiri {
+        padding: 17px;
+    }
 
-  .kiri .satu {
-      margin-bottom: 17px;
-  }
+    .kiri .satu {
+        margin-bottom: 17px;
+    }
 
-  .satu i {
-      font-size: 1.5rem;
-  }
+    .satu i {
+        font-size: 1.5rem;
+    }
 
-  .satu h2 {
-      font-size: 1.7rem;
-  }
+    .satu h2 {
+        font-size: 1.7rem;
+    }
 
-  .satu h4 {
-      font-size: 1.19rem;
-      padding: 10px;
-  }
+    .satu h4 {
+        font-size: 1.19rem;
+        padding: 10px;
+    }
 
-  .dua h1 {
-      font-size: 1.7rem;
-  }
-
-
+    .dua h1 {
+        font-size: 1.7rem;
+    }
 }
 
 /*kanan*/
 .kanan {
-  padding: 20px;
+    padding: 20px;
 }
 
 .kanan .one {
-  text-align: center;
-  background: #FFFFFF;
-  margin-bottom: 30px;
+    text-align: center;
+    background: #ffffff;
+    margin-bottom: 30px;
 }
 
 .kanan h1 {
-  background: #00A9FF;
-  color: #fff;
+    background: #00a9ff;
+    color: #fff;
 }
 
 .kanan h3 {
-  padding-left: 30px;
-  text-align: left;
+    padding-left: 30px;
+    text-align: left;
 }
 
 .kanan .two {
-  text-align: center;
-  background: #FFFFFF;
-  margin-bottom: 30px;
+    text-align: center;
+    background: #ffffff;
+    margin-bottom: 30px;
 }
 
 .kanan .three {
-  text-align: center;
-  background: #FFFFFF;
-  margin-bottom: 30px;
+    text-align: center;
+    background: #ffffff;
+    margin-bottom: 30px;
 }
 
 .three .tabel {
-  padding: 10px;
+    padding: 10px;
 }
 .three .tabel th {
-  font-size: 10px;
-  color: #fff;
+    font-size: 10px;
+    color: #fff;
 }
 .three .tabel td {
-  font-size: 10px;
+    font-size: 10px;
 }
 .four .tabel th {
-  font-size: 10px;
-  color: #fff;
+    font-size: 10px;
+    color: #fff;
 }
 .four .tabel td {
-  font-size: 10px;
+    font-size: 10px;
 }
 
 .three h6 {
-  padding: 15px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .kanan .four {
-  text-align: center;
-  background: #FFFFFF;
+    text-align: center;
+    background: #ffffff;
 }
 
 .four h6 {
-  padding: 15px;
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .kanan .total {
-  padding: 50px;
+    padding: 50px;
 }
 
-.three .tabel, .four .tabel {
-  padding: 30px;
+.three .tabel,
+.four .tabel {
+    padding: 30px;
 }
-.three .tabel th, .four .tabel th {
-  font-size: 18px;
-  color: #fff;
+.three .tabel th,
+.four .tabel th {
+    font-size: 18px;
+    color: #fff;
 }
-.three .tabel td, .four .tabel td {
-  font-size: 18px;
+.three .tabel td,
+.four .tabel td {
+    font-size: 18px;
 }
-
-
 
 /*android*/
-@media only screen and (max-width : 767px) {
-  .kanan {
-      padding: 10px;
-  }
+@media only screen and (max-width: 767px) {
+    .kanan {
+        padding: 10px;
+    }
 
-  .kanan .one,
-  .kanan .two,
-  .kanan .three {
-      margin-bottom: 10px;
-  }
+    .kanan .one,
+    .kanan .two,
+    .kanan .three {
+        margin-bottom: 10px;
+    }
 
-  .kanan h1 {
-      font-size: 1rem;
-      padding: 5px;
-  }
+    .kanan h1 {
+        font-size: 1rem;
+        padding: 5px;
+    }
 
-  .kanan h3 {
-      font-size: 0.7rem;
-      padding-left: 10px;
-  }
+    .kanan h3 {
+        font-size: 0.7rem;
+        padding-left: 10px;
+    }
 
-  .kanan .total {
-      padding: 10px;
-  }
+    .kanan .total {
+        padding: 10px;
+    }
 
-  .three .tabel, .four .tabel {
-      padding: 15px;
-  }
-  .three .tabel th, .four .tabel th {
-      font-size: 10px;
-      color: #fff;
-  }
-  .three .tabel td, .four .tabel td {
-      font-size: 10px;
-  }
+    .three .tabel,
+    .four .tabel {
+        padding: 15px;
+    }
+    .three .tabel th,
+    .four .tabel th {
+        font-size: 10px;
+        color: #fff;
+    }
+    .three .tabel td,
+    .four .tabel td {
+        font-size: 10px;
+    }
 }
 
 /*android landscape dan tablet landscape*/
-@media only screen and (min-width: 768px) and (max-width : 992px) {
-  .kanan {
-      padding: 15px;
-  }
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .kanan {
+        padding: 15px;
+    }
 
-  .kanan .one,
-  .kanan .two,
-  .kanan .three {
-      margin-bottom: 15px;
-  }
+    .kanan .one,
+    .kanan .two,
+    .kanan .three {
+        margin-bottom: 15px;
+    }
 
-  .kanan h1 {
-      font-size: 1.5rem;
-      padding: 10px;
-  }
+    .kanan h1 {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
 
-  .kanan h3 {
-      font-size: 1.5rem;
-      padding-left: 15px;
-  }
+    .kanan h3 {
+        font-size: 1.5rem;
+        padding-left: 15px;
+    }
 
-  .four h6,
-  .three h6 {
-      font-size: 1rem;
-      padding: 10px;
-  }
-  .kanan .total {
-      padding: 15px;
-  }
+    .four h6,
+    .three h6 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .kanan .total {
+        padding: 15px;
+    }
 
-  .three .tabel, .four .tabel {
-      padding: 20px;
-  }
-  .three .tabel th, .four .tabel th {
-      font-size: 14px;
-      color: #fff;
-  }
-  .three .tabel td, .four .tabel td {
-      font-size: 14px;
-  }
+    .three .tabel,
+    .four .tabel {
+        padding: 20px;
+    }
+    .three .tabel th,
+    .four .tabel th {
+        font-size: 14px;
+        color: #fff;
+    }
+    .three .tabel td,
+    .four .tabel td {
+        font-size: 14px;
+    }
 }
 
 /*dekstop*/
-@media only screen and (min-width: 993px) and (max-width : 1200px) {
-  .kanan {
-      padding: 17px;
-  }
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .kanan {
+        padding: 17px;
+    }
 
-  .kanan .one,
-  .kanan .two,
-  .kanan .three {
-      margin-bottom: 17px;
-  }
+    .kanan .one,
+    .kanan .two,
+    .kanan .three {
+        margin-bottom: 17px;
+    }
 
-  .kanan h1 {
-      font-size: 1.8rem;
-      padding: 10px;
-  }
+    .kanan h1 {
+        font-size: 1.8rem;
+        padding: 10px;
+    }
 
-  .kanan h3 {
-      font-size: 1.7rem;
-      padding-left: 15px;
-  }
+    .kanan h3 {
+        font-size: 1.7rem;
+        padding-left: 15px;
+    }
 
-  .four h6,
-  .three h6 {
-      font-size: 1.2rem;
-      padding: 10px;
-  }
+    .four h6,
+    .three h6 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
 
-  .kanan .total {
-      padding: 17px;
-  }
+    .kanan .total {
+        padding: 17px;
+    }
 }
-
-
 
 /* /Informasi/Kontak(footer)/ */
 footer {
-  background-color: #00a9ff;
+    background-color: #00a9ff;
 }
 
 .kontak {
-  margin: 20px;
+    margin: 20px;
 }
 .kontak a {
-  color: white;
+    color: white;
 }
 
 .box {
-  background: rgba(217, 217, 217, 0.25);
-  padding: 15px;
-  color: #fff;
+    background: rgba(217, 217, 217, 0.25);
+    padding: 15px;
+    color: #fff;
 }
 
 .tautan h6 {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 .tautan a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 .tautan a:hover {
-  color: blue;
-  text-decoration: underline;
+    color: blue;
+    text-decoration: underline;
 }
 .box .tautan {
-  display: flex;
+    display: flex;
 }
 
 .tautan .link {
-  margin: 12px;
+    margin: 12px;
 }
 
 .box .sosmed {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .up .info {
-  text-align: left;
-  display: flex;
+    text-align: left;
+    display: flex;
 }
 
 .up h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-decoration: underline black;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline black;
 }
 
 .icon {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  font-size: 4.2rem;
-  margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 4.2rem;
+    margin-bottom: 20px;
 }
 .garis {
-  margin-top: 3rem;
+    margin-top: 3rem;
 }
 /* /android/ */
 @media only screen and (max-width: 767px) {
-  .kontak {
-      margin: 10px;
-  }
-  .up h2 {
-      font-size: 25px;
-  }
-  .box {
-      padding: 5px;
-  }
-  .up h4 {
-      font-size: 15px;
-  }
-  .icon {
-      font-size: 2.4rem;
-  }
-  .tautan h6 {
-      font-size: 0.7rem;
-  }
-  .tautan .link {
-      padding: 2px;
-  }
+    .kontak {
+        margin: 10px;
+    }
+    .up h2 {
+        font-size: 25px;
+    }
+    .box {
+        padding: 5px;
+    }
+    .up h4 {
+        font-size: 15px;
+    }
+    .icon {
+        font-size: 2.4rem;
+    }
+    .tautan h6 {
+        font-size: 0.7rem;
+    }
+    .tautan .link {
+        padding: 2px;
+    }
 }
 
 /* /android landscape dan tablet landscape/ */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .kontak {
-      margin: 15px;
-  }
-  .up h2 {
-      font-size: 28px;
-  }
-  .box {
-      padding: 0.5rem;
-  }
-  .up h4 {
-      font-size: 18px;
-  }
-  .icon {
-      font-size: 2.8rem;
-  }
-  .tautan h6 {
-      font-size: 0.7rem;
-  }
+    .kontak {
+        margin: 15px;
+    }
+    .up h2 {
+        font-size: 28px;
+    }
+    .box {
+        padding: 0.5rem;
+    }
+    .up h4 {
+        font-size: 18px;
+    }
+    .icon {
+        font-size: 2.8rem;
+    }
+    .tautan h6 {
+        font-size: 0.7rem;
+    }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-  .kontak {
-      margin: 17px;
-  }
-  .up h2 {
-      font-size: 30px;
-  }
-  .box {
-      padding: 0.9rem;
-  }
-  .up h4 {
-      font-size: 18px;
-  }
-  .icon {
-      font-size: 3.5rem;
-  }
-  .tautan h6 {
-      font-size: 1rem;
-  }
+    .kontak {
+        margin: 17px;
+    }
+    .up h2 {
+        font-size: 30px;
+    }
+    .box {
+        padding: 0.9rem;
+    }
+    .up h4 {
+        font-size: 18px;
+    }
+    .icon {
+        font-size: 3.5rem;
+    }
+    .tautan h6 {
+        font-size: 1rem;
+    }
 }
 
 /* /footer/ */
 .footer {
-  padding: 15px;
-  display: flex;
-  justify-content: space-evenly;
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .footer i {
-  font-size: 3rem;
+    font-size: 3rem;
 }
 
 .footer h4 {
-  font-size: 12px;
-  color: #fff;
-  text-align: left;
-  margin-top: 10px;
+    font-size: 12px;
+    color: #fff;
+    text-align: left;
+    margin-top: 10px;
 }
 
 .footer .info {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .info .garis1 {
-  margin-left: 11rem;
+    margin-left: 11rem;
 }
 
 .info .garis2 {
-  margin-left: 3rem;
+    margin-left: 3rem;
 }
 
 /* /android/ */
 @media only screen and (max-width: 767px) {
-  .footer {
-      padding: 10px;
-  }
+    .footer {
+        padding: 10px;
+    }
 
-  .footer i {
-      font-size: 2.3rem;
-  }
+    .footer i {
+        font-size: 2.3rem;
+    }
 
-  .footer h4 {
-      font-size: 15px;
-  }
+    .footer h4 {
+        font-size: 15px;
+    }
 
-  .info .garis1,
-  .info .garis2 {
-      display: none;
-  }
-  .copyright div {
-      font-size: 10px;
-  }
+    .info .garis1,
+    .info .garis2 {
+        display: none;
+    }
+    .copyright div {
+        font-size: 10px;
+    }
 }
 
 /* /android landscape dan tablet landscape/ */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-  .footer {
-      padding: 13px;
-  }
+    .footer {
+        padding: 13px;
+    }
 
-  .footer h4 {
-      font-size: 5px;
-  }
+    .footer h4 {
+        font-size: 5px;
+    }
 
-  .footer i {
-      font-size: 2.8rem;
-  }
+    .footer i {
+        font-size: 2.8rem;
+    }
 
-  .footer h4 {
-      font-size: 20px;
-  }
+    .footer h4 {
+        font-size: 20px;
+    }
 
-  .info .garis1,
-  .info .garis2 {
-      display: none;
-  }
+    .info .garis1,
+    .info .garis2 {
+        display: none;
+    }
 }
 
 /* /dekstop/ */
 @media only screen and (min-width: 993px) and (max-width: 1195px) {
-  .footer {
-      padding: 15px;
-  }
+    .footer {
+        padding: 15px;
+    }
 
-  .footer h4 {
-      font-size: 15px;
-  }
+    .footer h4 {
+        font-size: 15px;
+    }
 
-  .footer i {
-      font-size: 3.3rem;
-  }
+    .footer i {
+        font-size: 3.3rem;
+    }
 
-  .footer h4 {
-      font-size: 17px;
-  }
+    .footer h4 {
+        font-size: 17px;
+    }
 
-  .info .garis1 {
-      margin-left: 6rem;
-  }
+    .info .garis1 {
+        margin-left: 6rem;
+    }
 
-  .info .garis2 {
-      margin-left: 1rem;
-  }
+    .info .garis2 {
+        margin-left: 1rem;
+    }
 }

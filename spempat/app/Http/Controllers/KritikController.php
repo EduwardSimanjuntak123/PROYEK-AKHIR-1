@@ -10,20 +10,20 @@ class KritikController extends Controller
     public function index()
     {
         $kritiks = Kritik::with('balasan')->get();
-        return view('admin.kritik.index', compact('kritiks'));
+        return view('admin.kritik.index',['title' => 'Ulasan Pengunjung'], compact('kritiks'));
     }
 
     public function update(Request $request, Kritik $kritik)
     {
         $kritik->update(['ditampilkan' => $request->ditampilkan]);
-        return redirect()->back()->with('success', 'Status kritik berhasil diubah.');
+        return redirect()->back()->with('success', 'Ulasan telah berhasil ditampilkan');
     }
 
     public function destroy($id)
     {
-        $data= Kritik::find($id);
+        $data = Kritik::find($id);
         $data->delete();
-        return redirect()->back()->with('success', 'Kritik berhasil dihapus.');
+        return redirect()->back()->with('success', 'Ulasan berhasil dihapus.');
     }
     public function reply(Request $request, Kritik $kritik)
     {
@@ -38,9 +38,6 @@ class KritikController extends Controller
     public function hide(Request $request, Kritik $kritik)
     {
         $kritik->update(['ditampilkan' => false]);
-        return redirect()->back()->with('success', 'Kritik berhasil disembunyikan.');
+        return redirect()->back()->with('success', 'Ulasan berhasil disembunyikan.');
     }
-
-    
 }
-

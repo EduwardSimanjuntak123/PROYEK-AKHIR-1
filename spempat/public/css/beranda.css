@@ -102,16 +102,7 @@ body {
         padding: 5px 8px;
     }
 
-    .text-light h2 {
-        margin-left: 20px;
-        width: auto;
-    }
 
-    .text-light h3,
-    .text-light h4,
-    .text-light p {
-        padding-left: 20px;
-    }
 
     .shape {
         width: 300px;
@@ -179,16 +170,19 @@ body {
     }
     .text-light h3 {
         font-size: 25px;
-        padding-left: 25px;
+        padding-inline: 5px;
+        text-align: center;
         margin-top: 1rem;
     }
     .text-light h4 {
         font-size: 20px;
-        padding-left: 25px;
+        text-align: center;
+        padding-inline: 25px;
     }
     .text-light p {
         font-size: 19px;
-        padding-left: 25px;
+        text-align: center;
+        padding-inline: 25px;
     }
 }
 /*android landscape dan tablet*/
@@ -285,12 +279,15 @@ body {
     }
     .hero1 h2 {
         font-size: 1.2rem;
+        text-align: center;
     }
     .hero1 h3 {
         font-size: 1.1rem;
+        text-align: center;
     }
     .hero1 p {
         font-size: 0.9rem;
+        text-align: center;
     }
     .person img {
         display: none;
@@ -303,6 +300,7 @@ body {
     }
     .hero1 h2 {
         font-size: 1.8rem;
+        
     }
     .hero1 h3 {
         font-size: 1.4rem;
@@ -368,8 +366,11 @@ body {
     text-decoration: none;
     color: #fff;
 }
-.news a :hover {
-    color: #042182;
+.news p {
+    color: #082e47;
+}
+.news .link :hover {
+    color: #5467a2;
 }
 /*android*/
 @media only screen and (max-width: 767px) {
@@ -425,8 +426,7 @@ footer {
     text-decoration: none;
 }
 .tautan a:hover {
-    color: blue;
-    text-decoration: underline;
+    color: rgb(71, 71, 205);
 }
 .box .tautan {
     display: flex;

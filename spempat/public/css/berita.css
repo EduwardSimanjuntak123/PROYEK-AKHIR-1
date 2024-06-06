@@ -111,6 +111,7 @@ body {
     .text-light h3,
     .text-light h4,
     .text-light p {
+        
         padding-left: 20px;
     }
 }
@@ -127,9 +128,10 @@ body {
 }
 
 .gambar img {
-    background-size: cover;
+    padding: 10px;
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .list {
@@ -173,7 +175,7 @@ body {
 }
 
 /*dekstop*/
-@media only screen and (min-width: 993px) and (max-width: 1200px) {
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
     .hero h1 {
         font-size: 2.7rem;
         padding: 13px;
@@ -193,17 +195,17 @@ body {
 .news {
     background-color: #fff;
     padding: 30px;
+    width: max-content;
+    height: auto;
 }
 
 .news h2 {
     text-align: center;
     font-weight: bold;
 }
-
 .news img {
-    width: 500px;
-    height: auto;
-    object-fit: cover;
+    width: 600px;
+    height: 400px;
 }
 
 .news h6 {
@@ -220,15 +222,10 @@ body {
 @media only screen and (max-width: 767px) {
     .news {
         padding: 8px;
-        padding-bottom: 20px;
     }
 
     .news h1 {
         font-size: 1.5rem;
-    }
-
-    .news img {
-        height: auto;
     }
 
     .news h2 {

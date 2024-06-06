@@ -34,13 +34,13 @@
                         <div class="container">
                             <div class="row" style="justify-content: space-around;">
                                 <div class="col-3 col-lg-3 col-md-3  icon">
-                                    <a href=""><i class="bi bi-facebook"></i></a>
+                                    <a href="https://www.facebook.com/smpn4balige"><i class="bi bi-facebook"></i></a>
                                 </div>
                                 <div class="col-3 col-lg-3 col-md-3  icon">
-                                    <a href=""><i class="bi bi-youtube"></i></a>
+                                    <a href="https://www.youtube.com/@smpnegeri4balige339"><i class="bi bi-youtube"></i></a>
                                 </div>
                                 <div class="col-3 col-lg-3 col-md-3  icon">
-                                    <a href=""><i class="bi bi-whatsapp"></i></a>
+                                    <a href="https://www.instagram.com/smpn4balige"><i class="bi bi-instagram"></i></a>
                                 </div>
                             </div>
                         </div>

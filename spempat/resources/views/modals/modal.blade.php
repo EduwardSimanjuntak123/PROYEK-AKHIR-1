@@ -15,8 +15,9 @@
                         <div class="card-body">
                             <div class="form-group">
                                 @if ($item->file)
-                                    <center><img class="border shadow" src="{{ asset('storage/images/' . $item->file) }}"
-                                            alt="Gambar Profil" style="max-width: 100px;"></center>
+                                    <center><img class="border shadow"
+                                            src="{{ asset('storage/images/' . $item->file) }}" alt="Gambar Profil"
+                                            style="max-width: 100px;"></center>
                                 @endif
                                 <div>
                                     <label for="exampleInputEmail1">Nama Kepala Sekolah</label>
@@ -110,8 +111,8 @@
                                 </div>
                                 <div>
                                     <label for="exampleInputEmail1">Tanggal SK Ijin Operasional</label>
-                                    <input type="date" class="form-control" name="tanggak_SK_ijin_operasional"
-                                        value="{{ $item->tanggak_SK_ijin_operasional }}" id="exampleInputEmail1">
+                                    <input type="date" class="form-control" name="tanggal_SK_ijin_operasional"
+                                        value="{{ $item->tanggal_SK_ijin_operasional }}" id="exampleInputEmail1">
                                 </div>
 
                             </div>

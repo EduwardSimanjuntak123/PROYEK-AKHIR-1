@@ -2,7 +2,7 @@
 @section('content')
     <div class="container-fluid text-center word">
         <div class="row">
-            <div class="col">
+            <div class="col ok">
                 <img src="{{ asset('img/kelas3.jpg') }}" alt="foto_1" width="285" height="285">
                 <img src="{{ asset('img/taman.jpg') }}" alt="foto_2" width="285" height="285">
                 <img src="{{ asset('img/kelas1.jpg') }}" alt="foto_3" width="285" height="285">

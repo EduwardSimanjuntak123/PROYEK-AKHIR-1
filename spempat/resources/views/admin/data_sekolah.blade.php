@@ -22,7 +22,8 @@
                 <tr>
                     <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditdetailsekolah' . $item->id }}">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="{{ '#staticBackdropeditdetailsekolah' . $item->id }}">
                             <i class="lni lni-pencil"></i>
                         </button>
                     </td>
@@ -56,12 +57,13 @@
                 </tr>
                 <tr>
                     <th class="col-md-6 table-secondary">Tanggal SK Izin Operasional</th>
-                    <td class="col-md-6 ">{{ $item->tanggak_SK_ijin_operasional }}</td>
+                    <td class="col-md-6 ">{{ $item->tanggal_SK_ijin_operasional }}</td>
                 </tr>
                 <tr>
                     <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditindentitassekolah' . $item->id }}">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="{{ '#staticBackdropeditindentitassekolah' . $item->id }}">
                             <i class="lni lni-pencil"></i>
                         </button>
                     </td>
@@ -91,7 +93,8 @@
                 <tr>
                     <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditdatapelengkap' . $item->id }}">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="{{ '#staticBackdropeditdatapelengkap' . $item->id }}">
                             <i class="lni lni-pencil"></i>
                         </button>
                     </td>
@@ -117,7 +120,8 @@
                 <tr>
                     <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditdatarombel' . $item->id }}">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="{{ '#staticBackdropeditdatarombel' . $item->id }}">
                             <i class="lni lni-pencil"></i>
                         </button>
                     </td>
@@ -129,7 +133,7 @@
                     <h1>DATA SISWA</h1>
                 </caption>
                 <tr>
-                    <th class="col-md-6 table-secondary">Laki-aki </tj>
+                    <th class="col-md-6 table-secondary">Laki-Laki </tj>
                     <td class="col-md-6 ">{{ $item->jumlah_laki_laki }}</td>
                 </tr>
                 <tr>
@@ -139,7 +143,8 @@
                 <tr>
                     <th class="col-md-6 table-secondary">Aksi </th>
                     <td class="col-md-6 ">
-                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="{{ '#staticBackdropeditdatasiswa' . $item->id }}">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                            data-bs-target="{{ '#staticBackdropeditdatasiswa' . $item->id }}">
                             <i class="lni lni-pencil"></i>
                         </button>
                     </td>
