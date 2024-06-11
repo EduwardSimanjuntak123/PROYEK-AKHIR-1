@@ -24,10 +24,7 @@ Route::get('/About_us', [userviewController::class, 'about_us']);
 Route::get('/guru_staff', [userviewController::class, 'gurustaff'])->name('guru_staff');
 Route::get('/Galeri', [userviewController::class, 'galeri']);
 Route::get('/show/{id}', [userviewController::class, 'show_berita'])->name('berita.show');
-
-
 Route::post('/kritik', [userviewController::class, 'storekritik'])->name('kritik.store');
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -41,23 +38,28 @@ Route::middleware('auth')->group(function () {
     Route::prefix('dashboard')->group(function () {
         Route::get('/', [loginController::class, 'index'])->name('dashboard');
     });
-
-Route::prefix('kritik')->group(function() {
-    Route::get('/kritik', [KritikController::class, 'index'])->name('kritik');
-    Route::put('/kritik/{kritik}', [KritikController::class, 'update'])->name('kritik.update');
-    Route::post('/kritik/{kritik}/reply', [KritikController::class, 'reply'])->name('kritik.reply');
-    Route::post('/kritik/{kritik}/hide', [KritikController::class, 'hide'])->name('kritik.hide');
-    Route::delete('/kritik/{id}', [KritikController::class, 'destroy'])->name('kritik.destroy');
-});
+    Route::prefix('tahun_ajaran')->group(function () {
+        Route::post('/', [loginController::class, 'tahun_ajaran_store'])->name('tahun_ajaran.store');
+    });
+    Route::prefix('kritik')->group(function () {
+        Route::get('/kritik', [KritikController::class, 'index'])->name('kritik');
+        Route::put('/kritik/{kritik}', [KritikController::class, 'update'])->name('kritik.update');
+        Route::post('/kritik/{id}/reply', [KritikController::class, 'reply'])->name('kritik.reply');
+        Route::post('/kritik/{kritik}/hide', [KritikController::class, 'hide'])->name('kritik.hide');
+        Route::delete('/kritik/{id}', [KritikController::class, 'destroy'])->name('kritik.destroy');
+    });
     Route::prefix('gurustaff')->group(function () {
         Route::post('/store', [gurudanstaffController::class, 'store'])->name('gurustaff.store');
+        Route::post('/', [gurudanstaffController::class, 'jabatan_store'])->name('jabatan.store');
         Route::get('/', [gurudanstaffController::class, 'index'])->name('gurustaff.index');
         Route::delete('/delete/{id}', [gurudanstaffController::class, 'delete'])->name('gurustaff.delete');
         Route::put('/update/{id}', [gurudanstaffController::class, 'update'])->name('gurustaff.update');
     });
     Route::prefix('data_sekolah')->group(function () {
         Route::get('/', [data_sekolahController::class, 'index'])->name('data_sekolah.index');
+        Route::post('/store', [data_sekolahController::class, 'store'])->name('data_sekolah.store');
         Route::put('/update/{id}', [data_sekolahController::class, 'update'])->name('data_sekolah.update');
+        Route::put('/updatesiswa/{id}', [data_sekolahController::class, 'update_datasiswa'])->name('data_siswa.update');
     });
     Route::prefix('galeri')->group(function () {
         Route::get('/', [galeriController::class, 'index'])->name('galeri.index');
@@ -67,6 +69,9 @@ Route::prefix('kritik')->group(function() {
     Route::prefix('kata_sambutan')->group(function () {
         Route::get('/', [kata_sambutanController::class, 'index'])->name('kata_sambutan.index');
         Route::put('/update/{id}', [kata_sambutanController::class, 'update'])->name('kata_sambutan.update');
+        Route::post('/store', [kata_sambutanController::class, 'store'])->name('kata_sambutan.store');
+        Route::post('/update-tampilkan-ke-user/{id}', [kata_sambutanController ::class, 'updateTampilkanKeUser'])->name('update-tampilkan-ke-user');
+        Route::delete('/delete/{id}', [kata_sambutanController::class, 'delete'])->name('kata_sambutan.delete');
     });
     Route::prefix('data_sarpras')->group(function () {
         Route::get('/', [data_sarprasController::class, 'index'])->name('data_sarpras.index');
@@ -86,4 +91,4 @@ Route::prefix('kritik')->group(function() {
     });
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

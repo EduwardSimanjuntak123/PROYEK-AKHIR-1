@@ -5,18 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class data_sarpras extends Model
+class data_siswa extends Model
 {
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+    
+    protected $table = 'data_siswa';
     use HasFactory;
-    protected $table = 'data_sarpras';
     protected $fillable = [
-        'nama_sarpras',
-        'jumlah_sarpras',
-        'user_id',
+        'jumlah_tingkat_7',
+        'jumlah_tingkat_8',
+        'jumlah_tingkat_9',
+        'jumlah_laki_laki',
+        'jumlah_perempuan',
     ];
     public function tahun_ajaran()
     {

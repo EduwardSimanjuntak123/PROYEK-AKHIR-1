@@ -32,9 +32,11 @@
                 <div class="hero1">
                     <h2>KEPALA SEKOLAH SMPN 4 BALIGE</h2>
                     <h3>Berliana Pasaribu, S.Pd.</h3>
-                    @foreach ($kata_sambutan as $kata_sambutan)
+                    @if ($kata_sambutan)
                         <p>{{ $kata_sambutan->isi }}</p>
-                    @endforeach
+                    @else
+                        <p>Tidak ada kata sambutan yang dipilih.</p>
+                    @endif
                 </div>
             </div>
         </div>

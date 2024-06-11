@@ -1,6 +1,5 @@
 @extends('layouts_user.main')
 @section('content')
-
     <!--tampilan awal-->
     <div class="container-fluid pertama">
         <div class="row justify-content-center info">
@@ -18,18 +17,15 @@
         <div style="background-color: background rgba(5, 5, 5, 0.5);" class="container">
             <div class="row justify-content-center sejarah">
                 <h1>SEJARAH SMPN 4 BALIGE</h1>
-                <p>SMA Negeri 2 Cirebon resmi berdiri berdasarkan SK. Depdikbud No. 109/SMA/B/III/67 tanggal 1 Januari
-                    1967, Dan merupakan gabungan dari SMA Wahidin dan SMA SWAGATI. Upacara peresmian dilaksanakan secara
-                    sederhana dan khidmat pada tanggal 28 Januari 1967 di bangsal SMA Negeri 2 Cirebon dipimpin wakil
-                    Kepala
-                    Inspeksi SMA Bapak Sundoro (alm), Hadir dalam upacara tersebut antara lain : Bapak R. Markum
-                    (Direktur
-                    SMA 1), Letkol Sriyadi SH (Wakil Pepelrada), Bapak Drs. Sugiyanto ( Kepala Dinas SMA di Jakarta).
+                <p>SMP Negeri 4 Balige sekarang, awal berdirinya adalah Sekolah Menengah Ekonomi Pertama (SMEP) yang
+                    berdirinya pada tahun 1952 sampai dengan tanggal 17 Pebruari 1979, kemudian berubah Nomenklatur menjadi
+                    SMP Negeri yang disempurnakan TMT 01 April 1980 (SMP Negeri 3 Balige) kemudian terjadi lagi perubahan
+                    Nomenklatur dari SMP Negeri 3 Balige menjadi SLTP Negeri 4 Balige berdasarkan SK Mendikbud RI Nomor:
+                    034/0/1997 tanggal 7 Maret 1997, kemudian terjadi lagi perubahan Nomenklatur dari SLTP Negeri 4 Balige
+                    menjadi SMP Negeri 4 Balige TMT 26 Maret 2004, berdasarkan Surat Kepala Dinas Pendidikan Nasional
+                    Kabupaten Toba Samosir Nomor: 421.3/358/KUR/2004 tanggal 26 Maret 2004 sampai dengan sekarang.
                 </p>
             </div>
         </div>
     </div>
-
-
-
 @endsection

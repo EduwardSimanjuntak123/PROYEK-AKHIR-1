@@ -15,10 +15,13 @@ return new class extends Migration
             $table->id();
 
             $table->string('nama');
+            $table->string('NIP');
             $table->enum('jenis_kelamin', ['Laki-Laki', 'Perempuan']);
             $table->unsignedBigInteger('user_id');
-            $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->unsignedBigInteger('jabatan_id');
+            $table->foreign('jabatan_id')->references('id')->on('role_guru')->onDelete('cascade');
+            $table->timestamps();
         });
     }
 

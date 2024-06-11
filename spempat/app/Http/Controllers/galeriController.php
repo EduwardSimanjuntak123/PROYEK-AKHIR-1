@@ -2,69 +2,78 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\galeri;
+use App\Models\Galeri;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
 use RealRashid\SweetAlert\Facades\Alert;
 
-class galeriController extends Controller
+class GaleriController extends Controller
 {
-
     public function index()
     {
         try {
-            $data = galeri::get();
+            $data = Galeri::get();
 
             return view('admin.galeri', [
-                'title' => 'galeri'
-            ], compact('data'));
+                'title' => 'Galeri',
+                'achievement' => $data->where('kategori', 'achievement'),
+                'activity' => $data->where('kategori', 'activity'),
+            ],compact('data'));
         } catch (\Exception $e) {
-            Alert::warning('maaf terjadi kesalahan dalam memuat halaman', 'Silahkan coba beberapa saat lagi');
+            Alert::warning('Maaf terjadi kesalahan dalam memuat halaman', 'Silahkan coba beberapa saat lagi');
             return redirect()->back()->withInput();
         }
     }
+
     public function store(Request $request)
     {
-        try {
-            $validator = Validator::make(
-                $request->all(),
-                [
-                    'photo' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
-                ]
-            );
-            if ($validator->fails()){
-              Alert::warning('maaf terjadi kesalahan dalam menyimpan data', 'Silahkan coba  lagi');
-                return redirect()->back()->withInput()->withErrors($validator);  
+        
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'photo' => 'required|image|mimes:jpeg,png,jpg,gif|max:1024',
+                'nama_galeri' => 'required|string|max:255',
+                'kategori' => 'required|in:achievement,activity',
+            ]
+        );
+
+        if ($validator->fails()) {
+            if ($validator->errors()->has('photo') && $validator->errors()->first('photo') == 'The photo must not be greater than 1024 kilobytes.') {
+                Alert::warning('Ukuran gambar terlalu besar!', 'Maksimal ukuran gambar adalah 1MB');
+            } else {
+                Alert::warning('Sepertinya masih ada Field yang kosong!', 'Silahkan coba lagi');
             }
-            $photo = $request->file('photo');
-            $filename = date('Y-m-d') . $photo->getClientOriginalName(); //mengubah nama ke database
-            $path = 'images/' . $filename;
-
-            Storage::disk('public')->put($path, file_get_contents($photo));
-
-            $userId = Auth::id();
-
-            //memasukkan data ke database
-
-            $data['file'] = $filename;
-            $data['user_id'] = $userId;
-            $data['nama_galeri'] = $request->Nama_Galeri;
-            galeri::create($data);
-            Alert::success('Media Berhasil Ditambah', 'Success Message');
-
-            return redirect()->route('galeri.index')->with('filename', $filename);
-        } catch (\Exception $e) {
-            Alert::warning('maaf terjadi kesalahan dalam menyimpan data', 'Silahkan coba  lagi');
-            return redirect()->back()->withInput();
+            return redirect()->back()->withInput()->withErrors($validator);
         }
+
+        $photo = $request->file('photo');
+        $filename = date('Y-m-d') . '-' . $photo->getClientOriginalName(); //mengubah nama ke database
+        $path = 'images/' . $filename;
+
+        Storage::disk('public')->put($path, file_get_contents($photo));
+
+        $userId = Auth::id();
+
+        // memasukkan data ke database
+        $data = [
+            'file' => $filename,
+            'user_id' => $userId,
+            'nama_galeri' => $request->nama_galeri,
+            'kategori' => $request->kategori,
+        ];
+      
+        Galeri::create($data);
+        Alert::success('Media Berhasil Ditambah', 'Success Message');
+
+        return redirect()->route('galeri.index')->with('filename', $filename);
     }
 
     public function delete($id)
     {
         try {
-            $data = galeri::find($id);
+            $data = Galeri::find($id);
 
             if (!$data) {
                 return redirect()->route('galeri.index')->with('error', 'Data not found');
@@ -78,10 +87,11 @@ class galeriController extends Controller
             }
 
             $data->delete(); // Menghapus data dari database
+            Alert::success('Media Berhasil Dihapus', 'Success Message');
 
             return redirect()->route('galeri.index')->with('success', 'Foto dan data berhasil dihapus');
         } catch (\Exception $e) {
-            Alert::warning('maaf terjadi kesalahan dalam menghapus data', 'Silahkan coba  lagi');
+            Alert::warning('Maaf terjadi kesalahan dalam menghapus data', 'Silahkan coba  lagi');
             return redirect()->back()->withInput();
         }
     }

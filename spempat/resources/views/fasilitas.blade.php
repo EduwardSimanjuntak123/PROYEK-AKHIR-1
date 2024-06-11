@@ -31,15 +31,15 @@
                     <h2>Tata Usaha</h2>
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
-                    <h2>Ruang Lab</h2>
+                    <img src="{{ asset('img/taman.jpg') }}" width="300" height="300">
+                    <h2>Taman</h2>
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
+                    <img src="{{ asset('img/kelas1.jpg') }}" width="300" height="300">
                     <h2>Ruang Kelas</h2>
                 </div>
                 <div class="col-6">
-                    <img src="{{ asset('img/1.jpg') }}" width="300" height="300">
+                    <img src="{{ asset('img/dalam_greenhouse.jpg') }}" width="300" height="300">
                     <h2>Kebun Modern</h2>
                 </div>
             </div>

@@ -10,7 +10,6 @@
                 <form action="{{ route('galeri.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="card-body">
-
                         <div class="form-group">
                             <label for="exampleInputEmail1">Gambar</label>
                             <input type="file" class="form-control" name="photo" id="exampleInputEmail1">
@@ -20,20 +19,32 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Nama Galeri</label>
-                            <input type="text" placeholder="Masukan Nama Galeri" class="form-control" name="Nama_Galeri" id="exampleInputEmail1">
-                            @error('Nama_Galeri')
+                            <input type="text" placeholder="Masukan Nama Galeri" class="form-control" name="nama_galeri" id="exampleInputEmail1">
+                            @error('nama_galeri')
                                 <small style="color: brown">{{ $message }}</small>
                             @enderror
                         </div>
-
-
+                        <div class="form-group">
+                            <label>Kategori Galeri</label><br>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="kategori" id="achievement" value="achievement">
+                                <label class="form-check-label" for="achievement">Achievement</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="kategori" id="activity" value="activity">
+                                <label class="form-check-label" for="activity">Activity</label>
+                            </div>
+                            @error('kategori')
+                                <small style="color: brown">{{ $message }}</small>
+                            @enderror
+                        </div>
                     </div>
-
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">batal</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
                         <button type="submit" class="btn btn-primary">Tambah</button>
                     </div>
                 </form>
+                
             </div>
 
         </div>

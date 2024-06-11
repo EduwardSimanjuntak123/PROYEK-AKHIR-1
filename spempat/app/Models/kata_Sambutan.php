@@ -13,4 +13,9 @@ class kata_Sambutan extends Model
     }
     use HasFactory;
     protected $table = 'kata_sambutan';
+    protected $fillable = [
+        'isi',
+        'user_id',
+       
+    ];
 }

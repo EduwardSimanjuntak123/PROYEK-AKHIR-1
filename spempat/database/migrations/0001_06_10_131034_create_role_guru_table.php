@@ -11,13 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('kata_sambutan', function (Blueprint $table) {
+        Schema::create('role_guru', function (Blueprint $table) {
             $table->id();
+            $table->string('jabatan');
             $table->timestamps();
-            $table->text('isi');
-            $table->boolean('tampilkan_ke_user')->default(false);
-            $table->unsignedBigInteger('user_id');
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
@@ -26,7 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('kata_sambutan');
-        
+        Schema::dropIfExists('role_guru');
     }
 };

@@ -105,9 +105,7 @@
                 <div class="card-body">
                     <form action="{{ route('kritik.store') }}" method="POST">
                         @csrf
-
                         <div class="form-group">
-
                             <input type="text" class="form-control" name="nama" id="nama"
                                 placeholder="Nama (Optional)">
                         </div>
@@ -117,7 +115,6 @@
                                 placeholder="Email (Optional)">
                         </div>
                         <div class="form-group mt-2">
-
                             <textarea class="form-control" name="isi_kritik" id="isi_kritik" rows="3"
                                 placeholder="masukkan ulasan anda terkait sekolah maupun website kami"></textarea>
                         </div>

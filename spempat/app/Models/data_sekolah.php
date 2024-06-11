@@ -18,5 +18,10 @@ class data_sekolah extends Model
     protected $fillable = [
         'NPSN',
         'user_id',
+        'tahun_ajaran_id'
     ];
+    public function tahun_ajaran()
+    {
+        return $this->belongsTo(tahun_ajaran::class);
+    }
 }

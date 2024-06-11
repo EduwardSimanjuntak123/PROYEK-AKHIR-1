@@ -12,10 +12,12 @@ class galeri extends Model
     {
         return $this->belongsTo(User::class);
     }
+    
     protected $table = 'galeri';
     protected $fillable = [
         'file',
         'user_id',
-        'nama_galeri'
+        'nama_galeri',
+        'kategori',
     ];
 }

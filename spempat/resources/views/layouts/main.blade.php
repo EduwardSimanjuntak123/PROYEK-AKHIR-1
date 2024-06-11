@@ -77,7 +77,7 @@
                 <div class="p-3" style="display: flex;justify-content: space-between;">
                     <div class="halaman">
                         <a href="">
-                            <h3>Halaman {{ $title ?? '' }}</h3>
+                            <h3> {{ $title ?? '' }}</h3>
                         </a>
                     </div>
                     <div class="relative">
@@ -88,7 +88,7 @@
                         </button>
                         <!-- Dropdown menu -->
                         <div id="dropdownMenu" class="dropdown-content">
-                            
+
                             <a href="{{ route('logout') }}"><i class="lni lni-exit"></i>log out</a>
                         </div>
                     </div>

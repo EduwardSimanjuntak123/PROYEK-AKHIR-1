@@ -24,7 +24,6 @@ class kata_sambutanSeeder extends Seeder
             Oleh karena itu, kami berharap melalui pembelajaran elearning ini SMP Negeri 4 Balige menjadi bagian
             dari
             pendidikan yang bermutu dan berkualitas.',
-            'file' => 'sacasc',
             'user_id' => 1
             
         ]);

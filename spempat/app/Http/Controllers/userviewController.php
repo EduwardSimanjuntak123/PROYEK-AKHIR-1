@@ -10,6 +10,8 @@ use App\Models\gurustaff;
 use App\Models\galeri;
 use App\Models\kata_Sambutan;
 use App\Models\Kritik;
+use Illuminate\Support\Facades\Validator;
+
 use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
@@ -21,14 +23,14 @@ class userviewController extends Controller
     {
         try {
             $halaman = 'beranda';
-            $berita = berita::get();
-            $kata_sambutan = kata_Sambutan::get();
+            $berita = Berita::get();
+            $kata_sambutan = kata_Sambutan::where('tampilkan_ke_user', true)->first(); // Ambil hanya item yang ditampilkan
             return view('dashboarduser', compact('berita', 'halaman', 'kata_sambutan'));
         } catch (\Exception $e) {
             // Tangani pengecualian di sini
             // Misalnya, tampilkan pesan error dan kembalikan pengguna ke halaman sebelumnya
-            Alert::warning('maaf terjadi kesalahan saat memuat halaman', 'Silahkan coba beberapa saat lagi');
-
+            Alert::warning('Maaf terjadi kesalahan saat memuat halaman', 'Silahkan coba beberapa saat lagi');
+    
             return redirect()->back()->withInput();
         }
     }
@@ -86,11 +88,21 @@ class userviewController extends Controller
     }
     public function storekritik(Request $request)
     {
-        $request->validate([
-            'nama' => 'nullable|string|max:255',
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'nama' => 'nullable|string|max:255',
             'email' => 'nullable|string|email|max:255',
             'isi_kritik' => 'required|string',
-        ]);
+            ]
+        );
+        // $request->validate([
+        //     
+        // ]);
+        if ($validator->fails()) {
+            Alert::warning(' Field tidak boleh kosong!', 'Silahkan coba lagi');
+            return redirect()->back()->withInput()->withErrors($validator);
+        }
 
         Kritik::create($request->all());
         Alert::success('ulasan berhasil dikirim', 'Ulasan anda akan ditampilkan bila admin mengijinkannya');

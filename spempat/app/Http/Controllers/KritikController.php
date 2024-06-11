@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Kritik;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class KritikController extends Controller
 {
@@ -13,11 +14,11 @@ class KritikController extends Controller
         return view('admin.kritik.index',['title' => 'Ulasan Pengunjung'], compact('kritiks'));
     }
 
-    public function update(Request $request, Kritik $kritik)
-    {
-        $kritik->update(['ditampilkan' => $request->ditampilkan]);
-        return redirect()->back()->with('success', 'Ulasan telah berhasil ditampilkan');
-    }
+    // public function update(Request $request, Kritik $kritik)
+    // {
+    //     $kritik->update(['tampilkan' => $request->tampilkan]);
+    //     return redirect()->back()->with('success', 'Ulasan telah berhasil ditampilkan');
+    // }
 
     public function destroy($id)
     {
@@ -25,19 +26,36 @@ class KritikController extends Controller
         $data->delete();
         return redirect()->back()->with('success', 'Ulasan berhasil dihapus.');
     }
-    public function reply(Request $request, Kritik $kritik)
+    public function reply(Request $request, $id)
     {
+        // Dapatkan Kritik berdasarkan ID
+        $kritik = Kritik::findOrFail($id);
+    
         $request->validate([
             'isi_balasan' => 'required|string',
         ]);
-
-        $kritik->balasan()->create($request->all());
+    
+        $userId = Auth::id();
+    
+        // Buat balasan dengan data yang di-merge
+        $kritik->balasan()->create([
+            'isi_balasan' => $request->isi_balasan,
+            'user_id' => $userId,
+        ]);
+    
         return redirect()->back()->with('success', 'Balasan berhasil dikirim.');
     }
 
     public function hide(Request $request, Kritik $kritik)
-    {
-        $kritik->update(['ditampilkan' => false]);
-        return redirect()->back()->with('success', 'Ulasan berhasil disembunyikan.');
-    }
+{
+    $kritik->update(['status' => 'sembunyikan']);
+    return redirect()->back()->with('success', 'Ulasan berhasil disembunyikan.');
+}
+
+public function update(Request $request, Kritik $kritik)
+{
+    $kritik->update(['ditampilkan' => $request->ditampilkan]);
+    $message = $request->ditampilkan ? 'Ulasan berhasil ditampilkan.' : 'Ulasan berhasil disembunyikan.';
+    return redirect()->back()->with('success', $message);
+}
 }
