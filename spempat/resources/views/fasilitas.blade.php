@@ -1,25 +1,7 @@
 @extends('layouts_user.main')
 @section('content')
-    <div class="container-fluid text-center word">
-        <div class="row">
-            <div class="col ok">
-                <img src="{{ asset('img/kelas3.jpg') }}" alt="foto_1" width="285" height="285">
-                <img src="{{ asset('img/taman.jpg') }}" alt="foto_2" width="285" height="285">
-                <img src="{{ asset('img/kelas1.jpg') }}" alt="foto_3" width="285" height="285">
-            </div>
-            <div class="col">
-                <h1>FASILITAS</h1>
-                <h2>SMPN 4 BALIGE</h2>
-                <p>Fasilitas yang nyaman membentuk suasana pembelajaran yang damai dan mendukung</p>
-            </div>
-        </div>
-    </div>
 
-    <div class="list1">
-    </div>
 
-    <div class="list">
-    </div>
 
     <!--overflow-->
     <div class="container-fluid scrolldown scroll">

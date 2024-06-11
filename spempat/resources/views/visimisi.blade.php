@@ -1,16 +1,7 @@
 @extends('layouts_user.main')
 @section('content')
     <!--tampilan awal-->
-    <div class="container-fluid pertama">
-        <div class="row justify-content-center info">
-            <div class="col-6 col-lg-6 first">
-                <h1 style="font-weight: bold;">Visi dan Misi</h1>
-                <h1 style="font-weight: bold;">SMPN 4 BALIGE</h1>
-            </div>
-            <div class="col-6 col-lg-6 second">
-            </div>
-        </div>
-    </div>
+
     <!--Visi & Misi-->
     <div class="container-fluid kedua">
         <div class="container-fluid">

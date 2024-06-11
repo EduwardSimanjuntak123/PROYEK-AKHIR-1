@@ -1,101 +1,57 @@
-<!--informasi/kontak-->
 <footer>
-    <div class="container up">
-
-        <div class="row justify-content-evenly">
-            <div class="col-lg-6 col-md-6 col-xxl-6 info">
-                <div class="container kontak">
-                    <div class="box">
-                        <h2>Tautan</h2>
-                        <nav class="tautan" style="justify-content: space-around;">
-                            <div class="link">
-                                <h6><a href="/">-Beranda</a></h6>
-                                <h6><a href="/visi&misi">-Visi misi</a></h6>
-                                <h6><a href="/Data_Sekolah">-Data sekolah</a></h6>
-                            </div>
-                            <div class="link">
-                                <h6><a href="/guru_staff">-Guru dan Staff</a></h6>
-                                <h6><a href="/Sejarah">-Sejarah sekolah</a></h6>
-                                <h6><a href="/Galeri">-Galeri</a></h6>
-                            </div>
-                            <div class="link">
-                                <h6><a href="/fasilitas">-Fasilitas</a></h6>
-
-                            </div>
-                        </nav>
-                    </div>
-                </div>
+    <div class="container-fluid text-center ">
+      <div class="row justify-content-between footer">
+        <div class="col-3 kiri">
+          <h2 class="pb-2 mb-3 border-bottom border-warning">Hubungi Kami</h2>
+          <div class="in">
+            <div class="icon">
+              <div><i class="bi bi-geo-alt-fill"></i></div>
+              <div>
+                <h5>Toba Samosir, Kecamatan Balige,<br>Kabupaten Toba, Sumatera Utara</h5>
+              </div>
             </div>
-
-            <div class="col-lg-6 col-md-6 col-xxl-6 info">
-                <div class="container kontak">
-                    <div class="box">
-                        <h2 class="sosmed">Ikuti kami</h2>
-                        <div class="container">
-                            <div class="row" style="justify-content: space-around;">
-                                <div class="col-3 col-lg-3 col-md-3  icon">
-                                    <a href="https://www.facebook.com/smpn4balige"><i class="bi bi-facebook"></i></a>
-                                </div>
-                                <div class="col-3 col-lg-3 col-md-3  icon">
-                                    <a href="https://www.youtube.com/@smpnegeri4balige339"><i class="bi bi-youtube"></i></a>
-                                </div>
-                                <div class="col-3 col-lg-3 col-md-3  icon">
-                                    <a href="https://www.instagram.com/smpn4balige"><i class="bi bi-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="icon">
+              <div><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <h5>smpn4balige@yahoo.com.</h5>
+              </div>
             </div>
-            <span class="border-top border-3 border-black garis">
+            <div class="icon">
+              <div><i class="bi bi-telephone-fill"></i></div>
+              <div>
+                <h5>(024) 3541525</h5>
+              </div>
+            </div>
+          </div>
         </div>
-        </span>
 
-
-        <!--Footer-->
-        <div class="container text-center footer">
-            <div class="row">
-                <div class="col-lg-4 col-xxl-4 info">
-                    <div>
-                        <i class="bi bi-telephone-fill"></i>
-                    </div>
-
-                    <div class="ms-4">
-                        <h4>Kontak</h4>
-                        <h4>(024) 3541525</h4>
-                    </div>
-                    <span class="border-end border-3 border-black garis1">
-                </div>
-                </span>
-
-
-                <div class="col-lg-4 col-xxl-4 info">
-                    <div>
-                        <i class="bi bi-envelope-fill"></i>
-                    </div>
-                    <div class="ms-4">
-                        <h4>Email</h4>
-                        <h4>smpn4balige@yahoo.com</h4>
-                    </div>
-                    <span class="border-end border-3 border-black garis2">
-                </div>
-                </span>
-
-                <div class="col-lg-4 col-xxl-4 info">
-                    <div>
-                        <i class="bi bi-geo-alt-fill"></i>
-                    </div>
-                    <div class="ms-4">
-                        <h4>Alamat</h4>
-                        <h4>Toba Samosir, Kecamatan Balige, Kabupaten Toba, Sumatera Utara</h4>
-                    </div>
-                </div>
-            </div>
+        <div class="col-5 tengah">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.5309524302997!2d99.04738347592605!3d2.3260285976536554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e04f1116aadad%3A0xee0a9a7c9f1693f7!2sSMP%20Negeri%204%20BALIGE!5e0!3m2!1sid!2sid!4v1718037600383!5m2!1sid!2sid"
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-</footer>
-<div class="bg-body-tertiary text-center text-lg-start copyright">
-    <div class="text-center" style="background-color: rgba(0, 0, 0, 0.05);">
-        Copyright © 2024 SMPN 4 Balige - All Rights reserved.
+
+        <div class="col-3 kanan">
+          <h2 class="pb-2 mb-3 border-bottom border-warning">Ikuti Kami</h2>
+          <div class="in">
+            <div class="icon">
+              <a href=""><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="icon">
+              <a href=""><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="icon">
+              <a href=""><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    
-</div>
+  </footer>
+
+  <div class="bg-body-tertiary text-center text-lg-start copyright">
+    <div class="text-center">
+      Copyright © 2024 SMPN 4 Balige - All Rights reserved.
+    </div>
+  </div>

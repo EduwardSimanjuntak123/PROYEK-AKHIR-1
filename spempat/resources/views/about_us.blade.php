@@ -39,34 +39,25 @@
     <div class="container text-center about">
 
         <div class="row">
-            <div class="col-4 left">
-                <div class="one">
-                    <h1 style="color:white">Berita Terkini</h1>
-                    @foreach ($berita as $berita)
-                        <p class="" style="margin-bottom:5px"><a
-                                href="{{ route('berita.show', ['id' => $berita->id]) }}">{{ $berita->judul }}</a></p>
-                        <hr class="mx-3">
-                    @endforeach
-
-
+            <div class="col-6 left">
+                <div class="three">
+                    <h1 style="color:white;">MAPS</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1418352102305!2d99.0469476716618!3d2.3261271552038028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e04f1116aadad%3A0xee0a9a7c9f1693f7!2sSMP%20Negeri%204%20BALIGE!5e0!3m2!1sid!2sid!4v1716953171828!5m2!1sid!2sid"
+                        width="600" height="340" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-            <div class="col-8 right">
+            <div class="col-6 right">
                 @foreach ($about_us as $item)
-                    <div class="two">
-                        <h1 style="color:white; background-color: #00A9FF;">Info Kontak</h1>
+                    <div class="two" style="height: 380px">
+                        <h1 style="color:white;">Info Kontak</h1>
                         <h4><i class="bi bi-telephone-fill"></i>Telepon : {{ $item->no_telepon }}</h4>
                         <h4><i class="bi bi-envelope-fill"></i>Email : {{ $item->email }}</h4>
                         <h4><i class="bi bi-house-door-fill"></i>Alamat : {{ $item->alamat }}</h4>
                     </div>
                 @endforeach
-                <div class="three">
-                    <h1 style="color:white; background-color: #00A9FF;">MAPS</h1>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.1418352102305!2d99.0469476716618!3d2.3261271552038028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x302e04f1116aadad%3A0xee0a9a7c9f1693f7!2sSMP%20Negeri%204%20BALIGE!5e0!3m2!1sid!2sid!4v1716953171828!5m2!1sid!2sid"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
+
             </div>
         </div>
     </div>
@@ -76,32 +67,10 @@
     <div class="container mb-5">
 
         <div class="mt-5">
-            <h1 class="py-1 text-center" style="background-color: #00A9FF; color:white;">Ulasan Pengunjung kami</h1>
-            <div class="mb-4 p-2 shadow" style="background-color: #f8f9fa;">
-                @foreach ($kritiks as $kritik)
-                    <div class="chat-bubble user shadow">
-                        <h6 class="text-start text-success">{{ $kritik->nama ?? 'Anonymous' }}</h6>
-                        <p class="text-start">{{ $kritik->isi_kritik }}</p>
-                    </div>
-                    <div>
-                        @foreach ($kritik->balasan as $balas)
-                            <div class="d-flex justify-content-end">
-                                <div class="chat-bubble admin shadow">
-                                    <h6 class="text-end text-primary">Admin</h6>
-                                    <p class="text-end">{{ $balas->isi_balasan }}</p>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                @endforeach
-            </div>
-        </div>
-
-        <div class="mt-5">
             <div class="card shadow">
-                <div class="card-header" style=" background-color: #00A9FF;">
-                    <h1 class="text-center" style="color:white ">Buat Ulasan</h1>
-                </div>
+
+                <h1 class="text-center" style="color:white ">Buat Ulasan</h1>
+                
                 <div class="card-body">
                     <form action="{{ route('kritik.store') }}" method="POST">
                         @csrf
@@ -123,6 +92,29 @@
                 </div>
             </div>
         </div>
+        <div class="mt-5 ulasan">
+            <h1 class="py-1 text-center" style=" color:white;">Ulasan Pengunjung kami</h1>
+            <div class="mb-4 p-2 shadow" style="background-color: #f8f9fa;">
+                @foreach ($kritiks as $kritik)
+                    <div class="chat-bubble user shadow">
+                        <h6 class="text-start text-success">{{ $kritik->nama ?? 'Anonymous' }}</h6>
+                        <p class="text-start">{{ $kritik->isi_kritik }}</p>
+                    </div>
+                    <div>
+                        @foreach ($kritik->balasan as $balas)
+                            <div class="d-flex justify-content-end">
+                                <div class="chat-bubble admin shadow">
+                                    <h6 class="text-end text-primary">Admin</h6>
+                                    <p class="text-end">{{ $balas->isi_balasan }}</p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                @endforeach
+            </div>
+        </div>
+
+
     </div>
 
 

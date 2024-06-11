@@ -52,12 +52,16 @@ class userviewController extends Controller
     {
         try {
             $halaman = 'galeri';
-            $galeri = galeri::get();
-            return view('galeri', compact('galeri', 'halaman'));
+            $galeri = Galeri::get(); // Assuming 'Galeri' is the correct model name
+    
+            // Filter the gallery items by category
+            $achievement = $galeri->where('kategori', 'achievement');
+            $activity = $galeri->where('kategori', 'activity');
+    
+            // Pass the categorized data to the view
+            return view('galeri', compact('halaman', 'achievement', 'activity'));
         } catch (\Exception $e) {
-
-            Alert::warning('maaf terjadi kesalahan saat memuat halaman', 'Silahkan coba beberapa saat lagi');
-
+            Alert::warning('Maaf terjadi kesalahan saat memuat halaman', 'Silahkan coba beberapa saat lagi');
             return redirect()->back();
         }
     }

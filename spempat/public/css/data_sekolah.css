@@ -1,118 +1,119 @@
 body {
     margin: 0;
-    font-family: "Kaisei Tokumin", serif;
-    font-weight: 800; /* Ubah warna latar belakang body */
-}
-
-/* CSS untuk header */
-.header {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #DDD9D9; /* Ubah warna latar belakang body */
+  }
+  
+  /* CSS untuk header */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #00a9ff;
+    background: #023768;
     padding: 10px 20px;
-    font-weight: bold;
-}
-
-.logo {
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
     color: #fff;
     text-decoration: none;
-}
-
-.logo img {
+  }
+  
+  .logo img {
     width: 65px;
     height: 65px;
     margin-right: 20px;
     background: none;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-.navbar-nav {
+  }
+  
+  .navbar-nav {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     color: #fff;
-}
-
-.navbar-nav .nav-item {
+  }
+  
+  .navbar-nav .nav-item {
     margin-right: 20px;
-}
-
-.navbar-nav .nav-item a {
+  }
+  
+  .navbar-nav .nav-item a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 5px 10px;
     border-radius: 5px;
-}
-
-.navbar-nav .nav-item a:hover {
-    background: #77c8fe;
-}
-
-.navbar-nav .nav-item a {
+  }
+  
+  .navbar-nav .nav-item a:hover {
+    background: #2d5d7d;
+  }
+  
+  .navbar-nav .nav-item a {
     color: #fff;
-}
-
-.dropdown-menu {
+  }
+  
+  .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #333;
     min-width: 160px;
     z-index: 1;
     border-radius: 10px;
-}
-
-.dropdown-menu li {
+  }
+  
+  .dropdown-menu li {
     padding: 10px;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-.dropdown {
+  }
+  
+  .dropdown {
     position: relative;
-}
-
-.dropdown-toggle {
+  }
+  
+  .dropdown-toggle {
     cursor: pointer;
-}
-/* Untuk header */
-@media (max-width: 768px) {
+  }
+  
+  @media (max-width: 900px) {
     .logo img {
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
+      width: 45px;
+      height: 45px;
+      margin-right: 10px;
     }
-
+  
     .logo {
-        font-size: 20px;
+      font-size: 20px;
     }
-
+  
     .navbar-nav .nav-item a {
-        font-size: 14px;
-        padding: 5px 8px;
+      font-size: 20px;
+      padding: 5px 8px;
     }
-
+  
     .text-light h2 {
-        margin-left: 20px;
-        width: auto;
+      margin-left: 20px;
+      width: auto;
     }
-
+  
     .text-light h3,
     .text-light h4,
     .text-light p {
-        padding-left: 20px;
+      padding-left: 20px;
     }
-}
+  
+    .shape {
+      width: 300px;
+      height: 250px;
+    }
+  }
+  
 
 /*tampilan awal*/
 .hero {
