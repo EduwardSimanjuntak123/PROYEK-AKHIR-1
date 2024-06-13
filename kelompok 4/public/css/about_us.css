@@ -1,0 +1,349 @@
+
+
+/*carousel*/
+.carousel {
+    width: 100%;
+    margin: auto;
+}
+
+.carousel-indicators {
+    bottom: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+    background: none;
+    border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: black;
+}
+
+.carousel-item img {
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.list {
+    padding: 20px;
+    background: #023768;
+}
+
+/*About Us*/
+.about {
+    padding: 15px;
+}
+.left .one,
+.right .two,
+.right .three {
+    text-align: center;
+    background: rgba(217, 217, 217, 0.22);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.left h1,
+.two h1 {
+    background: #023768;
+    font-size: 25px;
+}
+.two h4 {
+    font-size: 18px;
+}
+
+.right .two h4 {
+    text-align: left;
+    padding-inline: 25px;
+}
+.two {
+    margin-bottom: 40px;
+}
+.right i {
+    font-size: 2rem;
+}
+.three iframe {
+    width: 100%;
+}
+/*android*/
+@media only screen and (max-width: 600px) {
+    .left h1,
+    .two h1,
+    .three h1 {
+        font-size: 0.5rem;
+    }
+    .left {
+        padding-inline: 0%;
+    }
+    .right {
+        padding-inline: 0%;
+    }
+
+    .left p {
+        padding-inline: 0%;
+    }
+    .left hr {
+        display: none;
+    }
+    .right .two h4 {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+    .two {
+        margin-bottom: 15px;
+    }
+    .right i {
+        font-size: 0.8rem;
+    }
+    .three iframe {
+        padding: 8px;
+        height: auto;
+    }
+    .left p {
+        font-size: 0.4rem;
+    }
+    .carousel-item img {
+        height: 200px;
+        object-fit: cover;
+    }
+}
+/*android landscape dan tablet*/
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .about {
+        padding: 25px;
+    }
+    .left h1,
+    .two h1,
+    .three h1 {
+        font-size: 1.4rem;
+    }
+    .left hr {
+        padding: 18px;
+    }
+    .right .two h4 {
+        padding: 14px;
+        font-size: 1rem;
+    }
+    .two {
+        margin-bottom: 25px;
+    }
+    .right i {
+        font-size: 1.3rem;
+    }
+    .three iframe {
+        padding: 12px;
+        height: auto;
+    }
+}
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .about {
+        padding: 35px;
+    }
+    .left h1,
+    .two h1,
+    .three h1 {
+        font-size: 1.8rem;
+    }
+
+    .right .two h4 {
+        padding: 18px;
+        font-size: 1.6rem;
+    }
+    .two {
+        margin-bottom: 35px;
+    }
+    .right i {
+        font-size: 1.7rem;
+    }
+    .three iframe {
+        padding: 16px;
+        height: auto;
+    }
+}
+.ulasan h1 {
+    font-size: 23px;
+    background-color: #1f6e8c;
+}
+.chat-bubble {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px 0;
+    max-width: 100%; /* Ensure it doesn't overflow */
+    word-wrap: break-word;
+    font-size: 15px; /* Break long words */
+}
+.chat-bubble.user {
+    background-color: #b9bbbe80;
+    width: max-content; /* Allow it to adjust based on content */
+}
+.chat-bubble.admin {
+    background-color: #b9bbbe80;
+    width: max-content;
+    /* Allow it to adjust based on content */
+}
+@media (max-width: 600px) {
+    /* For small devices */
+    .chat-bubble {
+        padding: 6;
+    }
+    .chat-bubble h6 {
+        font-size: 8px;
+    }
+    .chat-bubble p {
+        font-size: 8px;
+    }
+}
+
+
+/* untuk galeri */
+
+.kalimat h2,
+.kalimat h3 {
+    font-size: 35px;
+}
+.kalimat .word {
+    background: #26beff;
+    color: #fff;
+}
+.kalimat .text {
+    text-align: left;
+    background: #1f6e8c;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+.all {
+    padding: 20px;
+}
+.isi h1 {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.733);
+    color: rgb(0, 0, 0);
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 10px;
+    font-size: 40px;
+    background-color: #b3b3b3;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.foto img {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.foto img:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+}
+
+#thumbnail {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#thumbnail:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10rem;
+    left: 0;
+    top: 0;
+
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .tampilan {
+        height: 300px;
+    }
+    .kalimat h2,
+    .kalimat h3 {
+        font-size: 18px;
+    }
+    .all {
+        padding: 20px;
+    }
+    .isi h1 {
+        margin: 40px;
+        font-size: 30px;
+    }
+    .foto img {
+        height: 15rem;
+    }
+    .modal {
+        padding-top: 15rem;
+    }
+    .modal-content {
+        max-width: 350px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .tampilan {
+        height: 400px;
+    }
+    .kalimat h2,
+    .kalimat h3 {
+        font-size: 23px;
+    }
+    .all {
+        padding: 30px;
+    }
+    .isi h1 {
+        margin: 30px;
+        font-size: 45px;
+    }
+    .foto img {
+        height: 23rem;
+    }
+    .modal {
+        padding-top: 20rem;
+    }
+    .modal-content {
+        max-width: 600px;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .tampilan {
+        height: 550px;
+    }
+    .kalimat h2,
+    .kalimat h3 {
+        font-size: 27px;
+    }
+    .all {
+        padding: 5px;
+    }
+    .isi h1 {
+        font-size: 60px;
+    }
+    .modal-content {
+        max-width: 600px;
+    }
+}
+

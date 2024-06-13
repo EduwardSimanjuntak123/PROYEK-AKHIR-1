@@ -1,0 +1,266 @@
+/* /data sekolah/ */
+.data {
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* /left/ */
+.left {
+    padding: 20px;
+}
+
+.left .satu {
+    text-align: center;
+    background: rgba(217, 217, 217, 0.22);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+.left .dua {
+  text-align: center;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+.left h3{
+  color: #fff;
+  background: #0F5B77;
+}
+.dua .tabel{
+  padding: 20px;
+}
+.dua .tabel th {
+  font-size: 12px;
+  color: #fff;
+}
+.dua .tabel td{
+  font-size: 12px;
+}
+
+.satu i {
+    font-size: 1.5rem;
+}
+
+.satu h3 {
+    padding: 5px;
+    text-align: left;
+}
+
+.satu h5 {
+    text-align: left;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.satu img {
+    width: 38%;
+    height: auto;
+}
+
+/* /android/ */
+@media only screen and (max-width : 767px) {
+.left {
+    padding: 8px;
+}
+.left .satu {
+    margin-bottom: 15px;
+}
+.left .dua {
+  margin-bottom: 15px;
+}
+.dua .tabel{
+  padding: 6px;
+}
+.dua .tabel th {
+  font-size: 8px;
+}
+.dua .tabel td{
+  font-size: 8px;
+}
+.satu i {
+  font-size: 0.8rem;
+}
+.satu h3, .dua h3{
+  padding: 3px;
+  font-size: 0.9rem;
+}
+.satu h5, .dua h5 {
+  font-size: 0.6rem;
+  padding: 4px;
+}
+.satu img {
+    height: auto;
+}
+}
+
+/* /android landscape dan tablet landscape/ */
+@media only screen and (min-width: 768px) and (max-width : 992px) {
+  .left {
+    padding: 10px;
+}
+.left .satu {
+    margin-bottom: 17px;
+}
+.left .dua {
+  margin-bottom: 17px;
+}
+.dua .tabel{
+  padding: 10px;
+}
+.dua .tabel th {
+  font-size: 10px;
+}
+.dua .tabel td{
+  font-size: 10px;
+}
+.satu i {
+  font-size: 1rem;
+}
+.satu h3, .dua h3{
+  padding: 4px;
+  font-size: 1.1rem;
+}
+.satu h5, .dua h5 {
+  font-size: 0.8rem;
+
+}
+.satu img {
+    height: auto;
+}
+}
+
+/* /dekstop/ */
+@media only screen and (min-width: 993px) and (max-width : 1300px) {
+.left {
+  padding: 13px;
+}
+.satu h3, .dua h3{
+  font-size: 1.5rem;
+}
+.satu h5, .dua h5 {
+  font-size: 1.1rem;
+}
+.satu img {
+    height: auto;
+}
+}
+
+/* /right/ */
+.right {
+    padding: 20px;
+}
+.right .one {
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+.right h3 {
+    background: #0F5B77;
+    color: #fff;
+}
+.right h5 {
+    padding-left: 30px;
+    text-align: left;
+}
+.right .two {
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+.right .three {
+    text-align: center;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.three .tabel {
+    padding: 25px;
+}
+.three .tabel th {
+    font-size: 12px;
+    color: #fff;
+}
+.three .tabel td {
+    font-size: 12px;
+}
+
+/* /android/ */
+@media only screen and (max-width : 767px) {
+.right {
+    padding: 8px;
+}
+.right .one {
+    margin-bottom: 15px;
+}
+.right h5 {
+    padding-left: 15px;
+}
+.right .two {
+    margin-bottom: 15px;
+}
+.three .tabel {
+    padding: 6px;
+}
+.three .tabel th {
+    font-size: 8px;
+    color: #fff;
+}
+.three .tabel td {
+    font-size: 8px;
+}
+.one h3, .two h3, .three h3{
+  padding: 3px;
+  font-size: 0.9rem;
+}
+.one h5, .two h5{
+  font-size: 0.6rem;
+  
+}
+}
+
+/* /android landscape dan tablet landscape/ */
+@media only screen and (min-width: 768px) and (max-width : 992px) {
+.right {
+    padding: 10px;
+}
+.right .one {
+    margin-bottom: 17px;
+}
+.right h5 {
+    padding-left: 17px;
+}
+.right .two {
+    margin-bottom: 17px;
+}
+.three .tabel {
+    padding: 10px;
+}
+.three .tabel th {
+    font-size: 10px;
+    color: #fff;
+}
+.three .tabel td {
+    font-size: 10px;
+}
+.one h3, .two h3, .three h3{
+  padding: 4px;
+  font-size: 1.1rem;
+}
+.one h5, .two h5{
+  font-size: 0.8rem;
+  padding: 4px;
+}
+}
+/* /dekstop/ */
+@media only screen and (min-width: 993px) and (max-width : 1300px) {
+.right {
+    padding: 13px;
+}
+.one h3, .two h3, .three h3{
+  font-size: 1.5rem;
+}
+.one h5, .two h5{
+  font-size: 1.1rem;
+}
+}

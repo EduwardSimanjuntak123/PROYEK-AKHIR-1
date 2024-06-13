@@ -1,0 +1,72 @@
+
+
+/*sejarah*/
+.history{
+    padding: 30px;
+  }
+  .history p, .tabel p{
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  .tabel {
+    background: #ECECEC;
+    text-align: center; 
+  }
+th:nth-child(1), td:nth-child(1) {
+    width: 5%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 20%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 20%;
+}
+th:nth-child(4), td:nth-child(4) {
+  width: 20%;
+}
+th:nth-child(5), td:nth-child(5) {
+  width: 20%;
+}
+@media only screen and (max-width : 767px){
+    .history{
+      padding: 10px;
+    }
+    .history h2{
+      font-size: 1.3rem;
+    }
+    .history p, .tabel p{
+      font-size: 0.8rem;
+    }
+    .table th, .table td{
+    font-size: 0.5rem;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width : 992px){
+    .history{
+      padding: 20px;
+    }
+    .history h2{
+      font-size: 1.5rem;
+    }
+    .history p, .tabel p{
+      font-size: 0.9rem;
+    }
+    .table th, .table td{
+    font-size: 0.7rem;
+    }
+  }
+  @media only screen and (min-width: 993px) and (max-width : 1200px){ 
+    .history{
+      padding: 30px;
+    }
+    .history h2{
+      font-size: 1.6rem;
+    }
+    .history p, .tabel p{
+      font-size: 1rem;
+    }
+    .table th, .table td{
+    font-size: 0.9rem;}} 
+

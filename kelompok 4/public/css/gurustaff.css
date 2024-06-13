@@ -1,0 +1,111 @@
+
+
+/*tampilan awal*/
+.text{
+    background-image: url(/img/gurudanstaf.jpg);
+    background-size: cover;
+  }
+  .text p{
+    padding: 8rem;
+    text-align: left;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .list{
+    background: linear-gradient(90deg, #023768 0%, #7BBCF8 100%);
+    padding: 20px;
+  }
+  
+  /*tampilan isi*/
+  .guru{
+    padding: 30px;
+  }
+  .guru .tabel{
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .guru .tabel th, .tabel h2{
+    background: #0F5B77;
+    color: #fff;
+  }
+  .guru .tabel td{
+    font-size: 18px;
+  }
+  
+  /*android*/
+  @media only screen and (max-width : 600px) {
+    .isi {
+      margin: 10px;
+    }
+  
+    .isi h1 {
+      font-size: 15px;
+      padding: 2px;
+    }
+  
+    .isi p {
+      font-size: 10px;
+      height: 200px;
+      padding: 2px;
+    }
+  
+    .guru .tabel{
+      margin-bottom: 0;
+    }
+    .guru .tabel th{
+      font-size: 12px;
+      color: #fff;
+    }
+    .guru .tabel td{
+      font-size: 12px;
+    }
+  }
+  
+  /*android landscape dan tablet*/
+  @media only screen and (min-width: 601px) and (max-width : 992px) {
+    .isi {
+      margin: 25px;
+    }
+  
+    .isi h1 {
+      font-size: 30px;
+      padding: 10px;
+    }
+  
+    .isi p {
+      font-size: 18px;
+      height: 300px;
+      padding: 5px;
+    }
+    .guru .tabel{
+      margin-bottom: 10px;
+    }
+    .guru .tabel th{
+      font-size: 15px;
+      color: #fff;
+    }
+    .guru .tabel td{
+      font-size: 15px;
+    }
+  }
+  
+  /*dekstop*/
+  @media only screen and (min-width: 993px) and (max-width : 1200px) {
+    .isi {
+      margin: 35px;
+    }
+  
+    .isi h1 {
+      font-size: 35px;
+      padding: 12px;
+    }
+  
+    .isi p {
+      font-size: 22px;
+      height: 400px;
+      padding: 7px;
+    }
+  }
+  
+

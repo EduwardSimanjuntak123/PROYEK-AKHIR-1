@@ -1,0 +1,179 @@
+/* /fasilitas/ */
+.scrolldown {
+    padding: 30px;
+    background-color: #fff;
+}
+
+.scrolldown h1 {
+    text-align: center;
+    margin: 4rem;
+}
+
+.scrolldown img {
+    object-fit: cover;
+    width: 65%;
+    height: 25rem;
+}
+
+.scrolldown .text-center {
+    overflow-y: scroll;
+    height: 470px;
+}
+
+/* /android/ */
+@media only screen and (max-width : 767px) {
+    .scrolldown {
+        padding: 8px;
+    }
+    .scrolldown h1 {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    .scrolldown h4 {
+        font-size: 0.8rem;
+    }
+
+    .scrolldown img {
+        height: 7rem;
+    }
+    .scrolldown .text-center {
+        height: 200px;
+    }
+}
+
+/* /android landscape dan tablet/ */
+@media only screen and (min-width: 768px) and (max-width : 992px) {
+  .scrolldown {
+    padding: 12px;
+}
+.scrolldown h1 {
+    margin: 2rem;
+    font-size: 1.3rem;
+}
+.scrolldown h4 {
+    font-size: 1rem;
+}
+.scrolldown img {
+    height: 12rem;
+}
+.scrolldown .text-center {
+    height: 250px;
+}
+}
+/* /dekstop/ */
+@media only screen and (min-width: 993px) and (max-width : 1300px) {
+  .scrolldown {
+  padding: 16px;
+}
+.scrolldown h1 {
+    margin: 3rem;
+    font-size: 1.6rem;
+}
+.scrolldown h4 {
+    font-size: 1.2rem;
+}
+.scrolldown img {
+    height: 17rem;
+}
+.scrolldown .text-center {
+    height: 300px;
+}
+}
+
+/* /Data Sarpras/ */
+.sarpras {
+    background-color: #fff;
+    padding: 80px;
+}
+.sarpras .genap td{
+    background: rgba(196, 196, 196, 0.35);
+}
+.sarpras .tabel{
+    padding: 5rem;
+    text-align: center;
+    color: #fff;
+  }
+  .sarpras .tabel h2{    
+    background: #0F5B77;
+    padding: 10px;
+  }
+.sarpras .tabel th{
+    font-size: 22px;
+    background: #0F5B77;
+    color: #fff;
+  }
+.sarpras .tabel td{
+    font-size: 18px;
+  }
+th:nth-child(1), td:nth-child(1) {
+    width: 5%;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 75%;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 20%;
+}
+
+/* /android/ */
+@media only screen and (max-width : 767px) {
+  .sarpras {
+    padding: 40px;
+}
+.sarpras .tabel{
+    padding: 2rem;
+  }
+  .sarpras .tabel h2{  
+    font-size: 1.1rem;
+    padding: 3px;
+  }
+.sarpras .tabel th{
+    font-size: 10px;
+    background: #0F5B77;
+    color: #fff;
+  }
+.sarpras .tabel td{
+    font-size: 10px;
+  } 
+}
+/* /android landscape dan tablet/ */
+@media only screen and (min-width: 768px) and (max-width : 992px) {
+  .sarpras {
+    padding: 50px;
+}
+.sarpras .tabel{
+    padding: 3rem;
+  }
+  .sarpras .tabel h2{  
+    font-size: 1.3rem;
+    padding: 5px;
+  }
+.sarpras .tabel th{
+    font-size: 12px;
+    background: #0F5B77;
+    color: #fff;
+  }
+.sarpras .tabel td{
+    font-size: 12px;
+  } 
+}
+/* /dekstop/ */
+@media only screen and (min-width: 993px) and (max-width : 1200px) {
+  .sarpras {
+    padding: 60px;
+}
+.sarpras .tabel{
+    padding: 4rem;
+  }
+  .sarpras .tabel h2{  
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+.sarpras .tabel th{
+    font-size: 14px;
+  }
+.sarpras .tabel td{
+    font-size: 14px;}}
