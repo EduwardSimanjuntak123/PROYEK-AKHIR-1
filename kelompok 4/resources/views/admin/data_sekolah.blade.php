@@ -1,14 +1,13 @@
 @extends('layouts.main')
 
 @section('content')
-
-    
-        <div class="container">
-            <table class="table table-border caption-top shadow">
-                <caption>
-                    <h3>Detail Sekolah</h3>
-                </caption>
-                @foreach ($data as $item)
+<div class="container">
+    <div class="container">
+        <table class="table table-border caption-top shadow">
+            <caption>
+                <h3>Detail Sekolah</h3>
+            </caption>
+            @foreach ($data as $item)
                 <tr>
                     <th class="col-md-6 table-secondary">Nama Kepala Sekolah</tj>
                     <td class="col-md-6 ">{{ $item->nama_kepala_sekolah }}</td>
@@ -34,17 +33,17 @@
                         </button>
                     </td>
                 </tr>
-            </table>
-            @endforeach
-            @include('modals.modal')
+        </table>
+        @endforeach
+        @include('modals.modal')
 
-   
 
-            <table class="table table-border caption-top shadow-lg">
-                <caption>
-                    <h3>Data Siswa</h3>
-                </caption>
-                @foreach ($data_siswa as $item)
+
+        <table class="table table-border caption-top shadow-lg">
+            <caption>
+                <h3>Data Siswa</h3>
+            </caption>
+            @foreach ($data_siswa as $item)
                 <tr>
                     <th class="col-md-6 table-secondary">Jumlah siswa kelas 7</tj>
                     <td class="col-md-6 ">{{ $item->jumlah_tingkat_7 }}</td>
@@ -74,9 +73,9 @@
                         </button>
                     </td>
                 </tr>
-            </table>
-        </div>
-        @endforeach
-
-   
+        </table>
+    </div>
+</div>
+    
+    @endforeach
 @endsection

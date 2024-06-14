@@ -1,280 +1,298 @@
 body {
     margin: 0;
     font-family: "Kaisei Tokumin", serif;
-    background-color: #DDD9D9; /* Ubah warna latar belakang body */
-  }
-  
-  
-  /* CSS untuk header */
-  * {
+    background-color: #ddd9d9; /* Ubah warna latar belakang body */
+}
+
+/* CSS untuk header */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  .header {
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #023768;
     padding: 10px 20px;
-  }
-  
-  .logo {
+}
+
+.logo {
     display: flex;
     align-items: center;
     color: #fff;
     text-decoration: none;
-  }
-  
-  .logo img {
+}
+
+.logo img {
     width: 65px;
     height: 65px;
     margin-right: 20px;
     background: none;
-  }
-  
-  .navbar-nav {
+}
+
+.navbar-nav {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     padding: 10px;
     color: #fff;
-  }
-  
-  .navbar-nav .nav-item {
+}
+
+.navbar-nav .nav-item {
     margin-right: 20px;
-  }
-  
-  .navbar-nav .nav-item a {
+}
+
+.navbar-nav .nav-item a {
     text-decoration: none;
     font-size: 1.2rem;
     padding: 5px 10px;
     border-radius: 5px;
-  }
-  
-  .navbar-nav .nav-item a:hover {
+}
+
+.navbar-nav .nav-item a:hover {
     background: #2d5d7d;
-  }
-  
-  .navbar-nav .nav-item a {
+}
+
+.navbar-nav .nav-item a {
     color: #fff;
-  }
-  
-  .dropdown-menu {
+}
+
+.dropdown-menu {
     display: none;
     position: absolute;
     min-width: 160px;
     z-index: 1;
     border-radius: 10px;
-  }
-  
-  .dropdown-menu li {
+}
+
+.dropdown-menu li {
     padding: 10px;
-  }
-  
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
-  }
-  
-  .dropdown-toggle {
+}
+
+.dropdown-toggle {
     cursor: pointer;
-  }
-  
-  @media (max-width: 900px) {
+}
+
+@media (max-width: 900px) {
     .logo img {
-      width: 45px;
-      height: 45px;
-      margin-right: 10px;
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
     }
-  
+
     .logo {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
+
     .navbar-nav .nav-item a {
-      font-size: 20px;
-      padding: 5px 8px;
+        font-size: 20px;
+        padding: 5px 8px;
     }
-  
+
     .text-light h2 {
-      margin-left: 20px;
-      width: auto;
+        margin-left: 20px;
+        width: auto;
     }
-  
+
     .text-light h3,
     .text-light h4,
     .text-light p {
-      padding-left: 20px;
+        padding-left: 20px;
     }
-  
-    .shape {
-      width: 300px;
-      height: 250px;
-    }
-  }
 
-  /*footer*/
-  /*Informasi/Kontak(footer)*/
-footer{
+    .shape {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+/*footer*/
+/*Informasi/Kontak(footer)*/
+footer {
     padding: 1.5rem;
     background: #023768;
-  }
-  .footer h2{
+}
+.footer h2 {
     text-align: left;
     color: #fff;
-  }
-  .footer h5{
+}
+.kiri p {
     text-align: left;
     color: #fff;
     font-size: 1.1rem;
-  }
-  .footer .icon{
+}
+.footer .icon {
     color: #fff;
     display: flex;
     justify-content: start;
     align-items: center;
-  }
-  /*kiri*/
-  .kiri{
+}
+/*kiri*/
+.kiri {
     margin-left: 1rem;
-  }
-  .kiri .in{
+}
+/* .kiri .in{
     display: grid;
-  }
-  .in i{
+  } */
+.in i {
     font-size: 2rem;
     margin-right: 1.5rem;
-  }
-  /*kanan*/
-  .kanan{
+}
+.in p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/*kanan*/
+.kanan {
     margin-right: 1rem;
-  }
-  .kanan .in{
-    display: flex;
-    justify-content: space-around;
-  }
-  .kanan a{
+}
+.kanan .icon a {
+    display: inline-flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.kanan .icon a:hover {
+    color: rgb(85, 115, 204);
+}
+/* .kanan .in{
+    display: list-item;
+  } */
+.kanan a {
     color: #fff;
-  }
-  
-  .copyright{
+}
+
+
+.copyright {
     background-color: black;
     color: #fff;
     padding: 10px;
-  }
-  /*android*/
-  @media only screen and (max-width : 767px) {
-    footer{
-      padding: 1rem;
+}
+/*android*/
+@media only screen and (max-width: 767px) {
+    footer {
+        padding: 1rem;
     }
-    .footer h2{
-      font-size: 0.8rem;
+    .footer h2 {
+        font-size: 0.8rem;
     }
-    .footer h5{
-      font-size: 0.55rem;
+    .footer h5 {
+        font-size: 0.55rem;
     }
-    .footer .icon{
-      display: flex;
-      justify-content: start;
-      align-items: center;
-    }
-    /*kiri*/
-    .kiri{
-      margin-left: 0;
-    }
-    .kiri .in{
-      display: grid;
-    }
-    .in i{
-      font-size: 1.3rem;
-      margin-right: 0.6rem;
-    }
-    /*kanan*/
-    .kanan{
-      margin-right: 0.5rem;
-    }
-    .tengah{
-      display: none;
-    }
-    .copyright{
-      font-size: 10px;
-      padding: 10px;
-    }
-  }
-  /*android landscape dan tablet landscape*/
-  @media only screen and (min-width: 768px) and (max-width : 992px) {
-    footer{
-      padding: 1.5rem;
-    }
-    .footer h2{
-      font-size: 1rem;
-    }
-    .footer h5{
-      font-size: 0.7rem;
-    }
-    .footer .icon{
-      display: flex;
-      justify-content: start;
-      align-items: center;
+    .footer .icon {
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
     /*kiri*/
-    .kiri{
-      margin-left: 0;
+    .kiri {
+        margin-left: 0;
     }
-    .kiri .in{
-      display: grid;
+    .kiri i{
+        font-size: 1.3rem;
     }
-    .in i{
-      font-size: 1.5rem;
-      margin-right: 0.8rem;
+    .kiri .in {
+        display: grid;
+    }
+    .in i {
+        font-size: 1.3rem;
+        margin-right: 0.6rem;
     }
     /*kanan*/
-    .kanan{
-      margin-right: 0.5rem;
+    .kanan {
+        margin-right: 0.5rem;
     }
-   iframe{
-    width: 12rem;
-    height: 9rem;
-   }
-    .copyright{
-      font-size: 15px;
-      padding: 15px;
+    .kanan p{
+        font-size: 1rem;
     }
-  }
-  
-  /*dekstop*/
-  @media only screen and (min-width: 993px) and (max-width : 1300px) {
-    footer{
-      padding: 1.5rem;
+    .tengah {
+        display: none;
     }
-    .footer h2{
-      font-size: 1.6rem;
+    .copyright {
+        font-size: 10px;
+        padding: 10px;
     }
-    .footer h5{
-      font-size: 1rem;
+}
+/*android landscape dan tablet landscape*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    footer {
+        padding: 1.5rem;
     }
-    .footer .icon{
-      display: flex;
-      justify-content: start;
-      align-items: center;
+    .footer h2 {
+        font-size: 1rem;
+    }
+    .footer h5 {
+        font-size: 0.7rem;
+    }
+    .footer .icon {
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
     /*kiri*/
-    .kiri{
-      margin-left: 0;
+    .kiri {
+        margin-left: 0;
     }
-    .kiri .in{
-      display: grid;
+    .kiri .in {
+        display: grid;
     }
-    .in i{
-      margin-right: 0.8rem;
+    .in i {
+        font-size: 1.5rem;
+        margin-right: 0.8rem;
     }
     /*kanan*/
-    .kanan{
-      margin-right: 0.5rem;
+    .kanan {
+        margin-right: 0.5rem;
     }
-    iframe{
-      width: 15rem;
-      height: 13rem;
-     }
-  }
+    iframe {
+        width: 12rem;
+        height: 9rem;
+    }
+    .copyright {
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+
+/*dekstop*/
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+    footer {
+        padding: 1.5rem;
+    }
+    .footer h2 {
+        font-size: 1.6rem;
+    }
+    .footer h5 {
+        font-size: 1rem;
+    }
+    .footer .icon {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    /*kiri*/
+    .kiri {
+        margin-left: 0;
+    }
+    .kiri .in {
+        display: grid;
+    }
+    .in i {
+        margin-right: 0.8rem;
+    }
+    /*kanan*/
+    .kanan {
+        margin-right: 0.5rem;
+    }
+    iframe {
+        width: 15rem;
+        height: 13rem;
+    }
+}

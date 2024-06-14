@@ -7,7 +7,7 @@
                 Tambah Fasilitas
             </button>
 @include('modals.modalsarpras')
-            <table class="table mt-3 shadow">
+            <table class="table mt-3 shadow sarpras">
                 <thead>
 
                     <tr class="table-secondary">

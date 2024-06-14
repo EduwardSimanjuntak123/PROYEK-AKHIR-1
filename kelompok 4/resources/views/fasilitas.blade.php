@@ -3,7 +3,7 @@
     <!--overflow-->
     <div class="container-fluid scrolldown">
         <h1>Fasilitas-fasilitas yang ada di SMPN 4 BALIGE</h1>
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center hero_sarpras">
             <div class="row row-cols-2 justify-content-evenly">
                 <div class="col-6">
                     <img src="{{ asset('img/2.jpg') }}" width="300" height="300">
@@ -62,5 +62,7 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
         @endsection
         <!--fasilitas-->

@@ -11,7 +11,7 @@
                     <h2>Achievement</h2>
                 </div>
                 @foreach ($achievement as $item)
-                    <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="col-xs-12 col-sm-6 col-lg-4 mb-4 achievement">
                         <img class="thumbnail" src="{{ asset('storage/images/' . $item->file) }}"
                             alt="{{ $item->nama_galeri }}">
                         <p>{{ $item->nama_galeri }}</p>
@@ -23,7 +23,7 @@
                     <h2>Activity</h2>
                 </div>
                 @foreach ($activity as $item)
-                    <div class="col-xs-12 col-sm-6 col-lg-4 mb-4">
+                    <div class="col-xs-12 col-sm-6 col-lg-4 mb-4 activity">
                         <img class="thumbnail" src="{{ asset('storage/images/' . $item->file) }}"
                             alt="{{ $item->nama_galeri }}">
                         <p>{{ $item->nama_galeri }}</p>

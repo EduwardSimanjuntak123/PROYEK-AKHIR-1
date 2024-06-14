@@ -124,7 +124,7 @@ $validator=Validator::make($request->all(),
         $filename = $berita->file;
 
         // Hapus foto dari penyimpanan jika ada
-        $path = 'images/' . $filename;
+        $path = 'img/' . $filename;
         if (Storage::disk('public')->exists($path)) {
             Storage::disk('public')->delete($path);
         }
